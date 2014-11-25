@@ -1,5 +1,7 @@
 aliases.user.zsh
 gitconfig.user
+vim/backups
+vim/bundle
 
 # From YADR:
 # OSX       taken from: https://github.com/github/gitignore/blob/master/Global/OSX.gitignore
