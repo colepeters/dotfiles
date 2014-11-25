@@ -10,6 +10,9 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Override rm -i alias which makes rm prompt for every action
 alias rm='nocorrect rm'
 
+# Source virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper.sh
+
 #
 # Git
 #
