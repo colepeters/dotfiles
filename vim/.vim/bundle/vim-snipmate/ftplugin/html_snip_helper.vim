@@ -1,0 +1,1 @@
+/Users/cole/.dotfiles/vim//bundle/vim-snipmate/ftplugin/html_snip_helper.vim

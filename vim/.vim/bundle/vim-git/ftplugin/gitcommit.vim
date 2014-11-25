@@ -1,0 +1,1 @@
+/Users/cole/.dotfiles/vim//bundle/vim-git/ftplugin/gitcommit.vim

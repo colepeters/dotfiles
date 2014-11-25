@@ -1,0 +1,1 @@
+/Users/cole/.dotfiles/vim//bundle/nerdtree/syntax/nerdtree.vim

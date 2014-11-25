@@ -1,0 +1,1 @@
+/Users/cole/.dotfiles/vim//bundle/vim-easymotion/t/smartsign_spec.vim

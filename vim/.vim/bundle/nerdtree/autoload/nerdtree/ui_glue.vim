@@ -1,0 +1,1 @@
+/Users/cole/.dotfiles/vim//bundle/nerdtree/autoload/nerdtree/ui_glue.vim

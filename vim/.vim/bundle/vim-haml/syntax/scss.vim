@@ -1,0 +1,1 @@
+/Users/cole/.dotfiles/vim//bundle/vim-haml/syntax/scss.vim

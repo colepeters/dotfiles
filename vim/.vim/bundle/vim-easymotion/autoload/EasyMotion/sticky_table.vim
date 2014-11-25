@@ -1,0 +1,1 @@
+/Users/cole/.dotfiles/vim//bundle/vim-easymotion/autoload/EasyMotion/sticky_table.vim

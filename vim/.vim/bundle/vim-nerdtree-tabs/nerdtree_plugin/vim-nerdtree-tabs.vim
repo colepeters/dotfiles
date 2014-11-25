@@ -1,0 +1,1 @@
+/Users/cole/.dotfiles/vim//bundle/vim-nerdtree-tabs/nerdtree_plugin/vim-nerdtree-tabs.vim

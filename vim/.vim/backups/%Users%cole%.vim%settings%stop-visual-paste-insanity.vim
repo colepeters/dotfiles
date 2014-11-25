@@ -1,0 +1,1 @@
+/Users/cole/.dotfiles/vim//backups/%Users%cole%.vim%settings%stop-visual-paste-insanity.vim

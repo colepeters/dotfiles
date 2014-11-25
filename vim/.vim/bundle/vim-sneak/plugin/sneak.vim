@@ -1,0 +1,1 @@
+/Users/cole/.dotfiles/vim//bundle/vim-sneak/plugin/sneak.vim

@@ -1,0 +1,1 @@
+/Users/cole/.dotfiles/vim//settings/vim-fugitive.vim

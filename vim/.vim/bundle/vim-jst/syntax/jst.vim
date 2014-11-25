@@ -1,0 +1,1 @@
+/Users/cole/.dotfiles/vim//bundle/vim-jst/syntax/jst.vim

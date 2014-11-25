@@ -1,0 +1,1 @@
+/Users/cole/.zprezto/runcoms/zlogout

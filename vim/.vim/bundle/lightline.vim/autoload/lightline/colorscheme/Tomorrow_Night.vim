@@ -1,0 +1,1 @@
+/Users/cole/.dotfiles/vim//bundle/lightline.vim/autoload/lightline/colorscheme/Tomorrow_Night.vim

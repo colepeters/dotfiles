@@ -1,0 +1,1 @@
+/Users/cole/.dotfiles/vim//bundle/neocomplete/autoload/neocomplete/filters/sorter_word.vim

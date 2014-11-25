@@ -1,0 +1,4 @@
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'colepeters/lightline.vim'
+Bundle 'xsunsmile/showmarks'
+Bundle 'nathanaelkane/vim-indent-guides'

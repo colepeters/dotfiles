@@ -1,0 +1,1 @@
+/Users/cole/.dotfiles/vim//bundle/vim-coffee-script/syntax/coffee.vim

@@ -1,0 +1,1 @@
+/Users/cole/.dotfiles/vim//bundle/lightline.vim/plugin/lightline.vim
