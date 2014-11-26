@@ -1,0 +1,2 @@
+EXCLUDES="README.md fonts"
+SYMLINK_DIRS="vim zprezto"
