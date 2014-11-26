@@ -6,7 +6,7 @@
 filetype off
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/vundle
 set rtp+=~/.vim/vundles/ "IMPORTANT: This is where our vundle lists are stored
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
