@@ -132,4 +132,7 @@ let g:solarized_menu=0               "Disable Solarized menu
 colorscheme solarized
 
 " Bright as fuck visual line
-hi! Visual guifg=#cccccc guibg=#D33682
+hi Visual guifg=#D33682 guibg=#cccccc
+
+" Highlight search matches
+set hlsearch
