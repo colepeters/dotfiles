@@ -124,12 +124,14 @@ nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 
 " Solarized Colorscheme Config
-let g:solarized_contrast="normal"    "default value is normal
-let g:solarized_bold=1               "use bold
-syntax enable                        "I don’t think this works…
-set background=dark
-let g:solarized_menu=0               "Disable Solarized menu
-colorscheme solarized
+if has("gui_running")
+  colorscheme solarized
+  let g:solarized_contrast="normal"    "default value is normal
+  let g:solarized_bold=1               "use bold
+  syntax enable                        "I don’t think this works…
+  set background=dark
+  let g:solarized_menu=0               "Disable Solarized menu
+endif
 
 " Bright as fuck visual line
 hi Visual guifg=#D33682 guibg=#cccccc

@@ -13,9 +13,10 @@ alias rm='nocorrect rm'
 # Source virtualenvwrapper
 source /usr/local/bin/virtualenvwrapper.sh
 
-#
+# Add depot_tools to PATH (Chromium)
+export PATH="$PATH:$HOME/Developer/depot_tools"
+
 # Git
-#
 __git_files () {
   _wanted files expl 'local files' _files
 }
