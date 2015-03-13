@@ -4,6 +4,9 @@ source ~/.zprezto/init.zsh
 # Source aliases
 source ~/.aliases.zsh
 
+# Source functions
+source ~/.functions.zsh
+
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"
 
