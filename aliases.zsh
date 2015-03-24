@@ -85,5 +85,8 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 # Homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
 
+# NPM
+alias ni='npm install'
+
 # Call user aliases
 source ~/.aliases.user.zsh
