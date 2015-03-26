@@ -88,5 +88,8 @@ alias brewu='brew update && brew upgrade && brew cleanup && brew prune && brew d
 # NPM
 alias ni='npm install'
 
+# Jekyll
+alias jsl='jekyll serve --baseurl ""' # aka Jekyll Serve Local
+
 # Call user aliases
 source ~/.aliases.user.zsh
