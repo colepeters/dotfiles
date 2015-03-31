@@ -138,3 +138,6 @@ hi Visual guifg=#D33682 guibg=#cccccc
 
 " Highlight search matches
 set hlsearch
+
+" Reduce delay of ESC switching out of Insert mode
+set timeoutlen=1000 ttimeoutlen=0
