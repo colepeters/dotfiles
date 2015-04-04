@@ -104,8 +104,6 @@ set nolist                               " Word wrap without linebreaks
 set linebreak                            " ---------------------------------
 set guioptions=gm                        " Disable graphical tabs
 syntax enable                            " Syntax highlighting
-hi Visual guifg=#D33682 guibg=#cccccc    " A brighter visual selection (gui)
-hi Visual ctermfg=33 ctermbg=230         " A brighter visual selection (terminal)
 set hlsearch                             " Highlight search matches
 set background=dark                      " ---------------------------------
 colorscheme solarized                    " Solarized colourscheme config
@@ -114,6 +112,8 @@ if has("gui_running")                    " Gui only options:
   let g:solarized_bold=1                 " Use bold
   let g:solarized_menu=0                 " Disable Solarized menu
 endif                                    " ---------------------------------
+hi Visual guifg=#D33682 guibg=#cccccc ctermfg=33 ctermbg=230  
+"                                        " A brighter visual selection
 
 " Movement
 nmap <CR> o<Esc>                         " Enter in normal mode for newline without insert
