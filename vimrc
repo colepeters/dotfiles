@@ -95,49 +95,39 @@ so ~/.vim/settings.vim
 "
 "====================================================
 
-" Typography and text flow
-if has('gui_running')
-  set guifont=InconsolataTCP:h17
-endif
-set wrap
-set nolist
-set linebreak
+" Appearance
+if has('gui_running')                    " ---------------------------------
+  set guifont=InconsolataTCP:h17         " Use a different typeface for gvim
+endif                                    " ---------------------------------
+set wrap                                 " ---------------------------------
+set nolist                               " Word wrap without linebreaks
+set linebreak                            " ---------------------------------
+set guioptions=gm                        " Disable graphical tabs
+syntax enable                            " Syntax highlighting
+hi Visual guifg=#D33682 guibg=#cccccc    " A brighter visual selection (gui)
+hi Visual ctermfg=33 ctermbg=230         " A brighter visual selection (terminal)
+set hlsearch                             " Highlight search matches
+set background=dark                      " ---------------------------------
+colorscheme solarized                    " Solarized colourscheme config
+if has("gui_running")                    " Gui only options:
+  let g:solarized_contrast="normal"      " Default value is normal
+  let g:solarized_bold=1                 " Use bold
+  let g:solarized_menu=0                 " Disable Solarized menu
+endif                                    " ---------------------------------
 
-" Moving through wrapped lines with CMD key:
-vmap <D-j> gj
-vmap <D-k> gk
-vmap <D-4> g$
-vmap <D-6> g^
-vmap <D-0> g^
-nmap <D-j> gj
-nmap <D-k> gk
-nmap <D-4> g$
-nmap <D-6> g^
-nmap <D-0> g^
+" Movement
+nmap <CR> o<Esc>                         " Enter in normal mode for newline without insert
+nmap <S-Enter> O<Esc>                    " Shift-enter for above, but before current line
+vmap <D-j> gj                            " ---------------------------------
+vmap <D-k> gk                            " 
+vmap <D-4> g$                            "
+vmap <D-6> g                             "
+vmap <D-0> g^                            " Moving through wrapped lines w/ CMD key
+nmap <D-j> gj                            "
+nmap <D-k> gk                            "
+nmap <D-4> g$                            "
+nmap <D-6> g^                            "
+nmap <D-0> g^                            " ---------------------------------
 
-" Disable graphical tabs
-set guioptions=gm
-
-" Insert a new line without dropping into insert mode with Enter
-" (Shift Enter for previous line):
-nmap <S-Enter> O<Esc>
-nmap <CR> o<Esc>
-
-" Solarized Colorscheme Config
-set background=dark
-colorscheme solarized
-syntax enable
-if has("gui_running")
-  let g:solarized_contrast="normal"    "default value is normal
-  let g:solarized_bold=1               "use bold
-  let g:solarized_menu=0               "Disable Solarized menu
-endif
-
-" Bright as fuck visual line
-hi Visual guifg=#D33682 guibg=#cccccc
-
-" Highlight search matches
-set hlsearch
-
-" Reduce delay of ESC switching out of Insert mode
-set timeoutlen=1000 ttimeoutlen=0
+" Assorted function stuff
+set timeoutlen=1000 ttimeoutlen=0        " Reduce delay of ESC switching out of Insert mode
