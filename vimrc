@@ -16,7 +16,6 @@ set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
 let mapleader=","               "Use , as leader
-syntax on                       "turn on syntax highlighting
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
@@ -112,26 +111,19 @@ if has("gui_running")                    " Gui only options:
   let g:solarized_bold=1                 " Use bold
   let g:solarized_menu=0                 " Disable Solarized menu
 endif                                    " ---------------------------------
-hi Visual guifg=#D33682 guibg=#cccccc ctermfg=33 ctermbg=230  
-"                                        " A brighter visual selection
+hi Visual guifg=#D33682 guibg=#cccccc ctermfg=33 ctermbg=230 " A brighter visual selection
 
 " Movement
 nmap <CR> o<Esc>                         " CR in normal mode for newline without insert
 nmap <S-Enter> O<Esc>                    " Shift-CR for above, but before current line
 vmap <D-j> gj                            " ---------------------------------
 vmap <D-k> gk                            " 
-vmap <D-4> g$                            "
-vmap <D-6> g                             "
-vmap <D-0> g^                            " Moving through wrapped lines w/ CMD key
-nmap <D-j> gj                            "
+nmap <D-j> gj                            " Moving through wrapped lines w/ CMD
 nmap <D-k> gk                            "
-nmap <D-4> g$                            "
-nmap <D-6> g^                            "
-nmap <D-0> g^                            " ---------------------------------
 nnoremap <C-t> :tabnew<CR>               " ---------------------------------
-nnoremap <C-w> :tabclose<CR>             " Tab new/close/prev/next with CTRL
-nnoremap <C-h> gT                        " 
+nnoremap <C-w> :tabclose<CR>             " Tab new/close/prev/next
+nnoremap <C-h> gT                        " using CTRL-t/w/h/l
 nnoremap <C-l> gt                        " ----------------------------------
 
 " Assorted function stuff
-set timeoutlen=1000 ttimeoutlen=0        " Reduce delay of ESC switching out of Insert mode
+set timeoutlen=1000 ttimeoutlen=0        " Reduce delay of ESC switching out of Insert mode (terminal Vim)
