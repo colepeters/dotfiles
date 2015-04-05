@@ -11,7 +11,6 @@ set number                      "Line numbers are good
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
-set showmode                    "Show current mode down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
@@ -96,11 +95,12 @@ so ~/.vim/settings.vim
 
 " Appearance
 if has('gui_running')                    " ---------------------------------
-  set guifont=InconsolataTCP:h17         " Use a different typeface for gvim
+  set guifont=Nitti\ Light:h19           " Use a different typeface for gvim
 endif                                    " ---------------------------------
 set wrap                                 " ---------------------------------
 set nolist                               " Word wrap without linebreaks
 set linebreak                            " ---------------------------------
+set noshowmode                           " Don’t show mode - we use Lightline for that
 set guioptions=gm                        " Disable graphical tabs
 syntax enable                            " Syntax highlighting
 set hlsearch                             " Highlight search matches
@@ -111,15 +111,12 @@ if has("gui_running")                    " Gui only options:
   let g:solarized_bold=1                 " Use bold
   let g:solarized_menu=0                 " Disable Solarized menu
 endif                                    " ---------------------------------
-hi Visual guifg=#D33682 guibg=#cccccc ctermfg=33 ctermbg=230 " A brighter visual selection
+" A brighter visual selection
+hi Visual guifg=#D33682 guibg=#cccccc ctermfg=33 ctermbg=230
 
 " Movement
 nmap <CR> o<Esc>                         " CR in normal mode for newline without insert
 nmap <S-Enter> O<Esc>                    " Shift-CR for above, but before current line
-vmap <D-j> gj                            " ---------------------------------
-vmap <D-k> gk                            " 
-nmap <D-j> gj                            " Moving through wrapped lines w/ CMD
-nmap <D-k> gk                            "
 nnoremap <C-t> :tabnew<CR>               " ---------------------------------
 nnoremap <C-w> :tabclose<CR>             " Tab new/close/prev/next
 nnoremap <C-h> gT                        " using CTRL-t/w/h/l
