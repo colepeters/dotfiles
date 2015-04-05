@@ -1,31 +1,25 @@
 let g:lightline = {
-      \ 'colorscheme': 'solarized_dark',
+      \ 'colorscheme': 'solarized',
       \ 'active': {
       \   'left': [ [ 'mode' ],
-      \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+      \             [ 'readonly', 'filename', 'modified' ] ],
+      \   'right': [ [], [], [ 'fileformat', 'filetype', 'lineinfo' ] ]
       \ },
       \ 'component': {
-      \   'readonly': '%{&readonly?"":""}',
-      \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
-      \ },
-      \ 'component_function': {
-      \   'fugitive': 'MyFugitive',
-      \ },
-      \ 'component_visible_condition': {
-      \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+      \   'readonly': '%{&readonly?"✕":""}',
       \ },
       \ 'separator': { 'left': '', 'right': '' },
       \ 'subseparator': { 'left': '|', 'right': '|' }
       \ }
 
+let g:lightline.mode_map = {
+  \ 'n' : 'N',
+  \ 'i' : 'I',
+  \ 'v' : 'v',
+  \ 'V' : 'V',
+  \ 'c' : 'C',
+  \ "\<C-v>" : 'B'
+  \ }
+
 " Use status bar even with single buffer
 set laststatus=2
-
-" TCP customs
-function! MyFugitive()
-  if exists("*fugitive#head")
-    let _ = fugitive#head()
-    return strlen(_) ? ' '._ : ''
-  endif
-  return ''
-endfunction
