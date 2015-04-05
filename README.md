@@ -18,14 +18,7 @@ The dotfiles are managed with [rcm by Thoughtbot](https://github.com/thoughtbot/
 Customisations for Vim, Git, and ZSH.
 
 ### Vim
-The `vimrc` file starts with a great selection of sane defaults, most of which have been borrowed from [YADR](https://github.com/skwp/dotfiles). The customisations I have included myself can be summed up as follows:
-
-- Uses [InconsolataTCP](https://github.com/colepeters/inconsolata-tcp) font, which features Powerline symbols patched in, and a more generous line height than other variants (no need to add extra line height with `set linespace`!)
-- Move through wrapped lines by using `CMD` + a motion (for example, move down one wrapped line with `CMD-j`)
-- Disabling of graphical tabs; text-based tabs look great thanks to [Lightline](https://github.com/colepeters/lightline.vim)
-- Insert new lines in insert mode with `ENTER` (new lines above current line with `SHIFT-ENTER`) - nice for quickly formatting linebreaks
-- Various customisations for the Solarized Dark colourscheme, including reduced contrast (not too much!) and disabling the Solarized menu bar item (which I never use)
-- A ridiculously bright visual line for super obvious text selection
+The `vimrc` file starts with a great selection of sane defaults, most of which have been borrowed from [YADR](https://github.com/skwp/dotfiles). Everything, including my own customisations, are heavily commented; instead of listing everything out here, you’ll probably find it easier to [just read the file itself]('./vimrc').
 
 *NB:* Many of the visual customisations are tailored for use with the [Solarized](http://ethanschoonover.com/solarized) colour scheme, the dark version in particular.
 
