@@ -18,7 +18,7 @@ The dotfiles are managed with [rcm by Thoughtbot](https://github.com/thoughtbot/
 Customisations for Vim, Git, and ZSH.
 
 ### Vim
-The `vimrc` file starts with a great selection of sane defaults, most of which have been borrowed from [YADR](https://github.com/skwp/dotfiles). Everything, including my own customisations, are heavily commented; instead of listing everything out here, you’ll probably find it easier to [just read the file itself]('./vimrc').
+The `vimrc` file starts with a great selection of sane defaults, most of which have been borrowed from [YADR](https://github.com/skwp/dotfiles). Everything, including my own customisations, are heavily commented; instead of listing everything out here, you’ll probably find it easier to [just read the file itself](./vimrc).
 
 *NB:* Many of the visual customisations are tailored for use with the [Solarized](http://ethanschoonover.com/solarized) colour scheme, the dark version in particular.
 
