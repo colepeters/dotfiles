@@ -95,7 +95,7 @@ so ~/.vim/settings.vim
 
 " Appearance
 if has('gui_running')                    " ---------------------------------
-  set guifont=Nitti\ Light:h19           " Use a different typeface for gvim
+  set guifont=Nitti\ Light:h19           " I <3 Nitti; you can use InconsolataTCP (included in this repo)
 endif                                    " ---------------------------------
 set wrap                                 " ---------------------------------
 set nolist                               " Word wrap without linebreaks
