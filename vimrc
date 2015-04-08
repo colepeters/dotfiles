@@ -124,3 +124,25 @@ nnoremap <C-l> gt                        " ----------------------------------
 
 " Assorted function stuff
 set timeoutlen=1000 ttimeoutlen=0        " Reduce delay of ESC switching out of Insert mode (terminal Vim)
+
+" Change Lightline theme based on background setting
+augroup LightLineColorscheme
+  autocmd!
+  autocmd ColorScheme * call s:lightline_update()
+augroup END
+function! s:lightline_update()
+  if !exists('g:loaded_lightline')
+    return
+  endif
+  try
+    if g:colors_name =~# 'wombat\|solarized\|landscape\|jellybeans\|Tomorrow'
+      let g:lightline.colorscheme =
+            \ substitute(substitute(g:colors_name, '-', '_', 'g'), '256.*', '', '') .
+            \ (g:colors_name ==# 'solarized' ? '_' . &background : '')
+      call lightline#init()
+      call lightline#colorscheme()
+      call lightline#update()
+    endif
+  catch
+  endtry
+endfunction
