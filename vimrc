@@ -93,7 +93,7 @@ so ~/.vim/settings.vim
 "
 "====================================================
 
-" Appearance
+" ================ Appearance ========================
 if has('gui_running')                    " ---------------------------------
   set guifont=Nitti\ Light:h19           " I <3 Nitti; you can use InconsolataTCP (included in this repo)
 endif                                    " ---------------------------------
@@ -111,19 +111,12 @@ if has("gui_running")                    " Gui only options:
   let g:solarized_bold=1                 " Use bold
   let g:solarized_menu=0                 " Disable Solarized menu
 endif                                    " ---------------------------------
+
+" Toggle background light/dark with CTRL-B
+nnoremap <C-b> :let &background = ( &background == "dark" ? "light" : "dark" )<CR>
+
 " A brighter visual selection
 hi Visual guifg=#D33682 guibg=#cccccc ctermfg=33 ctermbg=230
-
-" Movement
-nmap <CR> o<Esc>                         " CR in normal mode for newline without insert
-nmap <S-Enter> O<Esc>                    " Shift-CR for above, but before current line
-nnoremap <C-t> :tabnew<CR>               " ---------------------------------
-nnoremap <C-w> :tabclose<CR>             " Tab new/close/prev/next
-nnoremap <C-h> gT                        " using CTRL-t/w/h/l
-nnoremap <C-l> gt                        " ----------------------------------
-
-" Assorted function stuff
-set timeoutlen=1000 ttimeoutlen=0        " Reduce delay of ESC switching out of Insert mode (terminal Vim)
 
 " Change Lightline theme based on background setting
 augroup LightLineColorscheme
@@ -146,3 +139,14 @@ function! s:lightline_update()
   catch
   endtry
 endfunction
+
+" =============== Movement ===============
+nmap <CR> o<Esc>                         " CR in normal mode for newline without insert
+nmap <S-Enter> O<Esc>                    " Shift-CR for above, but before current line
+nnoremap <C-t> :tabnew<CR>               " ---------------------------------
+nnoremap <C-w> :tabclose<CR>             " Tab new/close/prev/next
+nnoremap <C-h> gT                        " using CTRL-t/w/h/l
+nnoremap <C-l> gt                        " ----------------------------------
+
+" =============== Behaviour ==============
+set timeoutlen=1000 ttimeoutlen=0        " Reduce delay of ESC switching out of Insert mode (terminal Vim)
