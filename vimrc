@@ -110,6 +110,7 @@ if has("gui_running")                    " Gui only options:
   let g:solarized_contrast="normal"      " Default value is normal
   let g:solarized_bold=1                 " Use bold
   let g:solarized_menu=0                 " Disable Solarized menu
+  set background=light                   " Light BG in gvim
 endif                                    " ---------------------------------
 
 " Toggle background light/dark with CTRL-B
