@@ -94,9 +94,6 @@ so ~/.vim/settings.vim
 "====================================================
 
 " ================ Appearance ========================
-if has('gui_running')                    " ---------------------------------
-  set guifont=Nitti\ Light:h19           " I <3 Nitti; you can use InconsolataTCP (included in this repo)
-endif                                    " ---------------------------------
 set wrap                                 " ---------------------------------
 set nolist                               " Word wrap without linebreaks
 set linebreak                            " ---------------------------------
@@ -104,13 +101,14 @@ set noshowmode                           " Don’t show mode - we use Lightline 
 set guioptions=gm                        " Disable graphical tabs
 syntax enable                            " Syntax highlighting
 set hlsearch                             " Highlight search matches
-set background=dark                      " ---------------------------------
-colorscheme solarized                    " Solarized colourscheme config
+set background=dark                      " Dark BG in terminal Vim
 if has("gui_running")                    " Gui only options:
-  let g:solarized_contrast="normal"      " Default value is normal
-  let g:solarized_bold=1                 " Use bold
-  let g:solarized_menu=0                 " Disable Solarized menu
+  colorscheme solarized                  " Solarized colours
   set background=light                   " Light BG in gvim
+  let g:solarized_contrast="normal"      " Default value is normal, adjust to yr liking
+  let g:solarized_menu=0                 " Disable Solarized menu
+  let g:solarized_bold=1                 " Use bold
+  set guifont=Nitti\ Light:h19           " I <3 Nitti; you can use InconsolataTCP (included in this repo)
 endif                                    " ---------------------------------
 
 " Toggle background light/dark with CTRL-B
