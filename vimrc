@@ -142,10 +142,10 @@ endfunction
 " =============== Movement ===============
 nmap <CR> o<Esc>                         " CR in normal mode for newline without insert
 nmap <S-Enter> O<Esc>                    " Shift-CR for above, but before current line
-nnoremap <C-t> :tabnew<CR>               " ---------------------------------
-nnoremap <C-w> :tabclose<CR>             " Tab new/close/prev/next
-nnoremap <C-h> gT                        " using CTRL-t/w/h/l
-nnoremap <C-l> gt                        " ----------------------------------
+nnoremap <C-J> <C-W><C-J>                " ----------------------------------
+nnoremap <C-K> <C-W><C-K>                " Navigate splits 
+nnoremap <C-L> <C-W><C-L>                " with CTRL-j/k/l/h
+nnoremap <C-H> <C-W><C-H>                " ----------------------------------
 
 " =============== Behaviour ==============
 set timeoutlen=1000 ttimeoutlen=0        " Reduce delay of ESC switching out of Insert mode (terminal Vim)
