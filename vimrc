@@ -115,7 +115,7 @@ endif                                    " ---------------------------------
 nnoremap <C-b> :let &background = ( &background == "dark" ? "light" : "dark" )<CR>
 
 " A brighter visual selection
-hi Visual guifg=#D33682 guibg=#cccccc ctermfg=33 ctermbg=230
+hi Visual guifg=#D33682 guibg=#eeeeee ctermfg=125 ctermbg=230
 
 " Change Lightline theme based on background setting
 augroup LightLineColorscheme
