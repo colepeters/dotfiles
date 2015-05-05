@@ -7,6 +7,9 @@ source ~/.aliases.zsh
 # Source functions
 source ~/.functions.zsh
 
+# Source secrets
+source ~/.secrets
+
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"
 
