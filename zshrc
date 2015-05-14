@@ -30,3 +30,6 @@ __git_files () {
 # stuff like ga *foo* and correctly have
 # git add the right stuff
 alias git='noglob git'
+
+export NVM_DIR="/Users/cole/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
