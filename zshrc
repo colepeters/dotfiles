@@ -31,5 +31,8 @@ __git_files () {
 # git add the right stuff
 alias git='noglob git'
 
-export NVM_DIR="/Users/cole/.nvm"
+export NVM_DIR="~/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# tab completion for NVM
+[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
