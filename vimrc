@@ -151,4 +151,5 @@ nnoremap <C-H> <C-W><C-H>                " ----------------------------------
 set timeoutlen=1000 ttimeoutlen=0        " Reduce delay of ESC switching out of Insert mode (terminal Vim)
 
 " =============== Custom commands ========
+" Pretty-print minifed JSON:
 command! Jsontool %!python -m json.tool
