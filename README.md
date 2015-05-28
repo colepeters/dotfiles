@@ -12,6 +12,7 @@ Having said that, these dotfiles are inherently opinionated, given that they are
 
 ### Credits
 A sizeable portion of these dotfiles are adapted from the well-known [YADR dotfiles](https://github.com/skwp/dotfiles) repository. I have attempted to make mention of all of these instances within the code to give credit where it is due.
+
 The dotfiles are managed with [rcm by Thoughtbot](https://github.com/thoughtbot/rcm), which is an awesome, lightweight tool for keeping dotfiles synced and organised.
 
 ## What’s included
@@ -61,7 +62,9 @@ Plugins for various Vim improvements:
 
 ### ZSH and Git
 I use [Antigen](https://github.com/zsh-users/antigen) to manage my ZSH plugins, because it is awesome. Antigen is sourced and applied (and relevant plugins are called) all from the .zshrc file. Antigen is installed as a submodule of this repo.
+
 The prompt utilised is my fork of [Pure](https://github.com/colepeters/pure) which changes only the symbol used to indicated a dirty git branch, and the colour used to indicate current branch name.
+
 Also in use are a huge number of super convenient aliases tailored primarily towards Git — [take a look at them here](https://github.com/colepeters/dotfiles/blob/master/aliases.zsh).
 
 ## Basic install (OS X)
