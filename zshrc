@@ -1,3 +1,29 @@
+# =====================================
+# Antigen config
+# =====================================
+# Source Antigen
+source ~/.dotfiles/antigen/antigen.zsh
+
+# Load the oh-my-zsh library
+antigen use oh-my-zsh
+
+# Bundle some oh-my-zsh plugins
+antigen bundle git
+
+# Syntax highlighting
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Use Pure prompt
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
+
+# That's a wrap!
+antigen apply
+
+# =====================================
+# Other orders of business
+# =====================================
+
 # Source aliases
 source ~/.aliases.zsh
 
