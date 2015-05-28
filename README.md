@@ -41,8 +41,6 @@ Language-related plugins:
 - A bunch of syntax and filetype settings for JavaScript, Markdown, HTML, HAML, and more; [view all of them here](https://github.com/colepeters/dotfiles/blob/master/vim/languages.vundle)
 
 “Project”-related plugins:
-- [NERDtree](https://github.com/scrooloose/nerdtree.git) for file exploring (I’m starting to use `:e` a lot more than NERDtree, but I’m keeping this in for now)
-- [NERDtree tabs](https://github.com/jistr/vim-nerdtree-tabs), makes NERDtree play nice with tabs
 - [CTRL-P](kien/ctrlp.vim) fuzzy file finder
 
 Search-related plugins:
@@ -62,7 +60,8 @@ Plugins for various Vim improvements:
 - [Surround](https://github.com/tpope/vim-surround) to surround a word or selection with something (like a tag, quotes, etc.)
 
 ## ZSH and Git
-Primarily, these dotfiles make use of [my fork of Prezto](https://github.com/colepeters/prezto), which provides use with syntax highlighting, custom prompts, auto completion, and more. My fork adds a custom theme and sets the keybindings to be Vim-like.
+I use [Antigen](https://github.com/zsh-users/antigen) to manage my ZSH plugins, because it is awesome. Antigen is sourced and applied (and relevant plugins are called) all from the .zshrc file. Antigen is installed as a submodule of this repo.
+The prompt utilised is my fork of [Pure](https://github.com/colepeters/pure) which changes only the symbol used to indicated a dirty git branch, and the colour used to indicate current branch name.
 Also in use are a huge number of super convenient aliases tailored primarily towards Git — [take a look at them here](https://github.com/colepeters/dotfiles/blob/master/aliases.zsh).
 
 ## TODO
