@@ -24,7 +24,7 @@ The `vimrc` file starts with a great selection of sane defaults, most of which h
 
 Probably one other important thing to note is the redefining of the `LEADER` key as `,` (another YADR takeaway that I really love).
 
-### Vim plugins
+#### Vim plugins
 Plugins are managed with [Vundle](https://github.com/gmarik/Vundle.vim); plugin lists are stored in topical `.vundle` files, another technique borrowed from YADR to keep things clearly separated and easily findable. The following is an overview of the most notable plugins:
 
 Appearance-related plugins:
@@ -59,7 +59,7 @@ Plugins for various Vim improvements:
 - [Tim Pope’s repeat.vim](https://github.com/tpope/vim-repeat) remaps `.` so that plugins can tap into it
 - [Surround](https://github.com/tpope/vim-surround) to surround a word or selection with something (like a tag, quotes, etc.)
 
-## ZSH and Git
+### ZSH and Git
 I use [Antigen](https://github.com/zsh-users/antigen) to manage my ZSH plugins, because it is awesome. Antigen is sourced and applied (and relevant plugins are called) all from the .zshrc file. Antigen is installed as a submodule of this repo.
 The prompt utilised is my fork of [Pure](https://github.com/colepeters/pure) which changes only the symbol used to indicated a dirty git branch, and the colour used to indicate current branch name.
 Also in use are a huge number of super convenient aliases tailored primarily towards Git — [take a look at them here](https://github.com/colepeters/dotfiles/blob/master/aliases.zsh).
