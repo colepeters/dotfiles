@@ -85,9 +85,6 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 # Homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
 
-# NPM
-alias ni='npm install'
-
 # Jekyll
 alias jsl='jekyll serve --baseurl ""' # aka Jekyll Serve Local
 
