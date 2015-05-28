@@ -1,6 +1,7 @@
 # =====================================
 # Antigen config
 # =====================================
+
 # Source Antigen
 source ~/.dotfiles/antigen/antigen.zsh
 
