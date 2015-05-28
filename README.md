@@ -64,8 +64,32 @@ I use [Antigen](https://github.com/zsh-users/antigen) to manage my ZSH plugins, 
 The prompt utilised is my fork of [Pure](https://github.com/colepeters/pure) which changes only the symbol used to indicated a dirty git branch, and the colour used to indicate current branch name.
 Also in use are a huge number of super convenient aliases tailored primarily towards Git — [take a look at them here](https://github.com/colepeters/dotfiles/blob/master/aliases.zsh).
 
+## Basic install (OS X)
+Oh my god these instructions so need to be tested and improved:
+
+```shell
+# Clone the repo to into a ".dotfiles" directory in your user directory
+git clone git@github.com:colepeters/dotfiles.git ~/.dotfiles
+
+# Switch to the new directory
+cd ~/.dotfiles
+
+# Initialise and update Antigen submodule
+git submodule init && git submodule update
+
+# Install RCM if it’s not already — you have Homebrew, right?
+brew tap thoughtbot/formulae
+brew install rcm
+
+# Generate symlinked dotfiles in your ~ directory
+rcup -v
+```
+
+- any private info (e.g. GitHub tokens, etc) should be stored in a `~/.secrets` file, which is sourced automatically if it exists
+- any private aliases (e.g. server ssh logins, etc) should be stored in a `~/.aliases.user.zsh`, which is also sourced automatically if it exists
+
 ## TODO
 - Review dependencies
-- Setup/install instructions
+- Better setup instructions
 - Install script
 - COME ON TARS
