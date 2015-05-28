@@ -85,8 +85,12 @@ brew install rcm
 rcup -v
 ```
 
+You should now be able to open a new shell session and have everything be not horrible and hopefully cooler and ready to go.
+
+Additional things of note:
 - any private info (e.g. GitHub tokens, etc) should be stored in a `~/.secrets` file, which is sourced automatically if it exists
 - any private aliases (e.g. server ssh logins, etc) should be stored in a `~/.aliases.user.zsh`, which is also sourced automatically if it exists
+
 
 ## TODO
 - Review dependencies
