@@ -16,7 +16,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Use Pure prompt
 antigen bundle mafredri/zsh-async
-antigen bundle sindresorhus/pure
+antigen bundle colepeters/pure
 
 # That's a wrap!
 antigen apply
