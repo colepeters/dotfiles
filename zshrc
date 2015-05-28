@@ -1,6 +1,3 @@
-# Initialise Prezto
-source ~/.zprezto/init.zsh
-
 # Source aliases
 source ~/.aliases.zsh
 

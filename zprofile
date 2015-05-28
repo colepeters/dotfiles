@@ -1,1 +1,0 @@
-/Users/cole/.zprezto/runcoms/zprofile
