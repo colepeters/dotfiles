@@ -108,9 +108,6 @@ if has("gui_running")                    " Gui only options:
   set guifont=Nitti\ Light:h19           " I <3 Nitti; you can use InconsolataTCP (included in this repo)
 endif                                    " ---------------------------------
 
-" A brighter visual selection
-hi Visual guifg=#D33682 guibg=#eeeeee ctermfg=125 ctermbg=230
-
 " =============== Movement ===============
 nmap <CR> o<Esc>                         " CR in normal mode for newline without insert
 nmap <S-Enter> O<Esc>                    " Shift-CR for above, but before current line
