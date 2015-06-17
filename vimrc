@@ -101,10 +101,9 @@ set noshowmode                           " Don’t show mode - we use Lightline 
 set guioptions=gm                        " Disable graphical tabs
 syntax enable                            " Syntax highlighting
 set hlsearch                             " Highlight search matches
-set background=dark                      " Dark BG in terminal Vim
+colorscheme PaperColorTCP                " https://github.com/colepeters/papercolor-theme
+set background=light                     " Light BG
 if has("gui_running")                    " Gui only options:
-  colorscheme PaperColor                 " Solarized colours
-  set background=light                   " Light BG in gvim
   set guifont=Nitti\ Light:h19           " I <3 Nitti; you can use InconsolataTCP (included in this repo)
 endif                                    " ---------------------------------
 
