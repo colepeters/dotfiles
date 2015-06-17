@@ -1,4 +1,5 @@
 Bundle 'altercation/vim-colors-solarized'
+Plugin 'NLKNguyen/papercolor-theme'
 Bundle 'colepeters/lightline.vim'
 Bundle 'xsunsmile/showmarks'
 Bundle 'nathanaelkane/vim-indent-guides'

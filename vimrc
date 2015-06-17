@@ -103,41 +103,13 @@ syntax enable                            " Syntax highlighting
 set hlsearch                             " Highlight search matches
 set background=dark                      " Dark BG in terminal Vim
 if has("gui_running")                    " Gui only options:
-  colorscheme solarized                  " Solarized colours
+  colorscheme PaperColor                 " Solarized colours
   set background=light                   " Light BG in gvim
-  let g:solarized_contrast="normal"      " Default value is normal, adjust to yr liking
-  let g:solarized_menu=0                 " Disable Solarized menu
-  let g:solarized_bold=1                 " Use bold
   set guifont=Nitti\ Light:h19           " I <3 Nitti; you can use InconsolataTCP (included in this repo)
 endif                                    " ---------------------------------
 
-" Toggle background light/dark with CTRL-B
-nnoremap <C-b> :let &background = ( &background == "dark" ? "light" : "dark" )<CR>
-
 " A brighter visual selection
 hi Visual guifg=#D33682 guibg=#eeeeee ctermfg=125 ctermbg=230
-
-" Change Lightline theme based on background setting
-augroup LightLineColorscheme
-  autocmd!
-  autocmd ColorScheme * call s:lightline_update()
-augroup END
-function! s:lightline_update()
-  if !exists('g:loaded_lightline')
-    return
-  endif
-  try
-    if g:colors_name =~# 'wombat\|solarized\|landscape\|jellybeans\|Tomorrow'
-      let g:lightline.colorscheme =
-            \ substitute(substitute(g:colors_name, '-', '_', 'g'), '256.*', '', '') .
-            \ (g:colors_name ==# 'solarized' ? '_' . &background : '')
-      call lightline#init()
-      call lightline#colorscheme()
-      call lightline#update()
-    endif
-  catch
-  endtry
-endfunction
 
 " =============== Movement ===============
 nmap <CR> o<Esc>                         " CR in normal mode for newline without insert
