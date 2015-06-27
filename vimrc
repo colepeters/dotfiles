@@ -85,15 +85,15 @@ set sidescroll=1
 so ~/.vim/settings.vim
 
 
-" ===================================================
+" ========================================
 "
 " TCP CUSTOMS
-" This section consists of customisations written
-" by my very own self WOW
+" This section consists of customisations
+" written by my very own self WOW
 "
-"====================================================
+"=========================================
 
-" ================ Appearance ========================
+" ================ Appearance ============
 set wrap                                 " ---------------------------------
 set nolist                               " Word wrap without linebreaks
 set linebreak                            " ---------------------------------
@@ -118,6 +118,10 @@ nnoremap <C-H> <C-W><C-H>                " ----------------------------------
 " =============== Behaviour ==============
 set timeoutlen=1000 ttimeoutlen=0        " Reduce delay of ESC switching out of Insert mode (terminal Vim)
 
+" =============== Plugins ================
+nnoremap <C-G> :GundoToggle<CR>          " Toggle Gundo graph view
+
 " =============== Custom commands ========
 " Pretty-print minifed JSON:
 command! Jsontool %!python -m json.tool
+
