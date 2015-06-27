@@ -109,7 +109,7 @@ endif                                    " ---------------------------------
 
 " =============== Movement ===============
 nmap <CR> o<Esc>                         " CR in normal mode for newline without insert
-nmap <S-Enter> O<Esc>                    " Shift-CR for above, but before current line
+nmap <S-Enter> O<Esc>                    " Shift-CR for newline before current line w/out insert
 nnoremap <C-J> <C-W><C-J>                " ----------------------------------
 nnoremap <C-K> <C-W><C-K>                " Navigate splits 
 nnoremap <C-L> <C-W><C-L>                " with CTRL-j/k/l/h
