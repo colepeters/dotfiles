@@ -100,10 +100,12 @@ set linebreak                            " ---------------------------------
 set noshowmode                           " Don’t show mode - we use Lightline for that
 set guioptions=gm                        " Disable graphical tabs
 set hlsearch                             " Highlight search matches
-colorscheme PaperColorTCP                " https://github.com/colepeters/papercolor-theme
+let g:enable_bold_font = 1               " Enable bold fonts
 set background=light                     " Light BG
-if has("gui_running")                    " Gui only options:
-  set guifont=Nitti\ Light:h20           " I <3 Nitti; you can use InconsolataTCP (included in this repo)
+colorscheme PaperColorTCP
+if has("gui_running")                    " ------- Gui-only options: -------
+  colorscheme hybrid_material
+  set guifont=Nitti\ Light:h18           
 endif                                    " ---------------------------------
 
 " =============== Syntax =================
