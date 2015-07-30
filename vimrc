@@ -99,13 +99,16 @@ set nolist                               " Word wrap without linebreaks
 set linebreak                            " ---------------------------------
 set noshowmode                           " Don’t show mode - we use Lightline for that
 set guioptions=gm                        " Disable graphical tabs
-syntax enable                            " Syntax highlighting
 set hlsearch                             " Highlight search matches
 colorscheme PaperColorTCP                " https://github.com/colepeters/papercolor-theme
 set background=light                     " Light BG
 if has("gui_running")                    " Gui only options:
-  set guifont=Nitti\ Light:h19           " I <3 Nitti; you can use InconsolataTCP (included in this repo)
+  set guifont=Nitti\ Light:h20           " I <3 Nitti; you can use InconsolataTCP (included in this repo)
 endif                                    " ---------------------------------
+
+" =============== Syntax =================
+syntax enable                            " Syntax highlighting
+let g:jsx_ext_required = 0               " Allow JSX in normal JS files
 
 " =============== Movement ===============
 nmap <CR> o<Esc>                         " CR in normal mode for newline without insert
