@@ -1,5 +1,4 @@
 let g:lightline = {
-      \ 'colorscheme': 'TomorrowMaterial',
       \ 'active': {
       \   'left': [ [ 'mode' ],
       \             [ 'readonly', 'filename', 'modified' ] ],

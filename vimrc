@@ -103,8 +103,10 @@ set hlsearch                             " Highlight search matches
 let g:enable_bold_font = 1               " Enable bold fonts
 set background=light                     " Light BG
 colorscheme PaperColorTCP
+let g:lightline.colorscheme = 'TomorrowMaterial'
 if has("gui_running")                    " ------- Gui-only options: -------
   colorscheme hybrid_material
+  let g:lightline.colorscheme = 'TomorrowMaterialDark'
   set guifont=Nitti\ Light:h18           
 endif                                    " ---------------------------------
 
