@@ -12,5 +12,7 @@ let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_style_error_symbol = "✗"
 let g:syntastic_style_warning_symbol = "⚠"
 
-" Use ESLint for JS checking
-let g:syntastic_javascript_checkers = ['standard']
+" Use a local .eslintrc for JS checking, if present
+" If it's not present, fallback to Standard
+" http://stackoverflow.com/a/28577965/5227241
+autocmd FileType javascript let b:syntastic_checkers = findfile('.eslintrc', '.;') != '' ? ['eslint'] : ['standard']
