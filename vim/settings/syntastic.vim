@@ -16,3 +16,6 @@ let g:syntastic_style_warning_symbol = "⚠"
 " If it's not present, fallback to Standard
 " http://stackoverflow.com/a/28577965/5227241
 autocmd FileType javascript let b:syntastic_checkers = findfile('.eslintrc', '.;') != '' ? ['eslint'] : ['standard']
+
+" Lint HTML with tidy-html5
+let g:syntastic_html_tidy_exec = 'tidy5'
