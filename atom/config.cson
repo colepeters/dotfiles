@@ -14,8 +14,10 @@
     showIndentGuide: true
     softWrap: true
     tabType: "soft"
-    fontFamily: "Fira Mono"
+    fontFamily: "Nitti"
     preferredLineLength: 120
+    fontSize: 16
+    lineHeight: 1.6
   "atom-material-ui":
     accentColor: "Blue"
     rippleAccentColor: true
