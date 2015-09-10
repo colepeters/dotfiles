@@ -9,7 +9,6 @@
       "material-syntax"
     ]
     projectHome: "~/Sites/"
-    openEmptyEditorOnStart: false
   editor:
     invisibles: {}
     showIndentGuide: true
@@ -25,6 +24,6 @@
     panelContrast: true
     rippleAccentColor: true
   term2:
-    fontFamily: "Nitti-Light"
+    fontFamily: "Nitti"
     fontSize: "17"
     scrollback: 2000
