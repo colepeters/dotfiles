@@ -6,7 +6,7 @@
   core:
     themes: [
       "atom-material-ui"
-      "material-syntax"
+      "solarized-dark-syntax"
     ]
     projectHome: "~/Sites/"
   editor:
@@ -17,12 +17,11 @@
     fontFamily: "Nitti"
     preferredLineLength: 120
     fontSize: 16
-    lineHeight: 1.6
   "atom-material-ui":
-    accentColor: "Blue"
     rippleAccentColor: true
     compactTreeView: true
     panelContrast: true
+    accentColor: "Blue"
   react: {}
   term2:
     scrollback: 2000
