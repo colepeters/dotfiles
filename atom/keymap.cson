@@ -29,5 +29,5 @@
 '.platform-darwin':
   'cmd-t': ''
 
-'.editor':
-  'cmd-t': 'application:new-file'
+'atom-text-editor':
+  'cmd-t': 'term2:open'

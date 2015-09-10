@@ -24,4 +24,7 @@
     depth: true
     panelContrast: true
     rippleAccentColor: true
-  term2: {}
+  term2:
+    fontFamily: "Nitti-Light"
+    fontSize: "17"
+    scrollback: 2000
