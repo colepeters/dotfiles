@@ -1,11 +1,6 @@
 # These aliases adopted from YADR
 # https://github.com/skwp/dotfiles
 
-# PS
-alias psa="ps aux"
-alias psg="ps aux | grep "
-alias psr='ps aux | grep ruby'
-
 # vim using
 mvim --version > /dev/null 2>&1
 MACVIM_INSTALLED=$?
@@ -84,9 +79,6 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 
 # Homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
-
-# Jekyll
-alias jsl='jekyll serve --baseurl ""' # aka Jekyll Serve Local
 
 # Call user aliases
 source ~/.aliases.user.zsh
