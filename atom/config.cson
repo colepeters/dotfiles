@@ -19,6 +19,8 @@
   react: {}
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
+  "linter-js-standard":
+    checkStyleDevDependencies: true
   "atom-material-ui":
     accentColor: "Blue"
     compactTreeView: true
