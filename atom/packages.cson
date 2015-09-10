@@ -47,7 +47,6 @@
   'link'
   'linter'
   'linter-eslint'
-  'linter-js-standard'
   'markdown-preview'
   'metrics'
   'notifications'

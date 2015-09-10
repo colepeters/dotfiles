@@ -1,31 +1,32 @@
-'*':
-  'exception-reporting':
-    userId: '5c67114c-5014-e55a-3eb3-2203808a00a7'
+"*":
+  "exception-reporting":
+    userId: "5c67114c-5014-e55a-3eb3-2203808a00a7"
   welcome:
     showOnStartup: false
   core:
     themes: [
-      'atom-material-ui'
-      'material-syntax'
+      "atom-material-ui"
+      "material-syntax"
     ]
-    projectHome: '~/Sites/'
+    projectHome: "~/Sites/"
   editor:
     invisibles: {}
     showIndentGuide: true
     softWrap: true
-    tabType: 'soft'
-    fontFamily: 'Roboto Mono'
+    tabType: "soft"
+    fontFamily: "Roboto Mono"
     preferredLineLength: 120
   react: {}
-  'linter-eslint':
+  "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
-  'atom-material-ui':
-    accentColor: 'Blue'
+  "atom-material-ui":
+    accentColor: "Blue"
     compactTreeView: true
     depth: true
     panelContrast: true
     rippleAccentColor: true
   term2:
-    fontFamily: 'Nitti'
-    fontSize: '17'
+    fontFamily: "Nitti"
+    fontSize: "17"
     scrollback: 2000
+  linter: {}
