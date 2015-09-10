@@ -1,0 +1,26 @@
+"*":
+  "exception-reporting":
+    userId: "5c67114c-5014-e55a-3eb3-2203808a00a7"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "atom-material-ui"
+      "material-syntax"
+    ]
+    projectHome: "~/Sites/"
+    openEmptyEditorOnStart: false
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+    softWrap: true
+    tabType: "soft"
+    fontFamily: "Roboto Mono"
+    preferredLineLength: 120
+  react: {}
+  "atom-material-ui":
+    accentColor: "Blue"
+    compactTreeView: true
+    depth: true
+    panelContrast: true
+    rippleAccentColor: true

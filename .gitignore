@@ -11,6 +11,13 @@ Session.vim
 .netrwhist
 *~
 
+### Atom ###
+atom/packages
+atom/storage
+atom/compile-cache
+atom/.apm
+atom/.node-gyp
+
 ### OSX ###
 .DS_Store
 .DS_Store?
@@ -19,3 +26,4 @@ Session.vim
 .Trashes
 ehthumbs.db
 Thumbs.db
+
