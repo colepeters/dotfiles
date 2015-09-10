@@ -14,21 +14,18 @@
     showIndentGuide: true
     softWrap: true
     tabType: "soft"
-    fontFamily: "Roboto Mono"
+    fontFamily: "Fira Mono"
     preferredLineLength: 120
+  "atom-material-ui":
+    accentColor: "Blue"
+    rippleAccentColor: true
+    compactTreeView: true
+    panelContrast: true
   react: {}
+  term2:
+    scrollback: 2000
+  linter: {}
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
   "linter-js-standard":
     checkStyleDevDependencies: true
-  "atom-material-ui":
-    accentColor: "Blue"
-    compactTreeView: true
-    depth: true
-    panelContrast: true
-    rippleAccentColor: true
-  term2:
-    fontFamily: "Nitti"
-    fontSize: "17"
-    scrollback: 2000
-  linter: {}
