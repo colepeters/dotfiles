@@ -17,6 +17,7 @@
     fontFamily: "Nitti"
     preferredLineLength: 120
     fontSize: 16
+    lineHeight: 1.333
   "atom-material-ui":
     rippleAccentColor: true
     compactTreeView: true
