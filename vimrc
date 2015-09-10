@@ -107,7 +107,7 @@ let g:lightline.colorscheme = 'TomorrowMaterial'
 if has("gui_running")                    " ------- Gui-only options: -------
   colorscheme hybrid_material
   let g:lightline.colorscheme = 'TomorrowMaterialDark'
-  set guifont=Nitti\ Light:h18           
+  set guifont=Nitti\ Light:h17           
 endif                                    " ---------------------------------
 
 " =============== Syntax =================
