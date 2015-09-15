@@ -6,7 +6,7 @@
   core:
     themes: [
       "atom-material-ui"
-      "solarized-dark-syntax"
+      "material-syntax"
     ]
     projectHome: "~/Sites/"
   editor:
@@ -14,15 +14,15 @@
     showIndentGuide: true
     softWrap: true
     tabType: "soft"
-    fontFamily: "Nitti"
+    fontFamily: "Fira Mono"
     preferredLineLength: 120
-    fontSize: 16
-    lineHeight: 1.333
+    fontSize: 15
   "atom-material-ui":
     rippleAccentColor: true
     compactTreeView: true
     panelContrast: true
     accentColor: "Blue"
+    useRobotoInUI: true
   react: {}
   term2:
     scrollback: 2000
