@@ -31,3 +31,5 @@
     disableWhenNoEslintrcFileInPath: true
   "linter-js-standard":
     checkStyleDevDependencies: true
+  emmet:
+    extensionsPath: "~/.atom/emmet/"
