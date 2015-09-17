@@ -31,3 +31,6 @@
 
 'atom-text-editor':
   'cmd-t': 'term2:open'
+
+'atom-text-editor[data-grammar="text html mustache"]:not([mini])':
+    'tab': 'emmet:expand-abbreviation-with-tab'
