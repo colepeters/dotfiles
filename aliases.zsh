@@ -81,7 +81,7 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 alias brewu='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
 
 # Node/NPM
-alias ffs='rm -rf node_modules/ && npm i'
+alias ffs='rm -rf node_modules/ && npm cache clean && npm i'
 
 # Call user aliases
 source ~/.aliases.user.zsh
