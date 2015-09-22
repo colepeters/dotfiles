@@ -4,6 +4,7 @@ vim/backups
 vim/bundle
 nvm/src
 nvm/versions
+nvim/plugged
 
 ### Vim ###
 [._]*.s[a-w][a-z]
