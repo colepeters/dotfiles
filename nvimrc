@@ -3,6 +3,7 @@ call plug#begin('~/.nvim/plugged')
 Plug 'benekastah/neomake'
 Plug 'Shougo/deoplete.nvim'
 Plug 'AlxHnr/clear_colors'
+Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'kien/ctrlp.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'sjl/gundo.vim'
@@ -11,11 +12,11 @@ Plug 'rking/ag.vim'
 call plug#end()
 
 " APPEARANCE
-" :let $NVIM_TUI_ENABLE_TRUE_COLOR=1	" Only works with iTerm nightlies
+:let $NVIM_TUI_ENABLE_TRUE_COLOR=1	" Only works with iTerm nightlies
 :let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1	" Cursor is pipe in Insert, block in Normal
 syntax enable				" Syntax highlighting
+colorscheme hybrid_material             " Colorscheme
 set background=dark                     " Dark background
-colorscheme clear_colors_dark           " Colorscheme
 set number				" Use line numbers
 set ruler                               " Show line/col number in status bar
 set hlsearch                            " Highlight search results
