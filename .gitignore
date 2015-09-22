@@ -2,6 +2,8 @@ aliases.user.zsh
 gitconfig.user
 vim/backups
 vim/bundle
+nvm/src
+nvm/versions
 
 ### Vim ###
 [._]*.s[a-w][a-z]
