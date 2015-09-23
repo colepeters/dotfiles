@@ -23,10 +23,6 @@ set hlsearch                            " Highlight search results
 set wrap                                " -------------------------------------
 set nolist                              " Word wrap without linebreaks
 set linebreak                           " -------------------------------------
-nnoremap <C-J> <C-W><C-J>               " ----------------------------------
-nnoremap <C-K> <C-W><C-K>               " Navigate splits
-nnoremap <C-L> <C-W><C-L>               " with CTRL-j/k/l/h
-nnoremap <C-H> <C-W><C-H>               " ----------------------------------
 
 " INDENTATION
 set autoindent
@@ -46,10 +42,16 @@ set scrolloff=8				" Starting scrolling from 8 lines of edge
 set backspace=indent,eol,start		" Backspace over these things
 set history=1000			" Lots of cmd history
 set undolevels=1000			" Lots of undo history, too
+set undoreload=1000                     " Undo lines on buffer reload
 set visualbell                          " Don’t you beep at me
 set noerrorbells                        " Don’t you beep at me at all!
 set autoread                            " Auto read files when changed on disk
 set laststatus=2                        " Always show the status bar
+if has('persistent_undo')
+  set undofile                "so is persistent undo ...
+  set undodir=~/.nvim/.undo
+endif
 
-" CUSTOM PLUGIN SETTINGS
+" LOAD SETTINGS
+" (Keymaps and plugin settings)
 so ~/.nvim/settings.vim
