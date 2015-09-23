@@ -1,5 +1,5 @@
 " KEYMAPS ------------------------------------------------------------
-" Some borrowed from YADR
+" Borrowed from the likes of YADR, @mrmrs, and myself
 
 " Clear current search highlight by double tapping /
 nmap <silent> // :nohlsearch<CR>
@@ -21,6 +21,13 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" Tab Navigation
+nnoremap th  :tabfirst<CR>
+nnoremap tj  :tabnext<CR>
+nnoremap tk  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap tn  :tabnew<CR>
 
 " END KEYMAPS --------------------------------------------------------
 
