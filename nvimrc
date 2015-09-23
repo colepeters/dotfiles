@@ -1,14 +1,13 @@
 " VIM-PLUG (plugins)
 call plug#begin('~/.nvim/plugged')
 Plug 'benekastah/neomake'
-Plug 'Shougo/deoplete.nvim'
-Plug 'AlxHnr/clear_colors'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'kien/ctrlp.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'sjl/gundo.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'rking/ag.vim'
+Plug 'Raimondi/delimitMate'
 call plug#end()
 
 " APPEARANCE
