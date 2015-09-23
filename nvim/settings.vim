@@ -29,12 +29,6 @@ nnoremap tk  :tabprev<CR>
 nnoremap tl  :tablast<CR>
 nnoremap tn  :tabnew<CR>
 
-" Automatic bracket completion
-inoremap {      {}<Left>
-inoremap {<CR>  {<CR>}<Esc>O
-inoremap {{     {
-inoremap {}     {}
-
 " END KEYMAPS --------------------------------------------------------
 
 " Call all files in settings/
