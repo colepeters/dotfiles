@@ -48,8 +48,8 @@ set noerrorbells                        " Don’t you beep at me at all!
 set autoread                            " Auto read files when changed on disk
 set laststatus=2                        " Always show the status bar
 if has('persistent_undo')
-  set undofile                "so is persistent undo ...
-  set undodir=~/.nvim/.undo
+  set undofile                          " Save undos after file closes
+  set undodir=~/.nvim/undodir           " Save undos in undodir within nvim dir
 endif
 
 " LOAD SETTINGS

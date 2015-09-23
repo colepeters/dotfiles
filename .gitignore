@@ -5,6 +5,9 @@ vim/bundle
 nvm/src
 nvm/versions
 nvim/plugged
+!nvim/undodir/
+nvim/undodir/*
+!nvim/undodir/undodir.md
 
 ### Vim ###
 [._]*.s[a-w][a-z]
