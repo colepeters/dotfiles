@@ -8,6 +8,7 @@ Plug 'sjl/gundo.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'rking/ag.vim'
 Plug 'Raimondi/delimitMate'
+Plug 'mattn/emmet-vim'
 call plug#end()
 
 " APPEARANCE
