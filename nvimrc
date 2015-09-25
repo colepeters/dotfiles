@@ -11,7 +11,7 @@ Plug 'Raimondi/delimitMate'
 call plug#end()
 
 " APPEARANCE
-:let $NVIM_TUI_ENABLE_TRUE_COLOR=1	" Only works with iTerm nightlies
+:let $NVIM_TUI_ENABLE_TRUE_COLOR=1	" Only works with iTerm nightlies & beta
 :let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1	" Cursor is pipe in Insert, block in Normal
 syntax enable				" Syntax highlighting
 colorscheme hybrid_material             " Colorscheme
@@ -24,19 +24,19 @@ set nolist                              " Word wrap without linebreaks
 set linebreak                           " -------------------------------------
 
 " INDENTATION
-set autoindent
-set copyindent
-set smartindent
-set smarttab
-set shiftwidth=2
-set softtabstop=2
-set expandtab
+set autoindent                          " Copy indent from current line when inserting new line
+set smartindent                         " Like indenting but smarter
+set smarttab                            " <Tab> inserts blanks according to shiftwidth
+set shiftwidth=2                        " Number of spaces to shift via indent (> || <)
+set softtabstop=2                       " Number of spaces inserted by <Tab>
+set expandtab                           " Uses spaces, not tabs
 
 " VARIOUS FUNCTIONALITY
 filetype on                             " Detect filetype
 filetype indent on                      " Filetype-specific indenting
-filetype plugin on                      " Filtype-specific plugins
+filetype plugin on                      " Filetype-specific plugins
 let mapleader=','                       " Use comma as leader
+set encoding=utf-8                      " UTF-8 encoding by default
 set scrolloff=8				" Starting scrolling from 8 lines of edge
 set backspace=indent,eol,start		" Backspace over these things
 set history=1000			" Lots of cmd history
@@ -45,6 +45,8 @@ set undoreload=1000                     " Undo lines on buffer reload
 set visualbell                          " Don’t you beep at me
 set noerrorbells                        " Don’t you beep at me at all!
 set autoread                            " Auto read files when changed on disk
+set noswapfile                          " Go away, swapfiles. No one likes yr style.
+set hidden                              " Keep buffers loaded when abandoned
 set laststatus=2                        " Always show the status bar
 if has('persistent_undo')
   set undofile                          " Save undos after file closes
