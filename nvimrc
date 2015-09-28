@@ -3,7 +3,6 @@ call plug#begin('~/.nvim/plugged')
 Plug 'benekastah/neomake'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'kien/ctrlp.vim'
-Plug 'Yggdroot/indentLine'
 Plug 'sjl/gundo.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'rking/ag.vim'
