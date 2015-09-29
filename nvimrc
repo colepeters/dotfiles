@@ -49,6 +49,7 @@ set autoread                            " Auto read files when changed on disk
 set noswapfile                          " Go away, swapfiles. No one likes yr style.
 set hidden                              " Keep buffers loaded when abandoned
 set laststatus=2                        " Always show the status bar
+set clipboard+=unnamedplus              " Always use system clipboard instead of +/* registers
 if has('persistent_undo')
   set undofile                          " Save undos after file closes
   set undodir=~/.nvim/undodir           " Save undos in undodir within nvim dir
