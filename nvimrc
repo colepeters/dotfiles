@@ -9,6 +9,7 @@ Plug 'rking/ag.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
+Plug 'mustache/vim-mustache-handlebars'
 call plug#end()
 
 " APPEARANCE
