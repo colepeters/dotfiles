@@ -13,8 +13,13 @@ let g:neomake_warning_sign = {
       \ 'texthl': 'ErrorMsg',
       \ }
 
-" Specify which makers should be enabled for which filetypes
-let g:neomake_javascript_enabled_makers = ['eslint']
+" Use StandardJS if .eslintrc not found in project directory;
+" otherwise, use ESLint
+if findfile('.eslintrc', '.;') ==# ''
+  let g:neomake_javascript_enabled_makers = ['standard']
+else
+  let g:neomake_javascript_enabled_makers = ['eslint']
+endif
 
 " Run Neomake on :w
 autocmd! BufWritePost * Neomake
