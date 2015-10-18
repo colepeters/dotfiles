@@ -25,6 +25,9 @@ antigen apply
 # Other orders of business
 # =====================================
 
+# Use NeoVim as default editor
+export EDITOR=/usr/local/bin/nvim
+
 # Source aliases
 source ~/.aliases.zsh
 

@@ -112,8 +112,8 @@
   default = upstream
 [core]
   autocrlf = false
-  editor = vim
   excludesfile = ~/.gitignore_global
+  editor = nvim
 [advice]
   statusHints = false
 [diff]
