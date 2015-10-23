@@ -49,9 +49,3 @@ __git_files () {
 # git add the right stuff
 alias git='noglob git'
 
-# Node version manager
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
-# tab completion for NVM
-[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
