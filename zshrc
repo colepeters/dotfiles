@@ -29,7 +29,7 @@ antigen apply
 export EDITOR=/usr/local/bin/nvim
 
 # Set XDG_CONFIG_HOME for NeoVim et al.
-export XDG_CONFIG_HOME:=$HOME/.dotfiles/config
+export XDG_CONFIG_HOME:=$HOME/.config
 
 # Source aliases
 source ~/.aliases.zsh

@@ -2,12 +2,10 @@ aliases.user.zsh
 gitconfig.user
 vim/backups
 vim/bundle
-nvm/src
-nvm/versions
-nvim/plugged
-!nvim/undodir/
-nvim/undodir/*
-!nvim/undodir/undodir.md
+config/nvim/plugged
+!config/nvim/undodir/
+config/nvim/undodir/*
+!config/nvim/undodir/undodir.md
 
 ### Vim ###
 [._]*.s[a-w][a-z]

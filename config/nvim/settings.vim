@@ -33,7 +33,7 @@ nnoremap tn  :tabnew<CR>
 
 " Call all files in settings/
 " Borrowed from YADR
-let nvimsettings = '~/.nvim/settings'
+let nvimsettings = '~/.config/nvim/settings'
 let uname = system("uname -s")
 for fpath in split(globpath(nvimsettings, '*.vim'), '\n')
   exe 'source' fpath

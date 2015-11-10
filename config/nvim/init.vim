@@ -1,5 +1,5 @@
 " VIM-PLUG (plugins)
-call plug#begin('~/.nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 Plug 'benekastah/neomake'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'kien/ctrlp.vim'
@@ -56,9 +56,9 @@ set laststatus=2                        " Always show the status bar
 set clipboard+=unnamedplus              " Always use system clipboard instead of +/* registers
 if has('persistent_undo')
   set undofile                          " Save undos after file closes
-  set undodir=~/.nvim/undodir           " Save undos in undodir within nvim dir
+  set undodir=~/.config/nvim/undodir    " Save undos in undodir within nvim dir
 endif
 
 " LOAD SETTINGS
 " (Keymaps and plugin settings)
-so ~/.nvim/settings.vim
+so ~/.config/nvim/settings.vim
