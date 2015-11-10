@@ -1,2 +1,2 @@
 EXCLUDES="README.md fonts antigen"
-SYMLINK_DIRS="vim atom nvm nvim"
+SYMLINK_DIRS="vim atom nvm nvim config"
