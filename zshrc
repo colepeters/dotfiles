@@ -34,9 +34,6 @@ export XDG_CONFIG_HOME=$HOME/.config
 # Source aliases
 source ~/.aliases.zsh
 
-# Source functions
-source ~/.functions.zsh
-
 # Source secrets
 source ~/.secrets
 
