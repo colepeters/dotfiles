@@ -15,7 +15,7 @@ let g:neomake_warning_sign = {
 
 " Use StandardJS if .eslintrc not found in project directory;
 " otherwise, use ESLint
-if findfile('.eslintrc', '.;') ==# ''
+if findfile('.eslintrc', '.;') ==# '' && executable('standard')
   let g:neomake_javascript_enabled_makers = ['standard']
 else
   let g:neomake_javascript_enabled_makers = ['eslint']
