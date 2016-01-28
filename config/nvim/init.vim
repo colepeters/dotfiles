@@ -13,6 +13,7 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'Valloric/YouCompleteMe'           " Setup: http://tilvim.com/2013/08/21/js-autocomplete.html
 Plug 'marijnh/tern_for_vim'             " ^^^
 Plug 'easymotion/vim-easymotion'
+Plug 'Valloric/ListToggle'
 call plug#end()
 
 " APPEARANCE
