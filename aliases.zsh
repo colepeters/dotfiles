@@ -29,5 +29,8 @@ alias brewu='brew update && brew upgrade && brew cleanup && brew prune && brew d
 # Node/NPM
 alias ffs='rm -rf node_modules/ && npm cache clean && npm i'
 
+# HTTPie, always with Solarized colours
+alias http='http --style=solarized'
+
 # Call user aliases
 source ~/.aliases.user.zsh
