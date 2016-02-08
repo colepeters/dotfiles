@@ -2,7 +2,7 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'benekastah/neomake'
 Plug 'kristijanhusak/vim-hybrid-material'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'sjl/gundo.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-grepper'
