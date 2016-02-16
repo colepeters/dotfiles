@@ -19,6 +19,7 @@ Session.vim
 atom/packages
 atom/storage
 atom/compile-cache
+atom/blob-store
 atom/.apm
 atom/.node-gyp
 
