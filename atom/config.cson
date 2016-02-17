@@ -28,6 +28,9 @@
     disableWhenNoEslintrcFileInPath: true
   "linter-js-standard":
     checkStyleDevDependencies: true
+  minimap: {}
+  "package-sync":
+    forceOverwrite: true
   react: {}
   term2:
     scrollback: 2000
