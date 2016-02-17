@@ -26,11 +26,5 @@
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
 
-'.platform-darwin':
-  'cmd-t': 'native!'
-
-'atom-text-editor':
-  'cmd-t': 'term2:open'
-
 'atom-text-editor[data-grammar="text html mustache"]:not([mini])':
     'tab': 'emmet:expand-abbreviation-with-tab'
