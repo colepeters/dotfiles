@@ -139,3 +139,5 @@
   clean = git lfs clean %f
   smudge = git lfs smudge %f
   required = true
+[page]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
