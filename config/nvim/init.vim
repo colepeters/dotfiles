@@ -1,7 +1,6 @@
 " VIM-PLUG (plugins)
 call plug#begin('~/.config/nvim/plugged')
-" Plug 'benekastah/neomake'
-Plug 'hauleth/neomake', { 'branch': 'fix/291' }
+Plug 'benekastah/neomake'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'sjl/gundo.vim'
