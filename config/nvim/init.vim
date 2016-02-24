@@ -9,10 +9,12 @@ Plug 'mhinz/vim-grepper'
 Plug 'Raimondi/delimitMate'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
-Plug 'mustache/vim-mustache-handlebars'
 Plug 'easymotion/vim-easymotion'
 Plug 'Shougo/deoplete.nvim'
 Plug 'Valloric/ListToggle'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'mustache/vim-mustache-handlebars'
 call plug#end()
 
 " APPEARANCE
