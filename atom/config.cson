@@ -1,10 +1,19 @@
 "*":
   "atom-material-ui":
-    accentColor: "Blue"
-    compactTreeView: true
-    panelContrast: true
-    rippleAccentColor: true
-    useRobotoInUI: true
+    colors:
+      abaseColor:
+        red: 33
+        green: 150
+        blue: 243
+        alpha: 1
+      predefinedColor: "Blue"
+    fonts: {}
+    tabs:
+      compactTabs: true
+    treeView:
+      compactList: true
+    ui:
+      panelContrast: true
   core:
     projectHome: "~/Sites/"
     themes: [
@@ -13,7 +22,7 @@
     ]
   editor:
     fontFamily: "Fira Mono"
-    fontSize: 15
+    fontSize: 16
     invisibles: {}
     preferredLineLength: 120
     showIndentGuide: true
@@ -34,5 +43,6 @@
   react: {}
   term2:
     scrollback: 2000
+  "vim-mode": {}
   welcome:
     showOnStartup: false
