@@ -24,6 +24,7 @@
     fontFamily: "Fira Mono"
     fontSize: 16
     invisibles: {}
+    lineHeight: 1.6
     preferredLineLength: 120
     showIndentGuide: true
     softWrap: true
@@ -32,7 +33,9 @@
     extensionsPath: "~/.atom/emmet/"
   "exception-reporting":
     userId: "5c67114c-5014-e55a-3eb3-2203808a00a7"
-  linter: {}
+  linter:
+    lintOnFly: false
+    showErrorInline: false
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
   "linter-js-standard":
