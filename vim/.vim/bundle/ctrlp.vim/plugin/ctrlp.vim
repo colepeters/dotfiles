@@ -1,1 +1,0 @@
-/Users/cole/.dotfiles/vim//bundle/ctrlp.vim/plugin/ctrlp.vim

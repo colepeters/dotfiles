@@ -1,1 +1,0 @@
-/Users/cole/.dotfiles/vim//bundle/vim-git/ftdetect/git.vim

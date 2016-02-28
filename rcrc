@@ -1,2 +1,2 @@
 EXCLUDES="README.md fonts antigen"
-SYMLINK_DIRS="atom config vim"
+SYMLINK_DIRS="atom config"

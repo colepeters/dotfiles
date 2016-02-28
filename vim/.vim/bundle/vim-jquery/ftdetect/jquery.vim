@@ -1,1 +1,0 @@
-/Users/cole/.dotfiles/vim//bundle/vim-jquery/ftdetect/jquery.vim

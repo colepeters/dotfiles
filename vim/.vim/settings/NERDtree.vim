@@ -1,1 +1,0 @@
-/Users/cole/.dotfiles/vim//settings/NERDtree.vim

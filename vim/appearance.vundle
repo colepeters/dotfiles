@@ -1,6 +1,0 @@
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'colepeters/papercolor-theme'
-Bundle 'colepeters/lightline.vim'
-Bundle 'xsunsmile/showmarks'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'kristijanhusak/vim-hybrid-material'

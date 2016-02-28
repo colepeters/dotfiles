@@ -1,1 +1,0 @@
-/Users/cole/.dotfiles/vim//bundle/lightline.vim/autoload/lightline/colorscheme/wombat.vim

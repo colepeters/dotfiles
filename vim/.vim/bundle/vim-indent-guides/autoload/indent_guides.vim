@@ -1,1 +1,0 @@
-/Users/cole/.dotfiles/vim//bundle/vim-indent-guides/autoload/indent_guides.vim

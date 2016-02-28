@@ -1,1 +1,0 @@
-/Users/cole/.dotfiles/vim//bundle/vim-markdown-preview/plugin/vmp.vim

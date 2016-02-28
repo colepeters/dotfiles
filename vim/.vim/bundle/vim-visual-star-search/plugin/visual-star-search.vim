@@ -1,1 +1,0 @@
-/Users/cole/.dotfiles/vim//bundle/vim-visual-star-search/plugin/visual-star-search.vim

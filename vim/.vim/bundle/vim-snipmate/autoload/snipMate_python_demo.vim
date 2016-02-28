@@ -1,1 +1,0 @@
-/Users/cole/.dotfiles/vim//bundle/vim-snipmate/autoload/snipMate_python_demo.vim

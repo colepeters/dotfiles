@@ -21,26 +21,10 @@ let mapleader=","               "Use , as leader
 " http://items.sjbach.com/319/configuring-vim-right
 set hidden
 
-" =============== Vundle Initialization ===============
-" This loads all the plugins specified in ~/.vim/vundles.vim
-" Use Vundle plugin to manage all other plugins
-if filereadable(expand("~/.vim/vundles.vim"))
-  source ~/.vim/vundles.vim
-endif
-
 " ================ Turn Off Swap Files ============== 
 set noswapfile
 set nobackup
 set nowb
-
-" ================ Persistent Undo ==================
-" Keep undo history across sessions, by storing in file.
-" Only works all the time.
-if has('persistent_undo')
-  silent !mkdir ~/.vim/backups > /dev/null 2>&1
-  set undodir=~/.vim/backups
-  set undofile
-endif
 
 " ================ Indentation ======================
 set autoindent
@@ -81,10 +65,6 @@ set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
 
-" Load custom plugin settings
-so ~/.vim/settings.vim
-
-
 " ========================================
 "
 " TCP CUSTOMS
@@ -102,13 +82,6 @@ set guioptions=gm                        " Disable graphical tabs
 set hlsearch                             " Highlight search matches
 let g:enable_bold_font = 1               " Enable bold fonts
 set background=light                     " Light BG
-colorscheme PaperColorTCP
-let g:lightline.colorscheme = 'TomorrowMaterial'
-if has("gui_running")                    " ------- Gui-only options: -------
-  colorscheme hybrid_material
-  let g:lightline.colorscheme = 'TomorrowMaterialDark'
-  set guifont=Nitti\ Light:h17           
-endif                                    " ---------------------------------
 
 " =============== Syntax =================
 syntax enable                            " Syntax highlighting
@@ -125,10 +98,11 @@ nnoremap <C-H> <C-W><C-H>                " ----------------------------------
 " =============== Behaviour ==============
 set timeoutlen=1000 ttimeoutlen=0        " Reduce delay of ESC switching out of Insert mode (terminal Vim)
 
-" =============== Plugins ================
-nnoremap <C-G> :GundoToggle<CR>          " Toggle Gundo graph view
-
-" =============== Custom commands ========
-" Pretty-print minifed JSON:
-command! Jsontool %!python -m json.tool
-
+" If you visually select something and hit paste
+" that thing gets yanked into your buffer. This
+" generally is annoying when you're copying one item
+" and repeatedly pasting it. This changes the paste
+" command in visual mode so that it doesn't overwrite
+" whatever is in your paste buffer.
+"
+vnoremap p "_dP
