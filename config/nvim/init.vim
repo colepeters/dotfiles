@@ -40,7 +40,6 @@ set expandtab                           " Uses spaces, not tabs
 
 " VARIOUS FUNCTIONALITY
 filetype on                             " Detect filetype
-filetype indent on                      " Filetype-specific indenting
 filetype plugin on                      " Filetype-specific plugins
 let mapleader=','                       " Use comma as leader
 set encoding=utf-8                      " UTF-8 encoding by default
