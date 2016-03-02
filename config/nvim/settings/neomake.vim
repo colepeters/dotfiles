@@ -1,3 +1,5 @@
+" ---------- BEHAVIOUR/APPEARANCE ----------
+
 " Open the loclist/quickfix list when entries are produced,
 " and preserve cursor position
 let g:neomake_open_list = 2
@@ -12,6 +14,11 @@ let g:neomake_warning_sign = {
       \ 'text': 'W>',
       \ 'texthl': 'ErrorMsg',
       \ }
+
+" Run Neomake on :w
+autocmd! BufWritePost * Neomake
+
+" ---------- JAVASCRIPT MAKERS ----------
 
 " load local eslint in the project root
 " modified from https://github.com/mtscout6/syntastic-local-eslint.vim
@@ -28,5 +35,7 @@ else
   let g:neomake_javascript_enabled_makers = ['eslint']
 endif
 
-" Run Neomake on :w
-autocmd! BufWritePost * Neomake
+
+" ---------- PYTHON MAKERS ----------
+let g:neomake_python_enabled_makers = ['flake8']
+

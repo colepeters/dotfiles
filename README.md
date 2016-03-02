@@ -52,6 +52,7 @@ These instructions have been tested on my own machine (OS X 10.11, using the lat
 ### Prerequisites
 - [Homebrew](http://brew.sh/)
 - [Node and npm](https://nodejs.org/en/)
+- [Pip](https://pip.pypa.io/en/stable/)
 - [Neovim](https://neovim.io)
 
 ### Install
@@ -87,6 +88,9 @@ rcup -v
 Some aliases and configurations depend on these little packages to work:
 
 ```shell
+# Some Neovim packages (e.g. deoplete) require Neovim with `if_python3`
+pip3 install neovim
+
 # diff-so-fancy, for better git diffs:
 npm install -g diff-so-fancy
 
@@ -96,8 +100,11 @@ brew install tig
 # HTTPie, a nice cURL replacement:
 brew install httpie
 
-# tidy-html5, which I use for linting HTML files in Neovim
+# tidy-html5, for linting HTML files
 brew install tidy-html5
+
+# flake8, for linting Python files
+pip install flake8
 ```
 
 ### Optional add-ons
