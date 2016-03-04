@@ -15,6 +15,9 @@
     ui:
       panelContrast: true
   core:
+    disabledPackages: [
+      "language-gfm"
+    ]
     projectHome: "~/Sites/"
     themes: [
       "atom-material-ui"
@@ -22,7 +25,7 @@
     ]
   editor:
     fontFamily: "Fira Mono"
-    fontSize: 16
+    fontSize: 15
     invisibles: {}
     lineHeight: 1.6
     preferredLineLength: 120

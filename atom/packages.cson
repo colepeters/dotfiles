@@ -5,6 +5,8 @@ packages: [
   "emmet"
   "ex-mode"
   "git-plus"
+  "language-gherkin"
+  "language-markdown"
   "linter"
   "linter-eslint"
   "linter-js-standard"
@@ -14,4 +16,5 @@ packages: [
   "react"
   "release-notes"
   "vim-mode"
+  "vim-surround"
 ]
