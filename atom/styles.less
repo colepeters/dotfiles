@@ -15,22 +15,20 @@
  * (To see them, uncomment and save)
  */
 
-// style the background color of the tree view
-.tree-view {
-  // background-color: whitesmoke;
-}
-
-// style the background and foreground colors on the atom-text-editor-element itself
-atom-text-editor {
-  // color: white;
-  // background-color: hsl(180, 24%, 12%);
-}
-
 // To style other content in the text editor's shadow DOM, use the ::shadow expression
-atom-text-editor::shadow .cursor {
-  // border-color: red;
+atom-text-editor::shadow {
+  // Block cursor (normal mode)
+  .cursors {
+    opacity: 0.4;
+  }
+  // Pipe cursor (insert mode)
+  .cursor {
+    opacity: 1;
+  }
 }
 
-.editor {
+// Font smoothing, because Fira Mono is a bit heavy in 400
+.editor,
+.terminal {
   -webkit-font-smoothing: antialiased;
 }
