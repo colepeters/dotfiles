@@ -2,7 +2,6 @@ packages: [
   "atom-material-syntax"
   "atom-material-syntax-light"
   "atom-material-ui"
-  "emmet"
   "ex-mode"
   "floobits"
   "git-plus"
