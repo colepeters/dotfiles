@@ -4,6 +4,7 @@ packages: [
   "atom-material-ui"
   "emmet"
   "ex-mode"
+  "floobits"
   "git-plus"
   "language-gherkin"
   "language-markdown"
@@ -15,6 +16,7 @@ packages: [
   "package-sync"
   "react"
   "release-notes"
+  "term3"
   "vim-mode"
   "vim-surround"
 ]

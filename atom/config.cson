@@ -36,6 +36,7 @@
     extensionsPath: "~/.atom/emmet/"
   "exception-reporting":
     userId: "5c67114c-5014-e55a-3eb3-2203808a00a7"
+  "fuzzy-finder": {}
   linter:
     lintOnFly: false
     showErrorInline: false
@@ -48,6 +49,91 @@
     forceOverwrite: true
   react: {}
   term2:
+    scrollback: 2000
+  term3:
+    colors:
+      background:
+        red: 38
+        green: 50
+        blue: 56
+        alpha: 1
+      brightBlack:
+        red: 82
+        green: 96
+        blue: 105
+        alpha: 1
+      brightBlue:
+        red: 41
+        green: 121
+        blue: 255
+        alpha: 1
+      brightCyan:
+        red: 0
+        green: 229
+        blue: 255
+        alpha: 1
+      brightGreen:
+        red: 0
+        green: 230
+        blue: 118
+        alpha: 1
+      brightPurple:
+        red: 213
+        green: 0
+        blue: 249
+        alpha: 1
+      brightRed:
+        red: 255
+        green: 23
+        blue: 68
+        alpha: 1
+      brightYellow:
+        red: 255
+        green: 234
+        blue: 0
+        alpha: 1
+      foreground:
+        red: 236
+        green: 239
+        blue: 241
+        alpha: 1
+      normalBlack:
+        red: 38
+        green: 50
+        blue: 56
+        alpha: 1
+      normalBlue:
+        red: 33
+        green: 150
+        blue: 243
+        alpha: 1
+      normalCyan:
+        red: 38
+        green: 198
+        blue: 218
+        alpha: 1
+      normalGreen:
+        red: 102
+        green: 187
+        blue: 106
+        alpha: 1
+      normalRed:
+        red: 239
+        green: 83
+        blue: 80
+        alpha: 1
+      normalWhite:
+        red: 236
+        green: 239
+        blue: 241
+        alpha: 1
+      normalYellow:
+        red: 255
+        green: 202
+        blue: 40
+        alpha: 1
+    fontFamily: "Fira Mono"
+    fontSize: "15"
     scrollback: 2000
   "vim-mode": {}
   welcome:
