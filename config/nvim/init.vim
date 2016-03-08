@@ -15,6 +15,7 @@ Plug 'Valloric/ListToggle'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'floobits/floobits-neovim'
 call plug#end()
 
 " APPEARANCE
