@@ -26,5 +26,12 @@
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
 
-'atom-text-editor[data-grammar="text html mustache"]:not([mini])':
-    'tab': 'emmet:expand-abbreviation-with-tab'
+# Vim-like commands with `,` leader
+'atom-text-editor.vim-mode.normal-mode':
+
+  # Term3
+  ', t': 'term3:open'
+  ', t v': 'term3:open-split-down'
+
+  # Fuzzy-finder
+  'ctrl-p': 'fuzzy-finder:toggle-file-finder'
