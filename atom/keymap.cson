@@ -29,9 +29,15 @@
 # Vim-like commands with `,` leader
 'atom-text-editor.vim-mode.normal-mode':
 
-  # Term3
-  ', t': 'term3:open'
-  ', t v': 'term3:open-split-down'
+  # PLUGIN                                      # MNEMONIC
 
-  # Fuzzy-finder
-  'ctrl-p': 'fuzzy-finder:toggle-file-finder'
+  # term3
+  ', t': 'term3:open'                           # terminal
+  ', t v': 'term3:open-split-down'              # terminal vertical
+
+  # fuzzy-finder
+  'ctrl-p': 'fuzzy-finder:toggle-file-finder'   # I mean, CTRL-P
+
+  # atom-fuzzy-grep
+  ', f': 'fuzzy-grep:toggle'                    # find
+  ', f l': 'fuzzy-grep:toggleLastSearch'        # find last

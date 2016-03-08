@@ -1,7 +1,9 @@
 packages: [
+  "atom-fuzzy-grep"
   "atom-material-syntax"
   "atom-material-syntax-light"
   "atom-material-ui"
+  "environment"
   "ex-mode"
   "floobits"
   "git-plus"
