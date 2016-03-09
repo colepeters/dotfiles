@@ -26,8 +26,11 @@
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
 
-# Vim-like commands with `,` leader
-'atom-text-editor.vim-mode.normal-mode':
+# VIM-LIKE COMMANDS WITH `,` LEADER
+# Selectors to make keybindings word in vim normal mode, and
+# within Atom where vim mode is not active (avoids keybindings
+# being triggered when in vim insert mode)
+'atom-text-editor:not(.vim-mode), atom-text-editor.vim-mode.normal-mode':
 
   # PLUGIN                                      # MNEMONIC
 
