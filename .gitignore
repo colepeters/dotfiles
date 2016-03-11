@@ -6,6 +6,8 @@ config/nvim/plugged
 !config/nvim/undodir/
 config/nvim/undodir/*
 !config/nvim/undodir/undodir.md
+config/functional-javascript
+config/workshopper
 
 ### Vim ###
 [._]*.s[a-w][a-z]
