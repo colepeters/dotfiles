@@ -1,4 +1,6 @@
 "*":
+  "atom-fuzzy-grep":
+    showFullPath: true
   "atom-material-ui":
     colors:
       abaseColor:
@@ -17,6 +19,7 @@
   core:
     disabledPackages: [
       "language-gfm"
+      "minimap"
     ]
     projectHome: "~/Sites/"
     themes: [
@@ -138,3 +141,6 @@
   "vim-mode": {}
   welcome:
     showOnStartup: false
+".json.source":
+  editor:
+    preferredLineLength: 120

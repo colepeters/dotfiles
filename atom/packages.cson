@@ -3,6 +3,7 @@ packages: [
   "atom-material-syntax"
   "atom-material-syntax-light"
   "atom-material-ui"
+  "colorful-json"
   "environment"
   "ex-mode"
   "floobits"
