@@ -15,6 +15,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'floobits/floobits-neovim'
+Plug 'Valloric/YouCompleteMe'
+Plug 'ternjs/tern_for_vim'
 call plug#end()
 
 " APPEARANCE
