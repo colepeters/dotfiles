@@ -17,6 +17,7 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'floobits/floobits-neovim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'ternjs/tern_for_vim'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 " APPEARANCE
