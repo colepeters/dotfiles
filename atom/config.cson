@@ -27,7 +27,7 @@
       "material-syntax"
     ]
   editor:
-    fontFamily: "Fira Mono"
+    fontFamily: "Roboto Mono"
     fontSize: 15
     invisibles: {}
     lineHeight: 1.6
@@ -135,7 +135,6 @@
         green: 202
         blue: 40
         alpha: 1
-    fontFamily: "Fira Mono"
     fontSize: "15"
     scrollback: 2000
   "vim-mode": {}
