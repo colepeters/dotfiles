@@ -1,0 +1,4 @@
+# Color adjustments for tig
+
+# Yellow mapped to teal in tcp-material-iterm
+color cursor white yellow bold
