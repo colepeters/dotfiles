@@ -18,9 +18,6 @@ alias ts='tig status'
 ### HOMEBREW ###
 alias brewu='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
 
-### NPM ###
-alias ffs='rm -rf node_modules/ && npm cache clean && npm i'
-
 ### HTTPIE ###
 alias http='http --style=solarized'
 
