@@ -29,6 +29,7 @@ set background=dark                     " Dark background
 set number				" Use line numbers
 set ruler                               " Show line/col number in status bar
 set hlsearch                            " Highlight search results
+set incsearch                           " Preview first search match as you type
 set wrap                                " -------------------------------------
 set nolist                              " Word wrap without linebreaks
 set linebreak                           " -------------------------------------
