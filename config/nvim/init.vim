@@ -2,22 +2,17 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'benekastah/neomake'
 Plug 'kristijanhusak/vim-hybrid-material'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'sjl/gundo.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'mhinz/vim-grepper'
 Plug 'Raimondi/delimitMate'
-Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
-Plug 'easymotion/vim-easymotion'
 Plug 'Valloric/ListToggle'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'mustache/vim-mustache-handlebars'
-Plug 'floobits/floobits-neovim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'ternjs/tern_for_vim'
-Plug 'Yggdroot/indentLine'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " APPEARANCE

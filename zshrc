@@ -49,3 +49,11 @@ __git_files () {
 # git add the right stuff
 alias git='noglob git'
 
+
+# FZF
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag -g ""'
+export FZF_DEFAULT_OPTS='
+  --color dark,hl:37,hl+:43,fg+:235,bg+:-1,fg+:254
+  --color info:254,prompt:37,spinner:108,pointer:37,marker:235
+'
