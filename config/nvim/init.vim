@@ -13,6 +13,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'ternjs/tern_for_vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'mhinz/vim-grepper'
 call plug#end()
 
 " APPEARANCE
