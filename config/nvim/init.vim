@@ -17,8 +17,8 @@ Plug 'mhinz/vim-grepper'
 call plug#end()
 
 " APPEARANCE
-:let $NVIM_TUI_ENABLE_TRUE_COLOR=1	" Only works with iTerm nightlies & beta
-:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1	" Cursor is pipe in Insert, block in Normal
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1	" Only works with iTerm nightlies & beta
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1	" Cursor is pipe in Insert, block in Normal
 syntax enable				" Syntax highlighting
 colorscheme hybrid_material             " Colorscheme
 set background=dark                     " Dark background
