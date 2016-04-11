@@ -27,6 +27,9 @@
   c = commit -m                     # commit with message
   ci = commit                       # commit
 
+  # checkout
+  co = checkout
+
 [format]
   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
 [mergetool]
