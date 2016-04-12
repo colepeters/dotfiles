@@ -31,9 +31,9 @@ let g:neomake_javascript_eslint_exe = substitute(s:eslint_path, '^\n*\s*\(.\{-}\
 
 " If an .eslintc file is NOT found in the current file's directory, or
 " the directories above it, switch to linting JS files w/ Standard
-if findfile('.eslintrc', '.;') ==# ''
-  let g:neomake_javascript_enabled_makers = ['standard']
-endif
+" if findfile('.eslintrc', '.;') ==# ''
+"   let g:neomake_javascript_enabled_makers = ['standard']
+" endif
 
 
 " ---------- PYTHON MAKERS ----------
