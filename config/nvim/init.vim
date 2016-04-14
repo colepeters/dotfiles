@@ -6,7 +6,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
-Plug 'pangloss/vim-javascript'
+"Plug 'pangloss/vim-javascript'
+Plug 'gavocanov/vim-js-indent'          " Indenting from pangloss/vim-javascript
+Plug 'othree/yajs.vim'                  " Better syntax highlighting than ^^
 Plug 'mxw/vim-jsx'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'Valloric/YouCompleteMe'
