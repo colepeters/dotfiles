@@ -8,6 +8,8 @@ config/nvim/undodir/*
 !config/nvim/undodir/undodir.md
 config/functional-javascript
 config/workshopper
+config/ranger/bookmarks
+config/ranger/history
 
 ### Vim ###
 [._]*.s[a-w][a-z]
