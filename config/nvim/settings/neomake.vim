@@ -22,6 +22,7 @@ autocmd! BufWritePost * Neomake
 
 " Default JS linting is with ESLint
 let g:neomake_javascript_enabled_makers = ['eslint']
+let g:neomake_jsx_enabled_makers = ['eslint']
 " load local eslint in the project root
 " modified from https://github.com/mtscout6/syntastic-local-eslint.vim
 " NB: This means, for your eslintrc to work properly, Neovim must be opened
