@@ -2,12 +2,24 @@ aliases.user.zsh
 gitconfig.user
 vim/backups
 vim/bundle
+
+### CONFIG DIR ###
+# Ignore config by default
+config/*
+
+# Don't ignore config/nvim
+!config/nvim
+
+# Ignore vim plugin installs
 config/nvim/plugged
+
+# Track undodir but not files inside it
 !config/nvim/undodir/
 config/nvim/undodir/*
 !config/nvim/undodir/undodir.md
-config/functional-javascript
-config/workshopper
+
+# Don't ignore config/ranger, do ignore bookmarks/history
+!config/ranger
 config/ranger/bookmarks
 config/ranger/history
 
