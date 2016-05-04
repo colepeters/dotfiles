@@ -52,6 +52,7 @@ These instructions have been tested on my own machine (OS X 10.11, using the lat
 ### Prerequisites
 - [Homebrew](http://brew.sh/)
 - [Node and npm](https://nodejs.org/en/)
+- Non-system install of Python (`brew install python` / `brew install python3`)
 - [Pip](https://pip.pypa.io/en/stable/)
 - [Neovim](https://neovim.io)
 
