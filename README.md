@@ -55,6 +55,7 @@ These instructions have been tested on my own machine (OS X 10.11, using the lat
 - Non-system install of Python (`brew install python` / `brew install python3`)
 - [Pip](https://pip.pypa.io/en/stable/)
 - [Neovim](https://neovim.io)
+- Ag (`brew install ag`) in order for FZF to work with the default command
 
 ### Install
 
