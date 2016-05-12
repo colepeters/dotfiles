@@ -18,17 +18,7 @@ Some Zsh and Git configurations have been borrowed from the [YADR dotfiles](http
 ## What’s included
 
 ### Neovim
-Neovim is like Vim, but (in my humble opinion) better. I particular love its asynchronous plugin architecture, how fast its development community is growing, and how well maintenance and support is handled. I keep my configuration pretty lean, but in a nutshell these dotfiles contain:
-
-- A small manifest of plugins (which are installed and updated via [vim-plug](https://github.com/junegunn/vim-plug), including (in part):
-  - [Neomake](https://github.com/benekastah/neomake), for asynchronous task-running (I use it for my linting setup)
-  - [vim-hybrid-material](https://github.com/kristijanhusak/vim-hybrid-material), my favourite colour scheme (looks great using iTerm2’s recent 24-bit colour mode)
-  - [CtrlP](https://github.com/ctrlpvim/ctrlp.vim), the best fuzzy file finder
-  - [vim-grepper](https://github.com/mhinz/vim-grepper), for project-wide search using your choice of grep tools
-  - [delimitMate](https://github.com/Raimondi/delimitMate), for auto-closing of parentheses, braces, quotes, etc
-  - Some other niceties, syntaxes, etc
-- A small selections of per-plugin settings files, sourced automatically on startup
-- Light configurations for Neovim’s appearance, indentation settings, and setting in general (in particular, experienced Vim users should note that `Leader` is mapped to `,`)
+Neovim is like Vim, but (in my humble opinion) better. I particular love its asynchronous plugin architecture, how fast its development community is growing, and how well maintenance and support is handled. I keep my configuration pretty lean.
 
 ### Zsh and Git
 I use [Antigen](https://github.com/zsh-users/antigen) to manage my ZSH plugins, because it is awesome. Antigen is sourced and applied (and relevant plugins are called) all from the .zshrc file. Antigen is installed as a submodule of this repo.
@@ -86,7 +76,7 @@ rcup -v rcrc
 rcup -v
 ```
 
-### Add-ons
+### Additional packages
 Some aliases and configurations depend on these little packages to work:
 
 ```shell
@@ -119,6 +109,9 @@ npm i -g standard snazzy
 
 # tldr, aka quick and useful documentation for CLI commands
 npm i -g tldr
+
+# Ranger file manager
+brew install ranger
 ```
 
 ### 🎉 Ta-da
