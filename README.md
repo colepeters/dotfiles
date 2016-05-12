@@ -43,7 +43,7 @@ These instructions have been tested on my own machine (OS X 10.11, using the lat
 - [Homebrew](http://brew.sh/)
 - [Node and npm](https://nodejs.org/en/)
 - Non-system install of Python (`brew install python` / `brew install python3`)
-- [Pip](https://pip.pypa.io/en/stable/)
+- [Pip](https://pip.pypa.io/en/stable/) (This will be installed alongside Python from Homebrew, see above)
 - [Neovim](https://neovim.io)
 - Ag (`brew install ag`) in order for FZF to work with the default command
 
