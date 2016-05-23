@@ -41,6 +41,7 @@ These instructions have been tested on my own machine (OS X 10.11, using the lat
 
 ### Prerequisites
 - [Homebrew](http://brew.sh/)
+- Correct Hombrew permissions: `sudo chown -R "$USER":admin /usr/local && sudo chown -R "$USER":admin /Library/Caches/Homebrew`
 - [Node and npm](https://nodejs.org/en/)
 - Non-system install of Python (`brew install python` / `brew install python3`)
 - [Pip](https://pip.pypa.io/en/stable/) (This will be installed alongside Python from Homebrew, see above)
@@ -52,6 +53,9 @@ These instructions have been tested on my own machine (OS X 10.11, using the lat
 ```shell
 # Install Zsh
 brew install zsh
+
+# Add zsh to standard shells
+sudo vi /etc/shells              # Add /usr/local/bin/zsh to the end of this file
 
 # Switch into Zsh — don’t worry if it looks like crap for the moment
 chsh -s zsh
