@@ -58,7 +58,7 @@ brew install zsh
 sudo vi /etc/shells              # Add /usr/local/bin/zsh to the end of this file
 
 # Switch into Zsh — don’t worry if it looks like crap for the moment
-chsh -s zsh
+chsh -s /usr/local/bin/zsh
 
 # Clone the repo to into a ".dotfiles" directory in your user directory
 git clone git@github.com:colepeters/dotfiles.git ~/.dotfiles
