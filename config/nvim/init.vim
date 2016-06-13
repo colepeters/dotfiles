@@ -2,6 +2,7 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'benekastah/neomake'
 Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'easysid/mod8.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
@@ -23,8 +24,7 @@ call plug#end()
 set termguicolors               	" Only works with iTerm nightlies & beta
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1	" Cursor is pipe in Insert, block in Normal
 syntax enable				" Syntax highlighting
-colorscheme hybrid_material             " Colorscheme
-set background=dark                     " Dark background
+colorscheme mod8                        " Colorscheme
 set number				" Use line numbers
 set ruler                               " Show line/col number in status bar
 set hlsearch                            " Highlight search results
