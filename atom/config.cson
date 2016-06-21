@@ -27,10 +27,8 @@
       "material-syntax"
     ]
   editor:
-    fontFamily: "Roboto Mono"
-    fontSize: 15
+    fontFamily: "Input"
     invisibles: {}
-    lineHeight: 1.6
     preferredLineLength: 120
     showIndentGuide: true
     softWrap: true
