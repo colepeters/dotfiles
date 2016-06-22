@@ -39,3 +39,7 @@ Thumbs.db
 # Node/NPM #
 ############
 node_modules
+
+# SPACEMACS LOCK FILES #
+# ######################
+.#*
