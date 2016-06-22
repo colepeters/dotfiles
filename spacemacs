@@ -24,6 +24,7 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      osx
+     ranger
      git
      version-control
      auto-completion
@@ -33,7 +34,6 @@ values."
      javascript
      react
      markdown
-     ranger
      ;; org
      ;; (shell :variables
      ;;        shell-default-height 30
@@ -248,6 +248,18 @@ in `dotspacemacs/user-config'."
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
+
+  ;; Set the fn key to meta so the left opt key can still
+  ;; be used to insert diacritics and special chars
+  (cond
+   ((eq system-type 'darwin)
+    (setq ns-alternate-modifier 'none)
+    (setq ns-function-modifier 'meta))
+   )
+
+  ;; Turn visual line mode on globally
+  (global-visual-line-mode 1)
+
   ;; Indentation preferences
   (setq-default
    ;; Use tabs instead of spaces
@@ -261,6 +273,10 @@ layers configuration. You are free to put any user code."
    web-mode-css-indent-offset 2
    web-mode-code-indent-offset 2
    web-mode-attr-indent-offset 2)
+
+  ;; Open handlebars files in web-mode
+  (add-to-list 'auto-mode-alist '("\\.hbs$" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.handlebars$" . web-mode))
 
   ;; lint with ESLint on the fly
   ;; from https://emacs.stackexchange.com/questions/14898/flycheck-with-eslint-doesnt-use-eslintrc
@@ -288,17 +304,6 @@ layers configuration. You are free to put any user code."
     )
 
   (provide 'init-flycheck)
-
-  ;; Set the fn key to meta so the left opt key can still
-  ;; be used to insert diacritics and special chars
-  (cond
-   ((eq system-type 'darwin)
-    (setq ns-alternate-modifier 'none)
-    (setq ns-function-modifier 'meta))
-  )
-
-  ;; Turn visual line mode on globally
-  (global-visual-line-mode 1)
 )
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
