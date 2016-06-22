@@ -250,6 +250,10 @@ layers configuration. You are free to put any user code."
   ;; Turn visual line mode on globally
   (global-visual-line-mode 1)
 
+  ;; Use powerline symbols for the modeline separators, which
+  ;; provides anti-aliasing (the default XMP doesn’t)
+  (setq powerline-default-separator 'utf-8)
+
   ;; Indentation preferences
   (setq-default
    ;; Use tabs instead of spaces
