@@ -6,9 +6,9 @@ Configurations and optimisations primarily for Zsh, Neovim, and a little bit of 
 Please be aware that _these configurations are designed for my own personal use_. You are of course welcome to make use of whatever you find here, but do understand that I take no responsibility for anything that backfires on your machine. (There’s really nothing scary in here. Just a word of caution.)
 
 ## Overview
-The concept behind these dotfiles is to provide a solid, lightweight setup for the tools I use most in my development work: [Neovim](https://neovim.io/), [Zsh](http://www.zsh.org/), [Git](https://git-scm.com/), and, occassionally, [Atom](https://atom.io/). External dependencies and plugins are kept to a minimum, while providing a pleasing aesthetic and uncomplicated implementation.
+The concept behind these dotfiles is to provide a solid, lightweight setup for the tools I use most in my development work: [Neovim](https://neovim.io/), [Zsh](http://www.zsh.org/), [Git](https://git-scm.com/), and, occassionally, [Atom](https://atom.io/). I have also begun working with [Spacemacs](https://spacemacs.org), so my `.spacemacs` file is also now tracked here.
 
-Having said that, these dotfiles are inherently opinionated. This is not meant to be a “one size fits all” dotfiles repo — if you like what you see, please feel free to use it, fork it or [open an issue](https://github.com/colepeters/dotfiles/issues/new) if you have any questions or comments.
+External dependencies and plugins are kept to a minimum, while providing a pleasing aesthetic and uncomplicated implementation. Having said that, these dotfiles are inherently opinionated. This is not meant to be a “one size fits all” dotfiles repo — if you like what you see, please feel free to use it, fork it or [open an issue](https://github.com/colepeters/dotfiles/issues/new) if you have any questions or comments.
 
 ### Credits
 The dotfiles are managed with [rcm by Thoughtbot](https://github.com/thoughtbot/rcm), which is an awesome, lightweight tool for keeping dotfiles synced and organised.
@@ -36,10 +36,16 @@ Please note that:
 ### Atom
 Atom?
 
+### Spacemacs
+My `.spacemacs` file specifies the configuration layers I use on a regular basis, which are mostly aimed at HTML, CSS, and JS development. In particular, the JS syntax checking is tuned for ESLint. I’ve also bound `meta` to the `fn` key, which allows me to use the left `opt` key for inserting diacritics and special characters.
+
 ## Usage (OS X)
 These instructions have been tested on my own machine (OS X 10.11, using the latest version of [iTerm2](https://www.iterm2.com/)). They presume that you do **not** already have a `.dotfiles` directory in your user (`~`) directory.
 
 ### Prerequisites
+
+**TODO: Update for Spacemacs config** 
+
 - [Homebrew](http://brew.sh/)
 - Correct Hombrew permissions: `sudo chown -R "$USER":admin /usr/local && sudo chown -R "$USER":admin /Library/Caches/Homebrew`
 - [Node and npm](https://nodejs.org/en/)
