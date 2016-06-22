@@ -292,6 +292,9 @@ layers configuration. You are free to put any user code."
     (setq ns-alternate-modifier 'none)
     (setq ns-function-modifier 'meta))
   )
+
+  ;; Turn visual line mode on globally
+  (global-visual-line-mode 1)
 )
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
