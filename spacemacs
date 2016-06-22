@@ -23,17 +23,28 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
+
+     ;; FS
      osx
-     ranger
+     shell
+     vinegar
+
+     ;; VCS
      git
+     github
      version-control
+
+     ;; Syntax
      auto-completion
      syntax-checking
+
+     ;; Language
      emacs-lisp
      html
      javascript
-     react
      markdown
+     python
+     react
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -232,7 +243,7 @@ values."
 It is called immediately after `dotspacemacs/init'.  You are free to put almost
 any user code here.  The exception is org related code, which should be placed
 in `dotspacemacs/user-config'."
-  )
+)
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
@@ -247,12 +258,13 @@ layers configuration. You are free to put any user code."
     (setq ns-function-modifier 'meta))
    )
 
-  ;; Turn visual line mode on globally
-  (global-visual-line-mode 1)
-
   ;; Use powerline symbols for the modeline separators, which
   ;; provides anti-aliasing (the default XMP doesn’t)
-  (setq powerline-default-separator 'utf-8)
+  (setq-default powerline-default-separator 'utf-8)
+  (spaceline-compile)
+
+  ;; Turn visual line mode on globally
+  (global-visual-line-mode 1)
 
   ;; Indentation preferences
   (setq-default
