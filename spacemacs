@@ -284,6 +284,9 @@ layers configuration. You are free to put any user code."
   (add-to-list 'auto-mode-alist '("\\.hbs$" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.handlebars$" . web-mode))
 
+  ;; Use single quotes in web-mode
+  (setq web-mode-auto-quote-style 2)
+
   ;; lint with ESLint on the fly
   ;; from https://emacs.stackexchange.com/questions/14898/flycheck-with-eslint-doesnt-use-eslintrc
   ;; and  http://codewinds.com/blog/2015-04-02-emacs-flycheck-eslint-jsx.html
