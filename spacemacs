@@ -50,7 +50,7 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages '(feature-mode)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -266,12 +266,19 @@ layers configuration. You are free to put any user code."
   ;; Turn visual line mode on globally
   (global-visual-line-mode 1)
 
+  ;; Set default shell
+  (setq-default
+   shell-default-shell 'term
+   shell-default-term-shell "usr/local/bin/zsh"
+   )
+
   ;; Indentation preferences
   (setq-default
    ;; Use tabs instead of spaces
    indent-tabs-mode nil
    tab-width 2
-   ;; js2-mode
+   ;; javascript
+   js-indent-level 2
    js2-basic-offset 2
    ;; web-mode
    css-indent-offset 2
@@ -284,8 +291,8 @@ layers configuration. You are free to put any user code."
   (add-to-list 'auto-mode-alist '("\\.hbs$" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.handlebars$" . web-mode))
 
-  ;; Use single quotes in web-mode
-  (setq web-mode-auto-quote-style 2)
+  ;; Disable web-mode auto quoting of attrs
+  (setq-default web-mode-enable-auto-quoting nil)
 
   ;; lint with ESLint on the fly
   ;; from https://emacs.stackexchange.com/questions/14898/flycheck-with-eslint-doesnt-use-eslintrc
@@ -313,6 +320,14 @@ layers configuration. You are free to put any user code."
     )
 
   (provide 'init-flycheck)
+
+  ;; Configure feature-mode for gherkin syntax
+  (setq feature-default-language "fi")
+  (require 'feature-mode)
+  (add-to-list 'auto-mode-alist '("\\.feature$" . feature-mode))
+
+  ;; Confiure CTRL-I to work like in Vim
+  (setq evil-want-C-i-jump t)
 )
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
