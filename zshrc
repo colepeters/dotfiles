@@ -1,25 +1,21 @@
 # =====================================
-# Antigen config
+# ZGEN
 # =====================================
+source ~/.dotfiles/zgen/zgen.zsh
 
-# Source Antigen
-source ~/.dotfiles/antigen/antigen.zsh
+# if the init scipt doesn't exist
+if ! zgen saved; then
 
-# Load the oh-my-zsh library
-antigen use oh-my-zsh
+  # specify plugins here
+  zgen oh-my-zsh
+  zgen oh-my-zsh plugins/git
+  zgen load zsh-users/zsh-syntax-highlighting
+  zgen load mafredri/zsh-async
+  zgen load colepeters/pure
 
-# Bundle some oh-my-zsh plugins
-antigen bundle git
-
-# Syntax highlighting
-antigen bundle zsh-users/zsh-syntax-highlighting
-
-# Use Pure prompt
-antigen bundle mafredri/zsh-async
-antigen bundle colepeters/pure
-
-# That's a wrap!
-antigen apply
+  # generate the init script from plugins above
+  zgen save
+fi
 
 # =====================================
 # Other orders of business
