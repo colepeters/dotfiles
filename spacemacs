@@ -133,7 +133,7 @@ values."
    ;; and TAB or <C-m> and RET.
    ;; In the terminal, these pairs are generally indistinguishable, so this only
    ;; works in the GUI. (default nil)
-   dotspacemacs-distinguish-gui-tab nil
+   dotspacemacs-distinguish-gui-tab t
    ;; (Not implemented) dotspacemacs-distinguish-gui-ret nil
    ;; The command key used for Evil commands (ex-commands) and
    ;; Emacs commands (M-x).
@@ -258,8 +258,7 @@ layers configuration. You are free to put any user code."
     (setq ns-function-modifier 'meta))
    )
 
-  ;; Use powerline symbols for the modeline separators, which
-  ;; provides anti-aliasing (the default XMP doesn’t)
+  ;; Use the slant option for powerline separators
   (setq-default powerline-default-separator 'slant)
   (spaceline-compile)
 
@@ -302,12 +301,10 @@ layers configuration. You are free to put any user code."
     :diminish flycheck-mode
     :config
     (global-flycheck-mode)
-
     ;; disable jshint since we prefer eslint checking
     (setq-default flycheck-disabled-checkers
                   (append flycheck-disabled-checkers
                           '(javascript-jshint)))
-
     (setq flycheck-checkers '(javascript-eslint))
     ;; use eslint with web-mode for jsx files
     (flycheck-add-mode 'javascript-eslint 'web-mode)
@@ -318,7 +315,6 @@ layers configuration. You are free to put any user code."
                   (append flycheck-disabled-checkers
                           '(json-jsonlist)))
     )
-
   (provide 'init-flycheck)
 
   ;; Configure feature-mode for gherkin syntax
