@@ -115,7 +115,7 @@ values."
                                :size 13
                                :weight normal
                                :width normal
-                               :powerline-scale 1.1)
+                               :powerline-scale 1.333)
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The leader key accessible in `emacs state' and `insert state'
@@ -260,7 +260,7 @@ layers configuration. You are free to put any user code."
 
   ;; Use powerline symbols for the modeline separators, which
   ;; provides anti-aliasing (the default XMP doesn’t)
-  (setq-default powerline-default-separator 'utf-8)
+  (setq-default powerline-default-separator 'slant)
   (spaceline-compile)
 
   ;; Turn visual line mode on globally
