@@ -1,12 +1,12 @@
 My Dotfiles
 ============
 
-Configurations and optimisations primarily for Zsh, Neovim, and a little bit of Atom.
+Configurations and optimisations primarily for Zsh, Neovim, Spacemacs, and a little bit of Atom.
 
 Please be aware that _these configurations are designed for my own personal use_. You are of course welcome to make use of whatever you find here, but do understand that I take no responsibility for anything that backfires on your machine. (There’s really nothing scary in here. Just a word of caution.)
 
 ## Overview
-The concept behind these dotfiles is to provide a solid, lightweight setup for the tools I use most in my development work: [Neovim](https://neovim.io/), [Zsh](http://www.zsh.org/), [Git](https://git-scm.com/), and, occassionally, [Atom](https://atom.io/). I have also begun working with [Spacemacs](https://spacemacs.org), so my `.spacemacs` file is also now tracked here.
+The concept behind these dotfiles is to provide a solid, lightweight setup for the tools I use most in my development work: [Zsh](http://www.zsh.org/), [Neovim](https://neovim.io/), [Spacemacs](https://spacemacs.org), [Git](https://git-scm.com/), and, occassionally, [Atom](https://atom.io/).
 
 External dependencies and plugins are kept to a minimum, while providing a pleasing aesthetic and uncomplicated implementation. Having said that, these dotfiles are inherently opinionated. This is not meant to be a “one size fits all” dotfiles repo — if you like what you see, please feel free to use it, fork it or [open an issue](https://github.com/colepeters/dotfiles/issues/new) if you have any questions or comments.
 
@@ -17,11 +17,8 @@ Some Zsh and Git configurations have been borrowed from the [YADR dotfiles](http
 
 ## What’s included
 
-### Neovim
-Neovim is like Vim, but (in my humble opinion) better. I particular love its asynchronous plugin architecture, how fast its development community is growing, and how well maintenance and support is handled. I keep my configuration pretty lean.
-
 ### Zsh and Git
-I use [Antigen](https://github.com/zsh-users/antigen) to manage my ZSH plugins, because it is awesome. Antigen is sourced and applied (and relevant plugins are called) all from the .zshrc file. Antigen is installed as a submodule of this repo.
+I use [Zgen](https://github.com/zsh-users/antigen) to manage my ZSH plugins, because it is awesome. Zgen is sourced and applied (and relevant plugins are called) all from the .zshrc file. It is installed as a submodule of this repo.
 
 The command line prompt utilised is my fork of [Pure](https://github.com/colepeters/pure). My fork changes only the symbol used to indicated a dirty git branch, and the colour used to indicate current branch name.
 
@@ -33,11 +30,14 @@ Please note that:
 - any private info (e.g. API tokens, etc) should be stored in a `~/.secrets` file, which is sourced automatically if it exists
 - any private aliases (e.g. server ssh logins, etc) should be stored in a `~/.aliases.user.zsh`, which is also sourced automatically if it exists
 
-### Atom
-Atom?
+### Neovim
+Neovim is like Vim, but (in my humble opinion) better. I particularly love its asynchronous plugin architecture, how fast its development community is growing, and how well maintenance and support is handled. I keep my configuration pretty lean.
 
 ### Spacemacs
-My `.spacemacs` file specifies the configuration layers I use on a regular basis, which are mostly aimed at HTML, CSS, and JS development. In particular, the JS syntax checking is tuned for ESLint. I’ve also bound `meta` to the `fn` key, which allows me to use the left `opt` key for inserting diacritics and special characters.
+My `.spacemacs` file specifies the configuration layers I use on a regular basis, which are mostly aimed at HTML, CSS, and JS development. In particular, the JS syntax checking is tuned for ESLint. I’ve also bound `meta` to the `fn` key, which allows me to use the left `opt` key for inserting diacritics and special characters. This is a fairly big work in progress as I’ve been alternating between Spacemacs and Neovim (depending on my mood, the task at hand, the weather, the direction of the wind…).
+
+### Atom
+I very rarely use Atom anymore, but when I do, my configs here provide me with an environment that works for me. Blah.
 
 ## Usage (OS X)
 These instructions have been tested on my own machine (OS X 10.11, using the latest version of [iTerm2](https://www.iterm2.com/)). They presume that you do **not** already have a `.dotfiles` directory in your user (`~`) directory.
@@ -72,7 +72,7 @@ git clone git@github.com:colepeters/dotfiles.git ~/.dotfiles
 # Switch to the new directory
 cd ~/.dotfiles
 
-# Initialise and update Antigen submodule
+# Initialise and update Zgen submodule
 git submodule init && git submodule update
 
 # Install RCM
