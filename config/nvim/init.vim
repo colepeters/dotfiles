@@ -2,12 +2,10 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'benekastah/neomake'
 Plug 'kristijanhusak/vim-hybrid-material'
-Plug 'easysid/mod8.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
-"Plug 'pangloss/vim-javascript'
 Plug 'gavocanov/vim-js-indent'          " Indenting from pangloss/vim-javascript
 Plug 'othree/yajs.vim'                  " Better syntax highlighting than ^^
 Plug 'mxw/vim-jsx'
@@ -24,7 +22,8 @@ call plug#end()
 set termguicolors               	" Only works with iTerm nightlies & beta
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1	" Cursor is pipe in Insert, block in Normal
 syntax enable				" Syntax highlighting
-colorscheme mod8                        " Colorscheme
+colorscheme hybrid_material             " Colorscheme
+set background=dark                     " Background
 set number				" Use line numbers
 set ruler                               " Show line/col number in status bar
 set hlsearch                            " Highlight search results
@@ -44,7 +43,7 @@ set expandtab                           " Uses spaces, not tabs
 " VARIOUS FUNCTIONALITY
 filetype on                             " Detect filetype
 filetype plugin on                      " Filetype-specific plugins
-let mapleader=','                       " Use comma as leader
+let mapleader=' '                       " Use space as leader
 set encoding=utf-8                      " UTF-8 encoding by default
 set scrolloff=8				" Starting scrolling from 8 lines of edge
 set backspace=indent,eol,start		" Backspace over these things
