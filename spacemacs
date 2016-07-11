@@ -43,7 +43,6 @@ values."
      html
      javascript
      markdown
-     python
      react
      )
    ;; List of additional packages that will be installed without being
