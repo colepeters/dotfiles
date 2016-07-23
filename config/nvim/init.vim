@@ -2,7 +2,7 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'benekastah/neomake'
 Plug 'kristijanhusak/vim-hybrid-material'
-Plug 'mhartington/oceanic-next'
+Plug 'colepeters/oceanic-next'
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
