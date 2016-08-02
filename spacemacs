@@ -44,6 +44,7 @@ values."
      javascript
      markdown
      react
+     django
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -91,7 +92,7 @@ values."
    ;; directory. A string value must be a path to an image format supported
    ;; by your Emacs build.
    ;; If the value is nil then no banner is displayed. (default 'official)
-   dotspacemacs-startup-banner 999
+   dotspacemacs-startup-banner 'official
    ;; List of items to show in the startup buffer. If nil it is disabled.
    ;; Possible values are: `recents' `bookmarks' `projects'.
    ;; (default '(recents projects))
@@ -220,7 +221,7 @@ values."
    dotspacemacs-highlight-delimiters 'all
    ;; If non nil advises quit functions to keep server open when quitting.
    ;; (default nil)
-   dotspacemacs-persistent-server nil
+   dotspacemacs-persistent-server t
    ;; List of search tool executable names. Spacemacs uses the first installed
    ;; tool of the list. Supported tools are `ag', `pt', `ack' and `grep'.
    ;; (default '("ag" "pt" "ack" "grep"))
@@ -253,8 +254,8 @@ layers configuration. You are free to put any user code."
   ;; be used to insert diacritics and special chars
   (cond
    ((eq system-type 'darwin)
-    (setq ns-alternate-modifier 'none)
-    (setq ns-function-modifier 'meta))
+    (setq mac-option-modifier 'none)
+    (setq mac-function-modifier 'meta))
    )
 
   ;; Use the slant option for powerline separators
