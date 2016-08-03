@@ -1,18 +1,32 @@
 " VIM-PLUG (plugins)
 call plug#begin('~/.config/nvim/plugged')
+
+" ASSORTED PLUGS
 Plug 'benekastah/neomake'
-Plug 'kristijanhusak/vim-hybrid-material'
-Plug 'colepeters/oceanic-next'
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
+Plug 'mattn/emmet-vim'
+
+" COLOUR PLUGS
+Plug 'colepeters/oceanic-next'
+Plug 'kristijanhusak/vim-hybrid-material'
+
+" COMPLETION PLUGS
+Plug 'Valloric/YouCompleteMe'
+
+" JS PLUGS
 Plug 'gavocanov/vim-js-indent'          " Indenting from pangloss/vim-javascript
 Plug 'othree/yajs.vim'                  " Better syntax highlighting than ^^
+Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'mxw/vim-jsx'
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'Valloric/YouCompleteMe'
 Plug 'ternjs/tern_for_vim'
+
+" OTHER SYNTAX PLUGS
+Plug 'mustache/vim-mustache-handlebars'
+
+" FIND PLUGS
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'rking/ag.vim'
