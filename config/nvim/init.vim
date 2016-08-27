@@ -34,7 +34,9 @@ Plug 'mhinz/vim-grepper'
 call plug#end()
 
 " APPEARANCE
-set termguicolors               	" Only works with iTerm nightlies & beta
+if (has("termguicolors"))               " -------------------------------------
+  set termguicolors                     " Sweet sweet colours
+endif                                   " -------------------------------------
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1	" Cursor is pipe in Insert, block in Normal
 syntax enable				" Syntax highlighting
 colorscheme OceanicNext                 " Colorscheme
@@ -46,6 +48,10 @@ set incsearch                           " Preview first search match as you type
 set wrap                                " -------------------------------------
 set nolist                              " Word wrap without linebreaks
 set linebreak                           " -------------------------------------
+
+" THEME SETTINGS
+let g:oceanic_next_terminal_italic = 1
+let g:oceanic_next_terminal_bold = 1
 
 " INDENTATION
 set autoindent                          " Copy indent from current line when inserting new line

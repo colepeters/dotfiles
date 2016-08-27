@@ -1,7 +1,7 @@
 module.exports = {
   config: {
     // default font size in pixels for all tabs
-    fontSize: 13,
+    fontSize: 12,
 
     // font family with optional fallbacks
     fontFamily: '"SF Mono", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
@@ -73,7 +73,7 @@ module.exports = {
     'hyperterm-bold-tab',
     'hyperterm-cursor',
     'hyperterm-tabby',
-    'hyperterm-oceanic-next'
+    'oceanic-next-hyperterm'
   ],
 
   // in development, you can create a directory under
