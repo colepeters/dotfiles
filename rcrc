@@ -1,2 +1,2 @@
-EXCLUDES="README.md fonts zgen"
-SYMLINK_DIRS="atom config"
+EXCLUDES="README.md zgen"
+SYMLINK_DIRS="config"
