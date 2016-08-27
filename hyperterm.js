@@ -66,14 +66,14 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    "hyperterm-blink",
-    "hypercwd",
-    "hyperterm-tab-icons",
-    "hyperterm-paste",
-    "hyperterm-bold-tab",
-    "hyperterm-oceanic-next",
-    "hyperterm-cursor",
-    "hyperterm-tabby"
+    'hyperterm-blink',
+    'hypercwd',
+    'hyperterm-tab-icons',
+    'hyperterm-paste',
+    'hyperterm-bold-tab',
+    'hyperterm-cursor',
+    'hyperterm-tabby',
+    'hyperterm-oceanic-next'
   ],
 
   // in development, you can create a directory under
