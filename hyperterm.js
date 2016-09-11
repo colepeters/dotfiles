@@ -4,13 +4,13 @@ module.exports = {
     fontSize: 12,
 
     // font family with optional fallbacks
-    fontFamily: '"SF Mono", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
+    fontFamily: '"SF Mono", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.75)',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
-    cursorShape: 'BLOCK',
+    cursorShape: 'BEAM',
 
     // color of the text
     foregroundColor: '#fff',
@@ -25,7 +25,12 @@ module.exports = {
     css: '',
 
     // custom css to embed in the terminal window
-    termCSS: '',
+    termCSS: `
+    .cursor-node {
+      background: transparent !important;
+      border: none !important;
+      border-left: 2px solid rgba(248,28,229,1) !important;
+    }`,
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: '12px 14px',
@@ -66,14 +71,14 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyperterm-blink',
     'hypercwd',
     'hyperterm-tab-icons',
     'hyperterm-paste',
     'hyperterm-bold-tab',
     'hyperterm-cursor',
     'hyperterm-tabby',
-    'oceanic-next-hyperterm'
+    'oceanic-next-hyperterm',
+    'hyperterm-blink'
   ],
 
   // in development, you can create a directory under
