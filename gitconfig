@@ -89,3 +89,5 @@
 	newHighlight = green bold 22
 [credential]
 	helper = osxkeychain
+[commit]
+	gpgsign = true
