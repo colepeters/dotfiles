@@ -11,7 +11,6 @@ Plug 'mattn/emmet-vim'
 
 " COLOUR PLUGS
 Plug 'colepeters/oceanic-next'
-Plug 'kristijanhusak/vim-hybrid-material'
 
 " COMPLETION PLUGS
 Plug 'Valloric/YouCompleteMe'
