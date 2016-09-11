@@ -4,6 +4,17 @@
 " and preserve cursor position
 let g:neomake_open_list = 2
 
+" Customise error and warning signs
+let g:neomake_error_sign = {
+      \ 'text': '✕',
+      \ 'texthl': 'ErrorMsg',
+      \ }
+
+let g:neomake_warning_sign = {
+      \ 'text': '!',
+      \ 'texthl': 'ErrorMsg',
+      \ }
+
 " Run Neomake on :w
 autocmd! BufWritePost * Neomake
 
