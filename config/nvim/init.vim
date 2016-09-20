@@ -8,6 +8,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
 Plug 'mattn/emmet-vim'
+Plug 'mhinz/vim-startify'
 
 " COLOUR PLUGS
 Plug 'colepeters/oceanic-next'
