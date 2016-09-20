@@ -8,10 +8,12 @@ Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
 Plug 'mattn/emmet-vim'
-Plug 'mhinz/vim-startify'
+Plug 'colepeters/vim-startify'
 
 " COLOUR PLUGS
 Plug 'colepeters/oceanic-next'
+Plug 'colepeters/base16-spacemacs-redux'
+Plug 'chriskempson/base16-vim'
 
 " COMPLETION PLUGS
 Plug 'Valloric/YouCompleteMe'
