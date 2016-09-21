@@ -8,7 +8,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
 Plug 'mattn/emmet-vim'
-Plug 'colepeters/vim-startify'
+Plug 'colepeters/vim-much-startify'
 
 " COLOUR PLUGS
 Plug 'colepeters/oceanic-next'
@@ -41,8 +41,8 @@ if (has("termguicolors"))               " -------------------------------------
 endif                                   " -------------------------------------
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1	" Cursor is pipe in Insert, block in Normal
 syntax enable				" Syntax highlighting
-colorscheme OceanicNext                 " Colorscheme
 set background=dark                     " Background
+colorscheme base16-spacemacs-redux-dark " Colourscheme
 set number				" Use line numbers
 set ruler                               " Show line/col number in status bar
 set hlsearch                            " Highlight search results
