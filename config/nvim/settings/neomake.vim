@@ -18,6 +18,9 @@ let g:neomake_warning_sign = {
 " Run Neomake on :w
 autocmd! BufWritePost * Neomake
 
+" Disable HTML checkers
+let g:neomake_html_enabled_makers = []
+
 " ---------- JAVASCRIPT MAKERS ----------
 
 " Default JS linting is with ESLint
