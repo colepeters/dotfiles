@@ -12,7 +12,7 @@ Plug 'colepeters/vim-much-startify'
 
 " COLOUR PLUGS
 Plug 'colepeters/oceanic-next'
-Plug 'colepeters/base16-spacemacs-redux'
+Plug 'colepeters/spacemacs-theme.vim'
 Plug 'chriskempson/base16-vim'
 
 " COMPLETION PLUGS
@@ -42,9 +42,10 @@ endif                                   " -------------------------------------
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1	" Cursor is pipe in Insert, block in Normal
 syntax enable				" Syntax highlighting
 set background=dark                     " Background
-colorscheme base16-spacemacs-redux-dark " Colourscheme
+colorscheme spacemacs-theme             " Colourscheme
 set number				" Use line numbers
 set ruler                               " Show line/col number in status bar
+set cursorline                          " Highlight the line the cursor is on
 set hlsearch                            " Highlight search results
 set incsearch                           " Preview first search match as you type
 set wrap                                " -------------------------------------
