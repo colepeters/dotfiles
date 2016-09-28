@@ -24,6 +24,7 @@ Plug 'othree/yajs.vim'                  " Better syntax highlighting than ^^
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'mxw/vim-jsx'
 Plug 'ternjs/tern_for_vim'
+Plug 'jaawerth/neomake-local-eslint-first'
 
 " OTHER SYNTAX PLUGS
 Plug 'mustache/vim-mustache-handlebars'
