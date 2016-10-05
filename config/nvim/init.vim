@@ -11,9 +11,7 @@ Plug 'mattn/emmet-vim'
 Plug 'colepeters/vim-much-startify'
 
 " COLOUR PLUGS
-Plug 'colepeters/oceanic-next'
 Plug 'colepeters/spacemacs-theme.vim'
-Plug 'chriskempson/base16-vim'
 
 " COMPLETION PLUGS
 Plug 'Valloric/YouCompleteMe'
@@ -32,7 +30,6 @@ Plug 'mustache/vim-mustache-handlebars'
 " FIND PLUGS
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'rking/ag.vim'
 Plug 'mhinz/vim-grepper'
 call plug#end()
 
