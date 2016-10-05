@@ -21,6 +21,9 @@ fi
 # Other orders of business
 # =====================================
 
+# Include Homebrew’s sbin in PATH
+export PATH="/usr/local/sbin:$PATH"
+
 # Use NeoVim as default editor
 export EDITOR=/usr/local/bin/nvim
 
