@@ -7,7 +7,7 @@ module.exports = {
     fontFamily: '"SF Mono", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(248,28,229,0.75)',
+    // cursorColor: 'rgba(248,28,229,0.75)',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BEAM',
@@ -26,10 +26,6 @@ module.exports = {
 
     // custom css to embed in the terminal window
     termCSS: `
-    .cursor-node {
-      background: transparent !important;
-      border: none !important;
-      border-left: 2px solid rgba(248,28,229,1) !important;
     }`,
 
     // custom padding (css format, i.e.: `top right bottom left`)
@@ -76,9 +72,8 @@ module.exports = {
     'hyperterm-paste',
     'hyperterm-bold-tab',
     'hyperterm-cursor',
-    'hyperterm-tabby',
-    'oceanic-next-hyperterm',
-    'hyperterm-blink'
+    'hyperterm-blink',
+    'hyperterm-hyperspace'
   ],
 
   // in development, you can create a directory under
