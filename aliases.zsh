@@ -1,3 +1,6 @@
+### DOTFILES ###
+alias cdd='cd ~/.dotfiles'
+
 ### NEOVIM ###
 alias nv='nvim'                             # nv is quicker to write than nvim
 alias ne='nvim ~/.config/nvim/init.vim'     # Quick access to Neovim config
