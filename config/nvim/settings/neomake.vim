@@ -6,12 +6,12 @@ let g:neomake_open_list = 2
 
 " Customise error and warning signs
 let g:neomake_error_sign = {
-      \ 'text': '✕',
+      \ 'text': '🚫',
       \ 'texthl': 'ErrorMsg',
       \ }
 
 let g:neomake_warning_sign = {
-      \ 'text': '!',
+      \ 'text': '⚠️',
       \ 'texthl': 'ErrorMsg',
       \ }
 
@@ -23,7 +23,6 @@ let g:neomake_html_enabled_makers = []
 
 " ---------- JAVASCRIPT MAKERS ----------
 
-" Default JS linting is with ESLint
 let g:neomake_javascript_enabled_makers = ['eslint']
 let g:neomake_jsx_enabled_makers = ['eslint']
 
