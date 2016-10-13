@@ -1,6 +1,5 @@
 /usr/local/lib
-├── diff-so-fancy@0.11.1
-├── eslint@3.7.1
+├── diff-so-fancy@0.11.2
 ├── eslint-config-airbnb@12.0.0
 ├── eslint-plugin-import@1.16.0
 ├── eslint-plugin-jsx-a11y@2.2.3
@@ -8,14 +7,12 @@
 ├── gulp@3.9.1
 ├── json@9.0.4
 ├── jsonlint@1.6.2
-├── list@0.8.1
-├── mocha@3.0.2
+├── list@0.8.2
+├── now@0.25.1
 ├── now-serve@0.5.0
 ├── npm@3.10.8
-├── snazzy@4.0.1
-├── svgo@0.7.0
+├── snazzy@5.0.0
 ├── tern@0.20.0
-├── tldr@1.6.0
-├── webpack@1.13.2
-└── x256@0.0.2
+├── tldr@1.6.2
+└── webpack@1.13.2
 

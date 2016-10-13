@@ -1,5 +1,6 @@
 ### DOTFILES ###
 alias cdd='cd ~/.dotfiles'
+alias npmgen='npm ls -g --depth=0 > ~/.dotfiles/npm-global-installs.txt'
 
 ### NEOVIM ###
 alias nv='nvim'                             # nv is quicker to write than nvim
