@@ -2,7 +2,6 @@
   "libs": [
     "browser",
     "chai",
-    "ecma6",
     "underscore"
   ],
   "plugins": {
