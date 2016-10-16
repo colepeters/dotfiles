@@ -1,8 +1,0 @@
-{
-  "extends": "airbnb",
-  "rules": {
-    "comma-dangle": 0,
-    "jsx-quotes": ["error", "prefer-single"],
-    "max-len": [1, 120, { ignoreUrls: true, ignoreComments: true }],
-  }
-}
