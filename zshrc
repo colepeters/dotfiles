@@ -11,7 +11,6 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/git
   zgen load zsh-users/zsh-syntax-highlighting
   zgen load mafredri/zsh-async
-  zgen load colepeters/pure
 
   # generate the init script from plugins above
   zgen save
@@ -20,6 +19,9 @@ fi
 # =====================================
 # Other orders of business
 # =====================================
+
+autoload -U promptinit; promptinit
+prompt pure
 
 # Include Homebrew’s sbin in PATH
 export PATH="/usr/local/sbin:$PATH"
