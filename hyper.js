@@ -1,39 +1,22 @@
 module.exports = {
   config: {
-    // default font size in pixels for all tabs
     fontSize: 12,
-
-    // font family with optional fallbacks
     fontFamily: '"SF Mono", monospace',
+    foregroundColor: '#fff',
+    backgroundColor: '#000',
+    borderColor: '#333',
+    padding: '12px 14px',
 
-    // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     // cursorColor: 'rgba(248,28,229,0.75)',
-
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BEAM',
 
-    // color of the text
-    foregroundColor: '#fff',
-
-    // terminal background color
-    backgroundColor: '#000',
-
-    // border color (window, tabs)
-    borderColor: '#333',
-
     // custom css to embed in the main window
-    css: '',
+    css: ``,
 
     // custom css to embed in the terminal window
-    termCSS: `
-    }`,
+    termCSS: ``,
 
-    // custom padding (css format, i.e.: `top right bottom left`)
-    padding: '12px 14px',
-
-    // the full list. if you're going to provide the full color palette,
-    // including the 6 x 6 color cubes and the grayscale map, just provide
-    // an array here instead of a color map object
     colors: {
       black: '#000000',
       red: '#ff0000',
@@ -51,33 +34,18 @@ module.exports = {
       lightMagenta: '#cc00ff',
       lightCyan: '#00ffff',
       lightWhite: '#ffffff'
-    },
+    }
 
-    // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
-    // if left empty, your system's login shell will be used by default
-    shell: ''
-
-    // for advanced config flags please refer to https://hyperterm.org/#cfg
   },
 
-  // a list of plugins to fetch and install from npm
-  // format: [@org/]project[#version]
-  // examples:
-  //   `hyperpower`
-  //   `@company/project`
-  //   `project#1.0.1`
   plugins: [
     'hypercwd',
-    'hyperterm-tab-icons',
+    'hyperlinks',
     'hyperterm-paste',
     'hyperterm-bold-tab',
-    'hyperterm-cursor',
     'hyperterm-blink',
     'hyperterm-hyperspace'
   ],
 
-  // in development, you can create a directory under
-  // `~/.hyperterm_plugins/local/` and include it here
-  // to load it and avoid it being `npm install`ed
   localPlugins: []
 };
