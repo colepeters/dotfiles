@@ -5,11 +5,6 @@ Configurations and optimisations primarily for Zsh, Neovim, and Spacemacs.
 
 Please be aware that _these configurations are designed for my own personal use_. You are of course welcome to make use of whatever you find here, but do understand that I take no responsibility for anything that backfires on your machine. (There’s really nothing scary in here. Just a word of caution.)
 
-## Overview
-The concept behind these dotfiles is to provide a solid, lightweight setup for the tools I use most in my development work: [Zsh](http://www.zsh.org/), [Neovim](https://neovim.io/), [Spacemacs](https://spacemacs.org), and [Git](https://git-scm.com/).
-
-External dependencies and plugins are kept to a minimum, while providing a pleasing aesthetic and uncomplicated implementation. Having said that, these dotfiles are inherently opinionated. This is not meant to be a “one size fits all” dotfiles repo — if you like what you see, please feel free to use it, fork it or [open an issue](https://github.com/colepeters/dotfiles/issues/new) if you have any questions or comments.
-
 ### Credits
 The dotfiles are managed with [rcm by Thoughtbot](https://github.com/thoughtbot/rcm), which is an awesome, lightweight tool for keeping dotfiles synced and organised.
 
@@ -19,8 +14,6 @@ Some Zsh and Git configurations have been borrowed from the [YADR dotfiles](http
 
 ### Zsh and Git
 I use [Zgen](https://github.com/zsh-users/antigen) to manage my ZSH plugins, because it is awesome. Zgen is sourced and applied (and relevant plugins are called) all from the .zshrc file. It is installed as a submodule of this repo.
-
-The command line prompt utilised is my fork of [Pure](https://github.com/colepeters/pure). My fork changes only the symbol used to indicated a dirty git branch, and the colour used to indicate current branch name.
 
 The `gitconfig` included is primarily borrowed from YADR, and includes some sensible aliases and defaults for Git’s CLI. **User-specific Git configurations should be stored in ~/.gitconfig.user**.
 
@@ -33,15 +26,16 @@ Please note that:
 ### Neovim
 Neovim is like Vim, but (in my humble opinion) better. I particularly love its asynchronous plugin architecture, how fast its development community is growing, and how well maintenance and support is handled. I keep my configuration pretty lean.
 
+### Hyper
+My config for [Hyper](//hyper.is) is pretty minimal. Word.
+
 ### Spacemacs
-My `.spacemacs` file specifies the configuration layers I use on a regular basis, which are mostly aimed at HTML, CSS, and JS development. In particular, the JS syntax checking is tuned for ESLint. I’ve also bound `meta` to the `fn` key, which allows me to use the left `opt` key for inserting diacritics and special characters. This is a fairly big work in progress as I’ve been alternating between Spacemacs and Neovim (depending on my mood, the task at hand, the weather, the direction of the wind…).
+My `.spacemacs` file specifies the configuration layers I use on a regular basis, which are mostly aimed at HTML, CSS, and JS development. In particular, the JS syntax checking is tuned for ESLint. I’ve also bound `meta` to the `fn` key, which allows me to use the left `opt` key for inserting diacritics and special characters. I don’t use Spacemacs much anymore but am keeping this around for now.
 
 ## Usage (OS X)
 These instructions have been tested on my own machine (OS X 10.11, using the latest version of [iTerm2](https://www.iterm2.com/)). They presume that you do **not** already have a `.dotfiles` directory in your user (`~`) directory.
 
 ### Prerequisites
-
-**TODO: Update for Spacemacs config** 
 
 - [Homebrew](http://brew.sh/)
 - Correct Hombrew permissions: `sudo chown -R "$USER":admin /usr/local && sudo chown -R "$USER":admin /Library/Caches/Homebrew`
@@ -50,6 +44,7 @@ These instructions have been tested on my own machine (OS X 10.11, using the lat
 - [Pip](https://pip.pypa.io/en/stable/) (This will be installed alongside Python from Homebrew, see above)
 - [Neovim](https://neovim.io)
 - Ag (`brew install ag`) in order for FZF to work with the default command
+- Pure (`npm install -g pure-prompt`)
 
 ### Install
 
@@ -98,9 +93,6 @@ brew install tig
 
 # HTTPie, a nice cURL replacement:
 brew install httpie
-
-# tidy-html5, for linting HTML files
-brew install tidy-html5
 
 # flake8, for linting Python files
 pip install flake8
