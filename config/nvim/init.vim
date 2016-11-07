@@ -3,12 +3,9 @@ call plug#begin('~/.config/nvim/plugged')
 
 " ASSORTED PLUGS
 Plug 'benekastah/neomake'
-Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
-Plug 'mattn/emmet-vim'
-Plug 'colepeters/vim-much-startify'
 
 " COLOUR PLUGS
 Plug 'colepeters/spacemacs-theme.vim'
