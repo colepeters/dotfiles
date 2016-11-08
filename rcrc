@@ -1,2 +1,2 @@
 EXCLUDES="README.md zgen npm-global-installs.txt"
-SYMLINK_DIRS="config"
+SYMLINK_DIRS="config terminfo"
