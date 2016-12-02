@@ -9,6 +9,7 @@ Plug 'Valloric/ListToggle'
 
 " COLOUR PLUGS
 Plug 'colepeters/spacemacs-theme.vim'
+Plug 'vim-scripts/zenesque.vim'
 
 " COMPLETION PLUGS
 Plug 'Valloric/YouCompleteMe'
@@ -31,6 +32,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-grepper'
 call plug#end()
 
+" THEME SETTINGS
+let g:zenesque_colors = 2
+
 " APPEARANCE
 if (has("termguicolors"))               " -------------------------------------
   set termguicolors                     " Sweet sweet colours
@@ -38,7 +42,7 @@ endif                                   " -------------------------------------
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1	" Cursor is pipe in Insert, block in Normal
 syntax enable				" Syntax highlighting
 set background=dark                     " Background
-colorscheme spacemacs-theme             " Colourscheme
+colorscheme zenesque                    " Colourscheme
 set number				" Use line numbers
 set ruler                               " Show line/col number in status bar
 set cursorline                          " Highlight the line the cursor is on
@@ -47,10 +51,6 @@ set incsearch                           " Preview first search match as you type
 set wrap                                " -------------------------------------
 set nolist                              " Word wrap without linebreaks
 set linebreak                           " -------------------------------------
-
-" THEME SETTINGS
-let g:oceanic_next_terminal_italic = 1
-let g:oceanic_next_terminal_bold = 1
 
 " INDENTATION
 set autoindent                          " Copy indent from current line when inserting new line
