@@ -33,7 +33,7 @@ Plug 'mhinz/vim-grepper'
 call plug#end()
 
 " THEME SETTINGS
-let g:zenesque_colors = 2
+let g:zenesque_colors = 1
 
 " APPEARANCE
 if (has("termguicolors"))               " -------------------------------------
