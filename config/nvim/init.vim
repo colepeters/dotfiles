@@ -33,7 +33,7 @@ Plug 'mhinz/vim-grepper'
 call plug#end()
 
 " THEME SETTINGS
-let g:zenesque_colors = 1
+" let g:zenesque_colors = 1
 
 " APPEARANCE
 if (has("termguicolors"))               " -------------------------------------
@@ -42,7 +42,7 @@ endif                                   " -------------------------------------
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1	" Cursor is pipe in Insert, block in Normal
 syntax enable				" Syntax highlighting
 set background=dark                     " Background
-colorscheme zenesque                    " Colourscheme
+colorscheme spacemacs-theme             " Colourscheme
 set number				" Use line numbers
 set ruler                               " Show line/col number in status bar
 set cursorline                          " Highlight the line the cursor is on
