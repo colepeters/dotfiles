@@ -43,9 +43,10 @@ module.exports = {
     'hyperlinks',
     'hyperterm-paste',
     'hyperterm-bold-tab',
-    'hyperterm-blink',
-    'hyperterm-hyperspace'
+    'hyperterm-blink'
   ],
 
-  localPlugins: []
-};
+  localPlugins: [
+    'hyper-space'
+  ]
+}
