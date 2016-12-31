@@ -15,7 +15,11 @@ module.exports = {
     css: ``,
 
     // custom css to embed in the terminal window
-    termCSS: ``,
+    termCSS: `
+    .cursor-node[focus=true] {
+      mix-blend-mode: color-dodge;
+    }
+    `,
 
     colors: {
       black: '#000000',
@@ -34,16 +38,19 @@ module.exports = {
       lightMagenta: '#cc00ff',
       lightCyan: '#00ffff',
       lightWhite: '#ffffff'
-    }
+    },
 
+    shell: '/usr/local/bin/zsh',
+    shellArgs: ['--login'],
+    env: {},
+    bell: 'SOUND',
+    copyOnSelect: 'true'
   },
 
   plugins: [
     'hypercwd',
     'hyperlinks',
-    'hyperterm-paste',
-    'hyperterm-bold-tab',
-    'hyperterm-blink'
+    'hyperterm-paste'
   ],
 
   localPlugins: [
