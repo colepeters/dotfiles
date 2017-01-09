@@ -24,7 +24,12 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # Include Homebrew’s sbin in PATH
-export PATH="/usr/local/sbin:$PATH"
+export PATH="$PATH:/usr/local/sbin"
+
+# Include ~/Developer/scripts in PATH if it exists
+if [ -d "$HOME/Developer/scripts" ] ; then
+  export PATH="$PATH:$HOME/Developer/scripts"
+fi
 
 # Use NeoVim as default editor
 export EDITOR=/usr/local/bin/nvim
@@ -115,3 +120,13 @@ elif type compctl &>/dev/null; then
   compctl -K _npm_completion npm
 fi
 ###-end-npm-completion-###
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /Users/cole/Developer/google-cloud-sdk/path.zsh.inc ]; then
+  source '/Users/cole/Developer/google-cloud-sdk/path.zsh.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /Users/cole/Developer/google-cloud-sdk/completion.zsh.inc ]; then
+  source '/Users/cole/Developer/google-cloud-sdk/completion.zsh.inc'
+fi
