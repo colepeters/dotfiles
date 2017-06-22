@@ -50,10 +50,9 @@ module.exports = {
   plugins: [
     'hypercwd',
     'hyperlinks',
-    'hyperterm-paste'
+    'hyperterm-paste',
+    'hyper-space'
   ],
 
-  localPlugins: [
-    'hyper-space'
-  ]
+  localPlugins: []
 }
