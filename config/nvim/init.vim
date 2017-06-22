@@ -9,7 +9,6 @@ Plug 'Valloric/ListToggle'
 
 " COLOUR PLUGS
 Plug 'colepeters/spacemacs-theme.vim'
-Plug 'vim-scripts/zenesque.vim'
 
 " COMPLETION PLUGS
 Plug 'Valloric/YouCompleteMe'
@@ -39,7 +38,6 @@ call plug#end()
 if (has("termguicolors"))               " -------------------------------------
   set termguicolors                     " Sweet sweet colours
 endif                                   " -------------------------------------
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1	" Cursor is pipe in Insert, block in Normal
 syntax enable				" Syntax highlighting
 set background=dark                     " Background
 colorscheme spacemacs-theme             " Colourscheme
