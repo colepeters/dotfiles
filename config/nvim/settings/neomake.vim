@@ -31,6 +31,3 @@ if findfile('.eslintrc', '.;') !=# ''
   let g:neomake_jsx_enabled_makers = ['eslint']
 endif
 
-" ---------- PYTHON MAKERS ----------
-let g:neomake_python_enabled_makers = ['flake8']
-

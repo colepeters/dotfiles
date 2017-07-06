@@ -1,7 +1,7 @@
-My Dotfiles
+dotfiles
 ============
 
-Configurations and optimisations primarily for Zsh, Neovim, and Spacemacs.
+Configurations and optimisations for Zsh, Git, Neovim, Hyper, etc.
 
 Please be aware that _these configurations are designed for my own personal use_. You are of course welcome to make use of whatever you find here, but do understand that I take no responsibility for anything that backfires on your machine. (There’s really nothing scary in here. Just a word of caution.)
 
@@ -28,9 +28,6 @@ Neovim is like Vim, but (in my humble opinion) better. I particularly love its a
 
 ### Hyper
 My config for [Hyper](//hyper.is) is pretty minimal. Word.
-
-### Spacemacs
-My `.spacemacs` file specifies the configuration layers I use on a regular basis, which are mostly aimed at HTML, CSS, and JS development. In particular, the JS syntax checking is tuned for ESLint. I’ve also bound `meta` to the `fn` key, which allows me to use the left `opt` key for inserting diacritics and special characters. I don’t use Spacemacs much anymore but am keeping this around for now.
 
 ## Usage (OS X)
 These instructions have been tested on my own machine (OS X 10.11, using the latest version of [iTerm2](https://www.iterm2.com/)). They presume that you do **not** already have a `.dotfiles` directory in your user (`~`) directory.
@@ -85,17 +82,17 @@ Some aliases and configurations depend on these little packages to work:
 # Some Neovim packages (e.g. deoplete) require Neovim with `if_python3`
 pip3 install neovim
 
+# JS completion requires ternjs (configured in tern-config dotfile)
+npm i -g tern
+
 # diff-so-fancy, for better git diffs:
-npm install -g diff-so-fancy
+npm i -g diff-so-fancy
 
 # Tig, a Git CLI wrapper:
 brew install tig
 
 # HTTPie, a nice cURL replacement:
 brew install httpie
-
-# flake8, for linting Python files
-pip install flake8
 ```
 
 ### Optional add-ons
@@ -108,9 +105,6 @@ npm i -g standard snazzy
 
 # tldr, aka quick and useful documentation for CLI commands
 npm i -g tldr
-
-# Ranger file manager
-brew install ranger
 ```
 
 ### 🎉 Ta-da
