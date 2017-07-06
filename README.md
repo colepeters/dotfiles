@@ -29,7 +29,7 @@ Neovim is like Vim, but (in my humble opinion) better. I particularly love its a
 ### Hyper
 My config for [Hyper](//hyper.is) is pretty minimal. Word.
 
-## Usage (OS X)
+## Usage (macOS)
 These instructions have been tested on my own machine (OS X 10.11, using the latest version of [iTerm2](https://www.iterm2.com/)). They presume that you do **not** already have a `.dotfiles` directory in your user (`~`) directory.
 
 ### Prerequisites
