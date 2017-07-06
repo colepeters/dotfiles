@@ -30,18 +30,17 @@ Neovim is like Vim, but (in my humble opinion) better. I particularly love its a
 My config for [Hyper](//hyper.is) is pretty minimal. Word.
 
 ## Usage (macOS)
-These instructions have been tested on my own machine (OS X 10.11, using the latest version of [iTerm2](https://www.iterm2.com/)). They presume that you do **not** already have a `.dotfiles` directory in your user (`~`) directory.
+These instructions have been tested on my own machine (OS X 10.12.5, using the latest version of [iTerm2](https://www.iterm2.com/) and/or [Hyper](https://hyper.is)). They presume that you do **not** already have a `.dotfiles/` directory in your user (`~/`) directory.
 
 ### Prerequisites
 
-- [Homebrew](http://brew.sh/)
-- Correct Hombrew permissions: `sudo chown -R "$USER":admin /usr/local && sudo chown -R "$USER":admin /Library/Caches/Homebrew`
-- [Node and npm](https://nodejs.org/en/)
-- Non-system install of Python (`brew install python` / `brew install python3`)
-- [Pip](https://pip.pypa.io/en/stable/) (This will be installed alongside Python from Homebrew, see above)
-- [Neovim](https://neovim.io)
-- Ag (`brew install ag`) in order for FZF to work with the default command
-- Pure (`npm install -g pure-prompt`)
+1. Install [Homebrew](http://brew.sh/)
+1. Correct Hombrew permissions: `sudo chown -R "$USER":admin /usr/local && sudo chown -R "$USER":admin /Library/Caches/Homebrew`
+1. Install [Node and npm](https://nodejs.org/en/)
+1. Install non-system version of Python: `brew install python && brew install python3` (also installs Pip which is required)
+1. Install [Neovim](https://neovim.io)
+1. Install Ag (`brew install ag`) in order for FZF to work with the default command
+1. Install Pure (`npm install -g pure-prompt`)
 
 ### Install
 
