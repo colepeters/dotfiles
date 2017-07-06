@@ -9,6 +9,8 @@ Plug 'Valloric/ListToggle'
 
 " COLOUR PLUGS
 Plug 'colepeters/spacemacs-theme.vim'
+Plug 'vim-scripts/zenesque.vim'
+Plug 'ajmwagar/vim-deus'
 
 " COMPLETION PLUGS
 Plug 'Valloric/YouCompleteMe'
@@ -32,7 +34,7 @@ Plug 'mhinz/vim-grepper'
 call plug#end()
 
 " THEME SETTINGS
-" let g:zenesque_colors = 1
+let g:zenesque_colors = 2
 
 " APPEARANCE
 if (has("termguicolors"))               " -------------------------------------
@@ -40,7 +42,7 @@ if (has("termguicolors"))               " -------------------------------------
 endif                                   " -------------------------------------
 syntax enable				" Syntax highlighting
 set background=dark                     " Background
-colorscheme spacemacs-theme             " Colourscheme
+colorscheme deus                        " Colourscheme
 set number				" Use line numbers
 set ruler                               " Show line/col number in status bar
 set cursorline                          " Highlight the line the cursor is on
