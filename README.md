@@ -5,11 +5,6 @@ Configurations and optimisations for Zsh, Git, Neovim, Hyper, etc.
 
 Please be aware that _these configurations are designed for my own personal use_. You are of course welcome to make use of whatever you find here, but do understand that I take no responsibility for anything that backfires on your machine. (There’s really nothing scary in here. Just a word of caution.)
 
-### Credits
-The dotfiles are managed with [rcm by Thoughtbot](https://github.com/thoughtbot/rcm), which is an awesome, lightweight tool for keeping dotfiles synced and organised.
-
-Some Zsh and Git configurations have been borrowed from the [YADR dotfiles](https://github.com/skwp/dotfiles) repository. I have attempted to make mention of all of these instances within the code to give credit where it is due.
-
 ## What’s included
 
 ### Zsh and Git
@@ -78,7 +73,7 @@ rcup -v
 Some aliases and configurations depend on these little packages to work:
 
 ```shell
-# Some Neovim packages (e.g. deoplete) require Neovim with `if_python3`
+# Some Neovim packages require Neovim with `if_python3`
 pip3 install neovim
 
 # JS completion requires ternjs (configured in tern-config dotfile)
@@ -95,16 +90,7 @@ brew install httpie
 ```
 
 ### Optional add-ons
-These CLI applications make my life easier:
-
-```shell
-# Standard, a great JS standard that I use when not writing to an eslintrc spec
-# (Also Snazzy, which gives a prettier output when running Standard on the CLI)
-npm i -g standard snazzy
-
-# tldr, aka quick and useful documentation for CLI commands
-npm i -g tldr
-```
+Some of the other CLI tools I use on a regular basis are listed in [npm\_global\_installs.txt](https://github.com/colepeters/dotfiles/blob/master/npm-global-installs.txt)
 
 ### 🎉 Ta-da
 You should now be able to open a new shell session and have everything be not horrible and hopefully cooler and ready to go.
@@ -112,3 +98,9 @@ You should now be able to open a new shell session and have everything be not ho
 Worh repeating:
 - any private info (e.g. GitHub tokens, etc) should be stored in a `~/.secrets` file, which is sourced automatically if it exists
 - any private aliases (e.g. server ssh logins, etc) should be stored in a `~/.aliases.user.zsh`, which is also sourced automatically if it exists
+
+## Credits
+The dotfiles are managed with [rcm by Thoughtbot](https://github.com/thoughtbot/rcm), which is an awesome, lightweight tool for keeping dotfiles synced and organised.
+
+Some Zsh and Git configurations have been borrowed from the [YADR dotfiles](https://github.com/skwp/dotfiles) repository. I have attempted to make mention of all of these instances within the code to give credit where it is due.
+
