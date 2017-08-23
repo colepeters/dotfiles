@@ -18,7 +18,6 @@ Plug 'Valloric/YouCompleteMe'
 " JS PLUGS
 Plug 'gavocanov/vim-js-indent'          " Indenting from pangloss/vim-javascript
 Plug 'othree/yajs.vim'                  " Better syntax highlighting than ^^
-Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'mxw/vim-jsx'
 Plug 'ternjs/tern_for_vim'
 Plug 'jaawerth/nrun.vim'
