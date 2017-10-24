@@ -6,6 +6,7 @@ Plug 'benekastah/neomake'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
+Plug 'airblade/vim-gitgutter'
 
 " COLOUR PLUGS
 Plug 'colepeters/spacemacs-theme.vim'
