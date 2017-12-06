@@ -15,11 +15,7 @@ module.exports = {
     css: ``,
 
     // custom css to embed in the terminal window
-    termCSS: `
-    .cursor-node[focus=true] {
-      mix-blend-mode: color-dodge;
-    }
-    `,
+    termCSS: ``,
 
     colors: {
       black: '#000000',
