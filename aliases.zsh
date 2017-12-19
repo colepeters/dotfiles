@@ -17,7 +17,7 @@ alias gco='git co'
 alias gl='git l'
 alias gpl='git pull'
 alias gps='git push'
-alias gclean 'git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d' # git 'clean' (delete local branches merged to master/dev)
+alias gclean='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d' # git 'clean' (delete local branches merged to master/dev)
 alias ts='tig status'
 
 ### HOMEBREW ###
