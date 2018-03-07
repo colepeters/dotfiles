@@ -2,11 +2,12 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " ASSORTED PLUGS
-Plug 'benekastah/neomake'
+" Plug 'benekastah/neomake'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
+Plug 'w0rp/ale'
 
 " COLOUR PLUGS
 Plug 'colepeters/spacemacs-theme.vim'
@@ -21,8 +22,8 @@ Plug 'gavocanov/vim-js-indent'          " Indenting from pangloss/vim-javascript
 Plug 'othree/yajs.vim'                  " Better syntax highlighting than ^^
 Plug 'mxw/vim-jsx'
 Plug 'ternjs/tern_for_vim'
-Plug 'jaawerth/nrun.vim'
-Plug 'jaawerth/neomake-local-eslint-first'
+" Plug 'jaawerth/nrun.vim'
+" Plug 'jaawerth/neomake-local-eslint-first'
 
 " OTHER SYNTAX PLUGS
 Plug 'mustache/vim-mustache-handlebars'
