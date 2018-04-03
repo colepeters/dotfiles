@@ -5,6 +5,7 @@
     "chai"
   ],
   "plugins": {
+    "es_modules": {},
     "modules": {},
     "node": {}
   }
