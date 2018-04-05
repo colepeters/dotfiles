@@ -1,7 +1,7 @@
 module.exports = {
   config: {
     fontSize: 12,
-    fontFamily: '"SF Mono", monospace',
+    fontFamily: '"IBM Plex Mono", monospace',
     foregroundColor: '#fff',
     backgroundColor: '#000',
     borderColor: '#333',
