@@ -16,8 +16,7 @@ Plug 'ajmwagar/vim-deus'
 Plug 'Valloric/YouCompleteMe'
 
 " JS PLUGS
-Plug 'gavocanov/vim-js-indent'          " Indenting from pangloss/vim-javascript
-Plug 'othree/yajs.vim'                  " Better syntax highlighting than ^^
+Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'ternjs/tern_for_vim'
 
