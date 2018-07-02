@@ -9,8 +9,8 @@ Plug 'w0rp/ale'
 
 " COLOUR PLUGS
 Plug 'colepeters/spacemacs-theme.vim'
-Plug 'vim-scripts/zenesque.vim'
 Plug 'ajmwagar/vim-deus'
+Plug 'reedes/vim-colors-pencil'
 
 " COMPLETION PLUGS
 Plug 'Valloric/YouCompleteMe'
