@@ -40,6 +40,10 @@ Thumbs.db
 ############
 node_modules
 
-# SPACEMACS LOCK FILES #
+# Spacemacs lock files #
 # ######################
 .#*
+
+# Other orders of business #
+# ##########################
+.tool-versions # ASDF
