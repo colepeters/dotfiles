@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    fontSize: 12,
+    fontSize: 13,
     fontFamily: '"IBM Plex Mono", monospace',
     foregroundColor: '#fff',
     backgroundColor: '#000',
@@ -43,7 +43,7 @@ module.exports = {
     copyOnSelect: 'true'
   },
 
-  plugins: ["hypercwd", "hyper-pane", "hyper-whimsy"],
+  plugins: ["hypercwd", "hyper-pane", "hyper-night-owl"],
 
   localPlugins: []
 }
