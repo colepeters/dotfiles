@@ -6,6 +6,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
 Plug 'w0rp/ale'
+Plug 'Yggdroot/indentLine'
 
 " COLOUR PLUGS
 Plug 'colepeters/spacemacs-theme.vim'
@@ -22,6 +23,8 @@ Plug 'ternjs/tern_for_vim'
 
 " OTHER SYNTAX PLUGS
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'slim-template/vim-slim'
+Plug 'kchmck/vim-coffee-script'
 
 " FIND PLUGS
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -59,6 +62,7 @@ set expandtab                           " Uses spaces, not tabs
 " VARIOUS FUNCTIONALITY
 filetype on                             " Detect filetype
 filetype plugin on                      " Filetype-specific plugins
+filetype plugin indent on               " Something something Slim ugh
 let mapleader=' '                       " Use space as leader
 set encoding=utf-8                      " UTF-8 encoding by default
 set scrolloff=8				" Starting scrolling from 8 lines of edge
