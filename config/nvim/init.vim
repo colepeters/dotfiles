@@ -5,13 +5,10 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
-Plug 'w0rp/ale'
 Plug 'Yggdroot/indentLine'
 
 " COLOUR PLUGS
-Plug 'colepeters/spacemacs-theme.vim'
 Plug 'ajmwagar/vim-deus'
-Plug 'reedes/vim-colors-pencil'
 
 " COMPLETION PLUGS
 Plug 'Valloric/YouCompleteMe'
@@ -20,11 +17,6 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'ternjs/tern_for_vim'
-
-" OTHER SYNTAX PLUGS
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'slim-template/vim-slim'
-Plug 'kchmck/vim-coffee-script'
 
 " FIND PLUGS
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -55,7 +47,7 @@ set linebreak                           " -------------------------------------
 set autoindent                          " Copy indent from current line when inserting new line
 set smartindent                         " Like indenting but smarter
 set smarttab                            " <Tab> inserts blanks according to shiftwidth
-set shiftwidth=2                        " Number of spaces to shift via indent (> || <)
+set shiftwidth=2                        " Number of spaces to shift via indent
 set softtabstop=2                       " Number of spaces inserted by <Tab>
 set expandtab                           " Uses spaces, not tabs
 
