@@ -1,14 +1,13 @@
 /usr/local/lib
-├── diff-so-fancy@0.11.4
-├── eslint@3.10.0
-├── gulp@3.9.1
+├── diff-so-fancy@1.2.5
+├── eslint@6.0.1
+├── gatsby-cli@2.7.15
 ├── json@9.0.6
-├── jsonlint@1.6.2
-├── npm@5.0.4
-├── pure-prompt@1.5.2
-├── snazzy@7.0.0
-├── standard@8.6.0
-├── tern@0.21.0
-├── tldr@2.0.0
-└── vtop@0.5.7
+├── npm@6.10.1
+├── prettier@1.18.2
+├── pure-prompt@1.10.3
+├── recursive-readdir@0.0.2
+├── tern@0.24.1
+├── tldr@3.2.7
+└── vtop@0.6.1
 
