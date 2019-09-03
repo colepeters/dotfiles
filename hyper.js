@@ -36,6 +36,7 @@ module.exports = {
       lightWhite: '#ffffff'
     },
 
+    scrollback: 5000,
     shell: '/usr/local/bin/zsh',
     shellArgs: ['--login'],
     env: {},
