@@ -11,13 +11,14 @@ alias ze='nv ~/.zshrc'                      # Quick access to Zsh config
 alias zr='source ~/.zshrc'                  # Reload Zsh config
 
 ### GIT ###
-alias gs='git status'
+alias gca='git commit --amend'
+alias gclean='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d' # git 'clean' (delete local branches merged to master/dev)
 alias gcm='git ci -m'
 alias gco='git co'
 alias gl='git l'
 alias gpl='git pull'
 alias gps='git push'
-alias gclean='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d' # git 'clean' (delete local branches merged to master/dev)
+alias gs='git status'
 alias ts='tig status'
 
 ### HOMEBREW ###
