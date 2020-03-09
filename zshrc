@@ -11,6 +11,8 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/git
   zgen load zsh-users/zsh-syntax-highlighting
   zgen load mafredri/zsh-async
+  zgen load softmoth/zsh-vim-mode
+  zgen load denysdovhan/spaceship-prompt spaceship
 
   # generate the init script from plugins above
   zgen save
@@ -21,7 +23,6 @@ fi
 # =====================================
 
 autoload -U promptinit; promptinit
-prompt pure
 
 # Include Homebrew’s sbin in PATH
 export PATH="$PATH:/usr/local/sbin"
@@ -125,3 +126,27 @@ fi
 # Prefer Homebrew Python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
+# CL editing
+bindkey -v
+
+# zsh-vim-mode
+MODE_CURSOR_VICMD="block"
+MODE_CURSOR_VIINS="blinking bar"
+
+# Spaceship prompt options
+SPACESHIP_PROMPT_ORDER=(
+  time
+  user
+  dir
+  git
+  exec_time
+  line_sep
+  vi_mode
+  jobs
+  exit_code
+  char
+)
+SPACESHIP_CHAR_SYMBOL="❯ "
+SPACESHIP_GIT_STATUS_PREFIX=" ("
+SPACESHIP_GIT_STATUS_SUFFIX=")"
+SPACESHIP_VI_MODE_SHOW=false
