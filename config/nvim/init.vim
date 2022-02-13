@@ -51,7 +51,6 @@ set expandtab                           " Uses spaces, not tabs
 " VARIOUS FUNCTIONALITY
 filetype on                             " Detect filetype
 filetype plugin on                      " Filetype-specific plugins
-filetype plugin indent on               " Something something Slim ugh
 let mapleader=' '                       " Use space as leader
 set encoding=utf-8                      " UTF-8 encoding by default
 set scrolloff=8				" Starting scrolling from 8 lines of edge
@@ -66,10 +65,6 @@ set noswapfile                          " Go away, swapfiles. No one likes yr st
 set hidden                              " Keep buffers loaded when abandoned
 set laststatus=2                        " Always show the status bar
 set clipboard+=unnamedplus              " Always use system clipboard instead of +/* registers
-if has('persistent_undo')
-  set undofile                          " Save undos after file closes
-  set undodir=~/.config/nvim/undodir    " Save undos in undodir within nvim dir
-endif
 
 " LOAD SETTINGS
 " (Keymaps and plugin settings)
