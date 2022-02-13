@@ -21,9 +21,6 @@ Please note that:
 ### Neovim
 Neovim is like Vim, but (in my humble opinion) better. I particularly love its asynchronous plugin architecture, how fast its development community is growing, and how well maintenance and support is handled. I keep my configuration pretty lean.
 
-### Hyper
-My config for [Hyper](//hyper.is) is pretty minimal; just a few plugins and basic settings. I find it works pretty great out of the box.
-
 ## Usage (macOS)
 These instructions have been tested on my own machine (OS X 10.12.5, using the latest version of [iTerm2](https://www.iterm2.com/) and/or [Hyper](https://hyper.is)). They presume that you do **not** already have a `.dotfiles/` directory in your user (`~/`) directory.
 
