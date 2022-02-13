@@ -19,19 +19,20 @@ Please note that:
 - any private aliases (e.g. server ssh logins, etc) should be stored in a `~/.aliases.user.zsh`, which is also sourced automatically if it exists
 
 ### Neovim
-Neovim is like Vim, but (in my humble opinion) better. I particularly love its asynchronous plugin architecture, how fast its development community is growing, and how well maintenance and support is handled. I keep my configuration pretty lean.
+These days I mostly code in VSCode with Vim bindings, but I like to keep a personalized instance of Neovim available on the terminal for quick jobs. Neovim is like Vim, but (in my humble opinion) better. I particularly love its asynchronous plugin architecture, how fast its development community is growing, and how well maintenance and support is handled. I keep my configuration pretty lean.
 
 ## Usage (macOS)
-These instructions have been tested on my own machine (OS X 10.12.5, using the latest version of [iTerm2](https://www.iterm2.com/) and/or [Hyper](https://hyper.is)). They presume that you do **not** already have a `.dotfiles/` directory in your user (`~/`) directory.
+These instructions have been tested on my own machine (macOS 11, using the latest version of [iTerm2](https://www.iterm2.com/)). They presume that you do **not** already have a `.dotfiles/` directory in your user (`~/`) directory.
 
 ### Prerequisites
 
 1. Install [Homebrew](http://brew.sh/)
 1. Correct Hombrew permissions: `sudo chown -R "$USER":admin /usr/local && sudo chown -R "$USER":admin /Library/Caches/Homebrew`
 1. Install [Node and npm](https://nodejs.org/en/)
-1. Install non-system version of Python: `brew install python && brew install python3` (also installs Pip which is required)
 1. Install [Neovim](https://neovim.io)
-1. Install Ag (`brew install ag`) in order for FZF to work with the default command
+1. Make sure [tree-sitter](https://github.com/tree-sitter/tree-sitter) and [luajit](https://github.com/LuaJIT/LuaJIT) are installed: `brew install tree-sitter luajit`
+1. Install [ripgrep](https://github.com/BurntSushi/ripgrep) for use with Telescope.nvim: `brew install ripgrep`
+1. Install [vim-plug](https://github.com/junegunn/vim-plug)
 1. Install Pure (`npm install -g pure-prompt`)
 
 ### Install
@@ -70,12 +71,6 @@ rcup -v
 Some aliases and configurations depend on these little packages to work:
 
 ```shell
-# Some Neovim packages require Neovim with `if_python3`
-pip3 install neovim
-
-# JS completion requires ternjs (configured in tern-config dotfile)
-npm i -g tern
-
 # diff-so-fancy, for better git diffs:
 npm i -g diff-so-fancy
 
@@ -85,9 +80,6 @@ brew install tig
 # HTTPie, a nice cURL replacement:
 brew install httpie
 ```
-
-### Optional add-ons
-Some of the other CLI tools I use on a regular basis are listed in [npm\_global\_installs.txt](https://github.com/colepeters/dotfiles/blob/master/npm-global-installs.txt)
 
 ### 🎉 Ta-da
 You should now be able to open a new shell session and have everything be not horrible and hopefully cooler and ready to go.

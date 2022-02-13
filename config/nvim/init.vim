@@ -2,23 +2,25 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " ASSORTED PLUGS
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
 Plug 'Yggdroot/indentLine'
+Plug 'mhinz/vim-grepper'
 
-" COLOUR PLUGS
+" TELESCOPE
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+
+" THEMES
 Plug 'ajmwagar/vim-deus'
 
-" JS PLUGS
+" JAVASCRIPT
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug 'ternjs/tern_for_vim'
 
-" FIND PLUGS
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-Plug 'mhinz/vim-grepper'
 call plug#end()
 
 " THEME SETTINGS
