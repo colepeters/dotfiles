@@ -10,9 +10,6 @@ Plug 'Yggdroot/indentLine'
 " COLOUR PLUGS
 Plug 'ajmwagar/vim-deus'
 
-" COMPLETION PLUGS
-Plug 'Valloric/YouCompleteMe'
-
 " JS PLUGS
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
