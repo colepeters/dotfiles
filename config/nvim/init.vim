@@ -16,6 +16,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 " THEMES
 Plug 'ajmwagar/vim-deus'
+Plug 'overcache/NeoSolarized'
 
 " JAVASCRIPT
 Plug 'pangloss/vim-javascript'
@@ -31,8 +32,7 @@ if (has("termguicolors"))               " -------------------------------------
   set termguicolors                     " Sweet sweet colours
 endif                                   " -------------------------------------
 syntax enable				" Syntax highlighting
-set background=dark                     " Background
-colorscheme deus                        " Colourscheme
+set background=light                    " Background
 set number				" Use line numbers
 set ruler                               " Show line/col number in status bar
 set cursorline                          " Highlight the line the cursor is on
@@ -41,6 +41,7 @@ set incsearch                           " Preview first search match as you type
 set wrap                                " -------------------------------------
 set nolist                              " Word wrap without linebreaks
 set linebreak                           " -------------------------------------
+colorscheme NeoSolarized                " Colourscheme
 
 " INDENTATION
 set autoindent                          " Copy indent from current line when inserting new line
