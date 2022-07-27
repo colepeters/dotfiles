@@ -91,3 +91,5 @@
 	helper = osxkeychain
 [commit]
 	gpgsign = true
+[init]
+	defaultBranch = main
