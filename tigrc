@@ -1,4 +1,14 @@
-# Color adjustments for tig
+# Revert to highlighted commit on main view
+bind main ! !?git revert %(commit)
 
-# Yellow mapped to teal in tcp-material-iterm
-color cursor white blue bold
+# Hard reset to highlighted commit on main view
+bind main R !?git reset --hard %(commit)
+
+# Show commit ID in main view
+set main-view-id = yes
+set main-view-id-width = 16
+
+# Customize date format in main view
+set main-view-date = custom
+set main-view-date-format = "%y/%m/%d %H:%M"
+set main-view-date-local = yes
