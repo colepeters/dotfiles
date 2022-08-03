@@ -11,7 +11,7 @@ Plug 'mhinz/vim-grepper'
 
 " TELESCOPE
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x'}
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 " THEMES
