@@ -8,6 +8,14 @@ Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
 Plug 'Yggdroot/indentLine'
 
+" COMPLETION
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'neovim/nvim-lspconfig'
+Plug 'saadparwaiz1/cmp_luasnip'
+
 " TELESCOPE
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x'}
@@ -41,6 +49,9 @@ set smarttab                            " <Tab> inserts blanks according to shif
 set shiftwidth=2                        " Number of spaces to shift via indent
 set softtabstop=2                       " Number of spaces inserted by <Tab>
 set expandtab                           " Uses spaces, not tabs
+
+" COMPLETIONS
+set completeopt=menu,menuone,noselect
 
 " VARIOUS FUNCTIONALITY
 filetype on                             " Detect filetype
