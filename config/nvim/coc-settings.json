@@ -1,3 +1,5 @@
 {
+  "eslint.autoFixOnSave": true,
+  "eslint.format.enable": true,
   "coc.preferences.formatOnTypeFiletypes": ["*"]
 }

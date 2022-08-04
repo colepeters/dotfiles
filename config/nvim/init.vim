@@ -7,7 +7,6 @@ Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
 Plug 'Yggdroot/indentLine'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " TELESCOPE
 Plug 'nvim-lua/plenary.nvim'
