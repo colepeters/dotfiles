@@ -1,5 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 # =====================================
 # ZGEN
 # =====================================
@@ -156,5 +154,3 @@ SPACESHIP_GIT_STATUS_PREFIX=" ("
 SPACESHIP_GIT_STATUS_SUFFIX=")"
 SPACESHIP_VI_MODE_SHOW=false
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
