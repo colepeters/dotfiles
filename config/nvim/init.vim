@@ -7,7 +7,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
 Plug 'Yggdroot/indentLine'
-Plug 'mhinz/vim-grepper'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " TELESCOPE
 Plug 'nvim-lua/plenary.nvim'
@@ -15,17 +15,10 @@ Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x'}
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 " THEMES
+Plug 'EdenEast/nightfox.nvim', { 'branch': 'main' }
 Plug 'ajmwagar/vim-deus'
-Plug 'overcache/NeoSolarized'
-
-" JAVASCRIPT
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
 
 call plug#end()
-
-" THEME SETTINGS
-let g:zenesque_colors = 2
 
 " APPEARANCE
 if (has("termguicolors"))               " -------------------------------------
@@ -41,7 +34,6 @@ set incsearch                           " Preview first search match as you type
 set wrap                                " -------------------------------------
 set nolist                              " Word wrap without linebreaks
 set linebreak                           " -------------------------------------
-colorscheme NeoSolarized                " Colourscheme
 
 " INDENTATION
 set autoindent                          " Copy indent from current line when inserting new line

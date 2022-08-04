@@ -38,3 +38,6 @@ let uname = system("uname -s")
 for fpath in split(globpath(nvimsettings, '*.vim'), '\n')
   exe 'source' fpath
 endfor
+for fpath in split(globpath(nvimsettings, '*.lua'), '\n')
+  exe 'source' fpath
+endfor

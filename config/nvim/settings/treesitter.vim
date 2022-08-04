@@ -1,8 +1,3 @@
-if !exists('g:loaded_nvim_treesitter')
-  echom "Not loaded treesitter"
-  finish
-endif
-
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
   highlight = {
@@ -14,17 +9,18 @@ require'nvim-treesitter.configs'.setup {
     disable = {},
   },
   ensure_installed = {
-    "bash",
-    "comment",
-    "css",
-    "html",
-    "javascript",
-    "jsdoc",
-    "json",
-    "json5",
-    "regex",
-    "vim",
-    "yaml",
+    'bash',
+    'comment',
+    'css',
+    'html',
+    'javascript',
+    'jsdoc',
+    'json',
+    'json5',
+    'lua',
+    'regex',
+    'vim',
+    'yaml',
   },
   autotag = {
     enable = true,
