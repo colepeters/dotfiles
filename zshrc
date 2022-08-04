@@ -9,6 +9,7 @@ if ! zgen saved; then
   # specify plugins here
   zgen oh-my-zsh
   zgen oh-my-zsh plugins/git
+  zgen oh-my-zsh plugins/asdf
   zgen load zsh-users/zsh-syntax-highlighting
   zgen load mafredri/zsh-async
   zgen load softmoth/zsh-vim-mode
