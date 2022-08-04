@@ -1,25 +1,9 @@
 dotfiles
 ============
 
-Configurations and optimisations for Zsh, Git, Neovim, Hyper, etc.
+Configurations and optimisations for Zsh, Git, Neovim, etc.
 
-Please be aware that _these configurations are designed for my own personal use_. You are of course welcome to make use of whatever you find here, but do understand that I take no responsibility for anything that backfires on your machine. (There’s really nothing scary in here. Just a word of caution.)
-
-## What’s included
-
-### Zsh and Git
-I use [Zgen](https://github.com/zsh-users/antigen) to manage my ZSH plugins, because it is awesome. Zgen is sourced and applied (and relevant plugins are called) all from the .zshrc file. It is installed as a submodule of this repo.
-
-The `gitconfig` included is primarily borrowed from YADR, and includes some sensible aliases and defaults for Git’s CLI. **User-specific Git configurations should be stored in ~/.gitconfig.user**.
-
-Also provided are a small number of convenient Zsh aliases — [take a look at them here](https://github.com/colepeters/dotfiles/blob/master/aliases.zsh).
-
-Please note that:
-- any private info (e.g. API tokens, etc) should be stored in a `~/.secrets` file, which is sourced automatically if it exists
-- any private aliases (e.g. server ssh logins, etc) should be stored in a `~/.aliases.user.zsh`, which is also sourced automatically if it exists
-
-### Neovim
-These days I mostly code in VSCode with Vim bindings, but I like to keep a personalized instance of Neovim available on the terminal for quick jobs. Neovim is like Vim, but (in my humble opinion) better. I particularly love its asynchronous plugin architecture, how fast its development community is growing, and how well maintenance and support is handled. I keep my configuration pretty lean.
+These dotfiles have been created for my own use and I make no assurances of them working for anyone else. That said, I like sharing these things in the open for others to borrow from, so please make use of these as you like.
 
 ## Usage (macOS)
 These instructions have been tested on my own machine (macOS 11, using the latest version of [iTerm2](https://www.iterm2.com/)). They presume that you do **not** already have a `.dotfiles/` directory in your user (`~/`) directory.
@@ -28,12 +12,12 @@ These instructions have been tested on my own machine (macOS 11, using the lates
 
 1. Install [Homebrew](http://brew.sh/)
 1. Correct Hombrew permissions: `sudo chown -R "$USER":admin /usr/local && sudo chown -R "$USER":admin /Library/Caches/Homebrew`
-1. Install [Node and npm](https://nodejs.org/en/)
+1. Install [ASDF](https://asdf-vm.com/) to manage various runtimes — for me, mostly NodeJS
+1. Install [the `nodejs` plugin for ASDF](https://github.com/asdf-vm/asdf-nodejs)
 1. Install [Neovim](https://neovim.io)
-1. Make sure [tree-sitter](https://github.com/tree-sitter/tree-sitter) and [luajit](https://github.com/LuaJIT/LuaJIT) are installed: `brew install tree-sitter luajit`
+1. Install [tree-sitter](https://github.com/tree-sitter/tree-sitter) and [luajit](https://github.com/LuaJIT/LuaJIT) for use in Neovim: `brew install tree-sitter luajit`
 1. Install [ripgrep](https://github.com/BurntSushi/ripgrep) for use with Telescope.nvim: `brew install ripgrep`
 1. Install [vim-plug](https://github.com/junegunn/vim-plug)
-1. Install Pure (`npm install -g pure-prompt`)
 
 ### Install
 
@@ -42,9 +26,9 @@ These instructions have been tested on my own machine (macOS 11, using the lates
 brew install zsh
 
 # Add zsh to standard shells
-sudo vi /etc/shells              # Add /usr/local/bin/zsh to the end of this file
+sudo vi /etc/shells              # 👈 Add /usr/local/bin/zsh to the end of this file
 
-# Switch into Zsh — don’t worry if it looks like crap for the moment
+# Switch into Zsh
 chsh -s /usr/local/bin/zsh
 
 # Clone the repo to into a ".dotfiles" directory in your user directory
@@ -53,7 +37,7 @@ git clone git@github.com:colepeters/dotfiles.git ~/.dotfiles
 # Switch to the new directory
 cd ~/.dotfiles
 
-# Initialise and update Zgen submodule
+# Initialise and update Zgen
 git submodule init && git submodule update
 
 # Install RCM
@@ -68,7 +52,7 @@ rcup -v
 ```
 
 ### Additional packages
-Some aliases and configurations depend on these little packages to work:
+Some aliases and configurations depend on these packages to work:
 
 ```shell
 # diff-so-fancy, for better git diffs:
@@ -84,12 +68,8 @@ brew install httpie
 ### 🎉 Ta-da
 You should now be able to open a new shell session and have everything be not horrible and hopefully cooler and ready to go.
 
-Worh repeating:
-- any private info (e.g. GitHub tokens, etc) should be stored in a `~/.secrets` file, which is sourced automatically if it exists
-- any private aliases (e.g. server ssh logins, etc) should be stored in a `~/.aliases.user.zsh`, which is also sourced automatically if it exists
-
 ## Credits
 The dotfiles are managed with [rcm by Thoughtbot](https://github.com/thoughtbot/rcm), which is an awesome, lightweight tool for keeping dotfiles synced and organised.
 
-Some Zsh and Git configurations have been borrowed from the [YADR dotfiles](https://github.com/skwp/dotfiles) repository. I have attempted to make mention of all of these instances within the code to give credit where it is due.
+Some Zsh and Git configurations have been borrowed from the [YADR dotfiles](https://github.com/skwp/dotfiles) repository.
 
