@@ -2,6 +2,9 @@
 alias cdd='cd ~/.dotfiles'
 alias npmgen='npm ls -g --depth=0 > ~/.dotfiles/npm-global-installs.txt'
 
+### GENERAL ###
+alias la='exa -la'
+
 ### NEOVIM ###
 alias nv='nvim'                             # nv is quicker to write than nvim
 alias ne='nvim ~/.config/nvim/init.vim'     # Quick access to Neovim config
