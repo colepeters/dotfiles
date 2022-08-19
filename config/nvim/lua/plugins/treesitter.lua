@@ -1,5 +1,4 @@
-lua <<EOF
-require'nvim-treesitter.configs'.setup {
+require('nvim-treesitter.configs').setup {
   highlight = {
     enable = true,
     disable = {},
@@ -24,6 +23,6 @@ require'nvim-treesitter.configs'.setup {
   },
   autotag = {
     enable = true,
-  }
+  },
 }
-EOF
+
