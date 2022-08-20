@@ -1,26 +1,36 @@
--- Borrowed from https://github.com/brainfucksec/neovim-lua/blob/main/nvim/lua/core/keymaps.lua
-local function map(mode, lhs, rhs, opts)
+local function map(mode, shortcut, command, opts)
   local options = { noremap = true, silent = true }
   if opts then
     options = vim.tbl_extend('force', options, opts)
   end
-  vim.api.nvim_set_keymap(mode, lhs, rhs, options)
+  vim.api.nvim_set_keymap(mode, shortcut, command, options)
 end
 
+-- ----------------------------------------------------------------------------
+-- General
+-- ----------------------------------------------------------------------------
 map('n', '//', ':nohlsearch <CR>')               -- Clear current search with //
 map('n', '0', '^')                               -- 0 goes to first char in line
 map('n', '^', '0')                               -- ^ goes to start of line
 map('n', 'Y', 'y$')                              -- Make Y behave like C and D
 
--- Splits
-map('n', 'vv', '<C-w>v')                         -- Vertical split
-map('n', 'vh', '<C-w>s')                         -- Horizontal split
+-- Stay in visual mode when indenting
+map('v', '<', '<gv')
+map('v', '>', '>gv')
 
--- Navigate splits with CTRL-hjkl
-map('n', '<C-J>', '<C-W><C-J>')
-map('n', '<C-K>', '<C-W><C-K>')
-map('n', '<C-H>', '<C-W><C-H>')
-map('n', '<C-L>', '<C-W><C-L>')
+-- Move text up and down
+map('v', 'J', ":m '>+1<CR>gv=gv")
+map('v', 'K', ":m '<-2<CR>gv=gv")
+map('x', 'J', ":m '>+1<CR>gv=gv")
+map('x', 'K', ":m '<-2<CR>gv=gv")
+
+-- Splits
+map('n', 'sv', '<C-w>v')                         -- Vertical split
+map('n', 'sh', '<C-w>s')                         -- Horizontal split
+map('n', '<C-j>', '<C-W>j')                      -- Navigate splits with CTRL-h/j/k/l
+map('n', '<C-k>', '<C-W>k')
+map('n', '<C-h>', '<C-W>h')
+map('n', '<C-l>', '<C-W>l')
 
 -- Tabs
 map('n', 'th', ':tabfirst <CR>')
@@ -34,6 +44,10 @@ map('n', 'tn', ':tabnew <CR>')
 -- generally is annoying when you're copying one item and repeatedly pasting it. This changes the paste
 -- command in visual mode so that it doesn't overwrite whatever is in your paste buffer.
 map('v', 'p', '"_dP')
+
+-- ----------------------------------------------------------------------------
+-- Plugins
+-- ----------------------------------------------------------------------------
 
 -- Telescope
 map('n', '<leader>ff', '<cmd>Telescope find_files <CR>')   -- Find Files

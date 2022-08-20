@@ -1,11 +1,6 @@
 require('nvim-treesitter.configs').setup {
-  highlight = {
+  autotag = {
     enable = true,
-    disable = {},
-  },
-  indent = {
-    enable = true,
-    disable = {},
   },
   ensure_installed = {
     'bash',
@@ -21,8 +16,13 @@ require('nvim-treesitter.configs').setup {
     'vim',
     'yaml',
   },
-  autotag = {
+  highlight = {
     enable = true,
+    disable = {},
+  },
+  indent = {
+    enable = true,
+    disable = {},
   },
 }
 

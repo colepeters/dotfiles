@@ -1,2 +1,2 @@
-EXCLUDES="README.md zgen npm-global-installs.txt colours"
+EXCLUDES="README.md zgen npm-global-installs.txt colours fonts"
 SYMLINK_DIRS="config terminfo"

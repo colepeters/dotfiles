@@ -11,6 +11,7 @@ local opt = vim.opt
 -- General
 -------------------------------------------------------------------------------
 g.mapleader = ' '              -- Leader is space
+opt.backup = false             -- Don't use backup files
 opt.clipboard = 'unnamedplus'  -- Use system clipboard
 opt.swapfile = false           -- Don't use swapfiles
 opt.autoread = true            -- Auto read files when changed on disk
@@ -50,5 +51,5 @@ opt.scrolloff = 8              -- Start scrolling 8 lines from edge
 opt.history = 1000             -- Remember N lines in history
 opt.undolevels = 1000          -- Remember N undos
 opt.undoreload = 1000          -- Remember N lines on buffer reload
-
+opt.signcolumn = 'yes'         -- Always show the sign column
 
