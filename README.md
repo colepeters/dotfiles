@@ -17,7 +17,6 @@ These instructions have been tested on my own machine (macOS 11, using the lates
 1. Install [Neovim](https://neovim.io)
 1. Install [tree-sitter](https://github.com/tree-sitter/tree-sitter) and [luajit](https://github.com/LuaJIT/LuaJIT) for use in Neovim: `brew install tree-sitter luajit`
 1. Install [ripgrep](https://github.com/BurntSushi/ripgrep) for use with Telescope.nvim: `brew install ripgrep`
-1. Install [vim-plug](https://github.com/junegunn/vim-plug)
 
 ### Install
 
@@ -69,7 +68,9 @@ brew install httpie
 You should now be able to open a new shell session and have everything be not horrible and hopefully cooler and ready to go.
 
 ## Credits
-The dotfiles are managed with [rcm by Thoughtbot](https://github.com/thoughtbot/rcm), which is an awesome, lightweight tool for keeping dotfiles synced and organised.
+Managed with [rcm by Thoughtbot](https://github.com/thoughtbot/rcm), which is an awesome, lightweight tool for keeping dotfiles synced and organised.
+
+A ton of my Neovim setup was sourced from [LunarVim](https://github.com/LunarVim), via [an excellent YouTue playlist](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ).
 
 Some Zsh and Git configurations have been borrowed from the [YADR dotfiles](https://github.com/skwp/dotfiles) repository.
 
