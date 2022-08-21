@@ -74,7 +74,11 @@ cmp.setup({
     { name = 'nvim_lsp' },
     { name = 'nvim_lua'},
     { name = 'path' },
-  })
+  }),
+  window = {
+    completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
+  },
 })
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
