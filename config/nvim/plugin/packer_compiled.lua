@@ -74,11 +74,6 @@ _G.packer_plugins = {
     path = "/Users/cole/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
-  ListToggle = {
-    loaded = true,
-    path = "/Users/cole/.local/share/nvim/site/pack/packer/start/ListToggle",
-    url = "https://github.com/Valloric/ListToggle"
-  },
   LuaSnip = {
     loaded = true,
     path = "/Users/cole/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -193,6 +188,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/cole/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/Users/cole/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
   },
   ["vim-deus"] = {
     loaded = true,

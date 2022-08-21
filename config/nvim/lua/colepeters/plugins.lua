@@ -49,21 +49,26 @@ return packer.startup(function(use)
     'neovim/nvim-lspconfig',
   }
   use 'jose-elias-alvarez/null-ls.nvim'
+  use 'folke/trouble.nvim'
 
-  -- Treesitter
-  use {
-    'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
-  }
-  use 'JoosepAlviste/nvim-ts-context-commentstring' -- treesitter context for comments
-
-  -- Telescope
+  -- Telescope (fuzzy finding)
   use {
     'nvim-telescope/telescope.nvim',
     branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+
+  -- Treesitter (syntax parsing/highlighting)
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
+  use 'JoosepAlviste/nvim-ts-context-commentstring' -- treesitter context for comments
+
+  -- Colours
+  use { 'EdenEast/nightfox.nvim', branch = 'main' }
+  use 'ajmwagar/vim-deus'
 
   -- Completion
   use 'hrsh7th/nvim-cmp'
@@ -74,27 +79,20 @@ return packer.startup(function(use)
   use 'saadparwaiz1/cmp_luasnip'
   use 'windwp/nvim-autopairs'
 
-  -- Colours
-  use { 'EdenEast/nightfox.nvim', branch = 'main' }
-  use 'ajmwagar/vim-deus'
-
-  -- Git
-  use 'lewis6991/gitsigns.nvim'
+  -- Manipulation
+  use 'numToStr/Comment.nvim'               -- comment utils
+  use 'tpope/vim-surround'                  -- manipulate wrapping chars
 
   -- UI
+  use 'lewis6991/gitsigns.nvim'
   use 'lukas-reineke/indent-blankline.nvim' -- indent guides
   use 'nvim-lua/popup.nvim'                 -- for system popup windows
-  use 'Valloric/ListToggle'                 -- toggle for quickfix and loclist
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
       'kyazdani42/nvim-web-devicons',
     },
   }
-
-  -- Manipulation
-  use 'numToStr/Comment.nvim'               -- comment utils
-  use 'tpope/vim-surround'                  -- manipulate wrapping chars
 
   -- Automatically set up configuration after cloning packer.nvim
   if packer_bootstrap then
