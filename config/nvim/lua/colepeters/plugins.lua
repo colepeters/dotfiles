@@ -41,6 +41,9 @@ return packer.startup(function(use)
   -- Allow packer to manage itself
   use 'wbthomason/packer.nvim'
 
+  -- Multi-plugin dependency
+  use 'nvim-lua/plenary.nvim'
+
   -- LSP
   -- Order of these plugins is important
   use {
@@ -52,19 +55,12 @@ return packer.startup(function(use)
   use 'folke/trouble.nvim'
 
   -- Telescope (fuzzy finding)
-  use {
-    'nvim-telescope/telescope.nvim',
-    branch = '0.1.x',
-    requires = { {'nvim-lua/plenary.nvim'} }
-  }
+  use { 'nvim-telescope/telescope.nvim', branch = '0.1.x' }
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- Treesitter (syntax parsing/highlighting)
-  use {
-    'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
-  }
-  use 'JoosepAlviste/nvim-ts-context-commentstring' -- treesitter context for comments
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   -- Colours
   use { 'EdenEast/nightfox.nvim', branch = 'main' }
@@ -87,11 +83,9 @@ return packer.startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   use 'lukas-reineke/indent-blankline.nvim' -- indent guides
   use 'nvim-lua/popup.nvim'                 -- for system popup windows
-  use {
+  use {                                     -- tree explorer
     'kyazdani42/nvim-tree.lua',
-    requires = {
-      'kyazdani42/nvim-web-devicons',
-    },
+    requires = { 'kyazdani42/nvim-web-devicons', },
   }
 
   -- Automatically set up configuration after cloning packer.nvim
