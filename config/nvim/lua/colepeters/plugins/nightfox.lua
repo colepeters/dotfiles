@@ -1,8 +1,12 @@
 require('nightfox').setup({
   options = {
-    transparent = true,
+    transparent = false,
     modules = {
       cmp = true,
+      gitsigns = true,
+      lsp_trouble = true,
+      native_lsp = true,
+      nvimtree = true,
       telescope = true,
       treesitter = true,
     },
