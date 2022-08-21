@@ -25,8 +25,8 @@ map('x', 'J', ":m '>+1<CR>gv=gv")
 map('x', 'K', ":m '<-2<CR>gv=gv")
 
 -- Splits
-map('n', 'sv', '<C-w>v')                         -- Vertical split
-map('n', 'sh', '<C-w>s')                         -- Horizontal split
+map('n', 'sy', '<C-w>v')                         -- Vertical split
+map('n', 'sx', '<C-w>s')                         -- Horizontal split
 map('n', '<C-j>', '<C-W>j')                      -- Navigate splits with CTRL-h/j/k/l
 map('n', '<C-k>', '<C-W>k')
 map('n', '<C-h>', '<C-W>h')
