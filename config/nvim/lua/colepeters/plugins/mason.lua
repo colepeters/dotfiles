@@ -50,6 +50,13 @@ require('mason-lspconfig').setup_handlers({
         }
       }
     })
-  end
+  end,
+  ['tsserver'] = function ()
+    require('lspconfig').tsserver.setup({
+      on_attach = function (client)
+        client.resolved_capabilities.document_formatting = false -- disable tsserver for formatting; use null-ls
+      end,
+    })
+  end,
 })
 

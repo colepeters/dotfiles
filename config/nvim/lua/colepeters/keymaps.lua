@@ -45,6 +45,9 @@ map('n', 'tn', ':tabnew <CR>')
 -- command in visual mode so that it doesn't overwrite whatever is in your paste buffer.
 map('v', 'p', '"_dP')
 
+-- Formatting
+map('n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting_sync(nil, 2000)<CR>')
+
 -- ----------------------------------------------------------------------------
 -- Plugins
 -- ----------------------------------------------------------------------------

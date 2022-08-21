@@ -48,6 +48,7 @@ return packer.startup(function(use)
     'williamboman/mason-lspconfig',
     'neovim/nvim-lspconfig',
   }
+  use 'jose-elias-alvarez/null-ls.nvim'
 
   -- Treesitter
   use {
