@@ -51,8 +51,9 @@ return packer.startup(function(use)
   -- Treesitter
   use {
     'nvim-treesitter/nvim-treesitter',
-    run = function() require('nvim-treesitter.install').update({ with_sync = true}) end,
+    run = ':TSUpdate'
   }
+  use 'JoosepAlviste/nvim-ts-context-commentstring' -- treesitter context for comments
 
   -- Telescope
   use {
@@ -76,10 +77,11 @@ return packer.startup(function(use)
   use 'ajmwagar/vim-deus'
 
   -- Assorted
-  use 'lukas-reineke/indent-blankline.nvim'
-  use 'nvim-lua/popup.nvim'
-  use 'tpope/vim-surround'
-  use 'Valloric/ListToggle'
+  use 'lukas-reineke/indent-blankline.nvim' -- indent guides
+  use 'numToStr/Comment.nvim'               -- comment utils
+  use 'nvim-lua/popup.nvim'                 -- for system popup windows
+  use 'tpope/vim-surround'                  -- manipulate wrapping chars
+  use 'Valloric/ListToggle'                 -- toggle for quickfix and loclist
 
   -- Automatically set up configuration after cloning packer.nvim
   if packer_bootstrap then
