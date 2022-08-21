@@ -55,3 +55,5 @@ map('n', '<leader>fg', '<cmd>Telescope git_files <CR>')    -- Find Git files
 map('n', '<leader>fi', '<cmd>Telescope live_grep <CR>')    -- Find In (files)
 map('n', '<leader>fb', '<cmd>Telescope buffers <CR>')      -- Find Buffers
 
+-- Nvim-Tree
+map('n', '<leader>e', '<cmd>NvimTreeToggle<CR>')           -- Toggle Nvim Tree ('e'xplore)

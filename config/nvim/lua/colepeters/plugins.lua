@@ -42,6 +42,7 @@ return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- LSP
+  -- Order of these plugins is important
   use {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig',
@@ -76,12 +77,23 @@ return packer.startup(function(use)
   use { 'EdenEast/nightfox.nvim', branch = 'main' }
   use 'ajmwagar/vim-deus'
 
-  -- Assorted
+  -- Git
+  use 'lewis6991/gitsigns.nvim'
+
+  -- UI
   use 'lukas-reineke/indent-blankline.nvim' -- indent guides
-  use 'numToStr/Comment.nvim'               -- comment utils
   use 'nvim-lua/popup.nvim'                 -- for system popup windows
-  use 'tpope/vim-surround'                  -- manipulate wrapping chars
   use 'Valloric/ListToggle'                 -- toggle for quickfix and loclist
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons',
+    },
+  }
+
+  -- Manipulation
+  use 'numToStr/Comment.nvim'               -- comment utils
+  use 'tpope/vim-surround'                  -- manipulate wrapping chars
 
   -- Automatically set up configuration after cloning packer.nvim
   if packer_bootstrap then
