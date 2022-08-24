@@ -32,13 +32,6 @@ map('n', '<C-k>', '<C-W>k')
 map('n', '<C-h>', '<C-W>h')
 map('n', '<C-l>', '<C-W>l')
 
--- Tabs
-map('n', 'th', ':tabfirst <CR>')
-map('n', 'tj', ':tabnext <CR>')
-map('n', 'tk', ':tabprev <CR>')
-map('n', 'tl', ':tablast <CR>')
-map('n', 'tn', ':tabnew <CR>')
-
 -- Stop visual paste insanity:
 -- If you visually select something and hit paste, that thing gets yanked into your buffer. This
 -- generally is annoying when you're copying one item and repeatedly pasting it. This changes the paste
@@ -51,6 +44,11 @@ map('n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting_sync(nil, 2000)<CR>')
 -- ----------------------------------------------------------------------------
 -- Plugins
 -- ----------------------------------------------------------------------------
+
+-- Bufferline & Bbye
+map('n', 'bj', '<cmd>:BufferLineCycleNext<CR>')
+map('n', 'bk', '<cmd>:BufferLineCyclePrev<CR>')
+map('n', 'bq', '<cmd>:Bdelete<CR>')
 
 -- Nvim-Tree
 map('n', '<leader>e', '<cmd>NvimTreeToggle<CR>')           -- Toggle Nvim Tree to 'e'xplore

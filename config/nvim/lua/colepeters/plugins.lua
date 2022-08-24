@@ -80,6 +80,8 @@ return packer.startup(function(use)
   use 'tpope/vim-surround'                  -- manipulate wrapping chars
 
   -- UI
+  use 'moll/vim-bbye'
+  use { 'akinsho/bufferline.nvim', tag = 'v2.*' }
   use 'lewis6991/gitsigns.nvim'
   use 'lukas-reineke/indent-blankline.nvim' -- indent guides
   use 'nvim-lua/popup.nvim'                 -- for system popup windows
