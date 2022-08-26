@@ -76,19 +76,18 @@ return packer.startup(function(use)
   use 'windwp/nvim-autopairs'
 
   -- Manipulation
-  use 'numToStr/Comment.nvim'               -- comment utils
-  use 'tpope/vim-surround'                  -- manipulate wrapping chars
+  use 'numToStr/Comment.nvim'
+  use 'tpope/vim-surround'
 
   -- UI
-  use 'moll/vim-bbye'
   use { 'akinsho/bufferline.nvim', tag = 'v2.*' }
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
   use 'lewis6991/gitsigns.nvim'
-  use 'lukas-reineke/indent-blankline.nvim' -- indent guides
-  use 'nvim-lua/popup.nvim'                 -- for system popup windows
-  use {                                     -- tree explorer
-    'kyazdani42/nvim-tree.lua',
-    requires = { 'kyazdani42/nvim-web-devicons', },
-  }
+  use 'lukas-reineke/indent-blankline.nvim'
+  use 'moll/vim-bbye'
+  use 'nvim-lua/popup.nvim'
+  use 'nvim-lualine/lualine.nvim'
 
   -- Automatically set up configuration after cloning packer.nvim
   if packer_bootstrap then
