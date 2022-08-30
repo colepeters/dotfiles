@@ -51,6 +51,13 @@ require('mason-lspconfig').setup_handlers({
       }
     })
   end,
+  ['diagnosticls'] = function ()
+    require('lspconfig').diagnosticls.setup({
+      on_attach = function (client)
+        client.resolved_capabilities.document_formatting = false -- disable diagnosticls for formatting; use null-ls
+      end,
+    })
+  end,
   ['tsserver'] = function ()
     require('lspconfig').tsserver.setup({
       on_attach = function (client)
