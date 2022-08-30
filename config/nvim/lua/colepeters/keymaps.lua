@@ -46,9 +46,9 @@ map('n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting_sync(nil, 2000)<CR>')
 -- ----------------------------------------------------------------------------
 
 -- Bufferline & Bbye
-map('n', 'bj', '<cmd>:BufferLineCycleNext<CR>')
-map('n', 'bk', '<cmd>:BufferLineCyclePrev<CR>')
-map('n', 'bq', '<cmd>:Bdelete<CR>')
+map('n', 'tj', '<cmd>:BufferLineCycleNext<CR>')
+map('n', 'tk', '<cmd>:BufferLineCyclePrev<CR>')
+map('n', 'tq', '<cmd>:Bdelete<CR>')
 
 -- Nvim-Tree
 map('n', '<leader>e', '<cmd>NvimTreeToggle<CR>')           -- Toggle Nvim Tree to 'e'xplore
