@@ -46,9 +46,9 @@ map('n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting_sync(nil, 2000)<CR>')
 -- ----------------------------------------------------------------------------
 
 -- Bufferline & Bbye
-map('n', 'tj', '<cmd>:BufferLineCycleNext<CR>')
-map('n', 'tk', '<cmd>:BufferLineCyclePrev<CR>')
-map('n', 'tq', '<cmd>:Bdelete<CR>')
+map('n', '<S-L>', '<cmd>:BufferLineCycleNext<CR>')
+map('n', '<S-H>', '<cmd>:BufferLineCyclePrev<CR>')
+map('n', '<S-Q>', '<cmd>:Bdelete<CR>')
 
 -- Nvim-Tree
 map('n', '<leader>e', '<cmd>NvimTreeToggle<CR>')           -- Toggle Nvim Tree to 'e'xplore
@@ -58,7 +58,6 @@ map('n', '<leader>ff', '<cmd>Telescope find_files <CR>')   -- Find Files
 map('n', '<leader>fg', '<cmd>Telescope git_files <CR>')    -- Find Git files
 map('n', '<leader>fi', '<cmd>Telescope live_grep <CR>')    -- Find In (files)
 map('n', '<leader>fb', '<cmd>Telescope buffers <CR>')      -- Find Buffers
-
 
 -- Trouble
 map('n', '<leader>d', '<cmd>TroubleToggle<CR>')           -- Toggle Trouble for 'd'iagnostics

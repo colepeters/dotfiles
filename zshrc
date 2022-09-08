@@ -155,3 +155,10 @@ SPACESHIP_GIT_STATUS_PREFIX=" ("
 SPACESHIP_GIT_STATUS_SUFFIX=")"
 SPACESHIP_VI_MODE_SHOW=false
 
+
+# bun completions
+[ -s "/Users/cole/.bun/_bun" ] && source "/Users/cole/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

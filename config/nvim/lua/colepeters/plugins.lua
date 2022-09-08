@@ -82,6 +82,7 @@ return packer.startup(function(use)
   -- UI
   use { 'akinsho/bufferline.nvim', tag = 'v2.*' }
   use { 'akinsho/toggleterm.nvim', tag = 'v2.*' }
+  use 'folke/which-key.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
   use 'lewis6991/gitsigns.nvim'
