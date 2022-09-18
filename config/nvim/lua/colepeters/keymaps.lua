@@ -39,7 +39,7 @@ map('n', '<C-l>', '<C-W>l')
 map('v', 'p', '"_dP')
 
 -- Formatting
-map('n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting_sync(nil, 2000)<CR>')
+map('n', '<leader>bf', '<cmd>lua vim.lsp.buf.formatting_sync(nil, 2000)<CR>')
 
 -- ----------------------------------------------------------------------------
 -- Plugins
