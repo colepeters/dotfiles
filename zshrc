@@ -157,8 +157,13 @@ SPACESHIP_VI_MODE_SHOW=false
 
 
 # bun completions
-[ -s "/Users/cole/.bun/_bun" ] && source "/Users/cole/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Begin
+export BEGIN_INSTALL="$HOME/.begin"
+export PATH="$BEGIN_INSTALL:$PATH"
+
