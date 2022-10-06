@@ -31,6 +31,7 @@ local on_attach = function (client, bufnr)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)          -- lists all references to symbol in quickfix
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)                -- show hover information
   vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)   -- show signature information
+  client.resolved_capabilities.document_formatting = false            -- disabled document formatting; use null-ls
 end
 
 require('mason-lspconfig').setup_handlers({
@@ -49,20 +50,6 @@ require('mason-lspconfig').setup_handlers({
           }
         }
       }
-    })
-  end,
-  ['diagnosticls'] = function ()
-    require('lspconfig').diagnosticls.setup({
-      on_attach = function (client)
-        client.resolved_capabilities.document_formatting = false -- disable diagnosticls for formatting; use null-ls
-      end,
-    })
-  end,
-  ['tsserver'] = function ()
-    require('lspconfig').tsserver.setup({
-      on_attach = function (client)
-        client.resolved_capabilities.document_formatting = false -- disable tsserver for formatting; use null-ls
-      end,
     })
   end,
 })
