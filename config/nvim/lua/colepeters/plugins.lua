@@ -61,6 +61,7 @@ return packer.startup(function(use)
   -- Treesitter (syntax parsing/highlighting)
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'JoosepAlviste/nvim-ts-context-commentstring'
+  use 'windwp/nvim-ts-autotag'
 
   -- Colours
   use { 'EdenEast/nightfox.nvim', branch = 'main' }
