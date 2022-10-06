@@ -229,11 +229,6 @@ _G.packer_plugins = {
     path = "/Users/cole/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
-  ["vim-deus"] = {
-    loaded = true,
-    path = "/Users/cole/.local/share/nvim/site/pack/packer/start/vim-deus",
-    url = "https://github.com/ajmwagar/vim-deus"
-  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/cole/.local/share/nvim/site/pack/packer/start/vim-surround",

@@ -65,7 +65,6 @@ return packer.startup(function(use)
 
   -- Colours
   use { 'EdenEast/nightfox.nvim', branch = 'main' }
-  use 'ajmwagar/vim-deus'
 
   -- Completion
   use 'hrsh7th/nvim-cmp'
