@@ -61,7 +61,6 @@ return packer.startup(function(use)
   -- Treesitter (syntax parsing/highlighting)
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'JoosepAlviste/nvim-ts-context-commentstring'
-  use 'windwp/nvim-ts-autotag'
 
   -- Colours
   use { 'EdenEast/nightfox.nvim', branch = 'main' }
@@ -75,6 +74,7 @@ return packer.startup(function(use)
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
   use 'windwp/nvim-autopairs'
+  use { 'bennypowers/nvim-ts-autotag', branch = 'template-tags' }
 
   -- Manipulation
   use 'numToStr/Comment.nvim'
