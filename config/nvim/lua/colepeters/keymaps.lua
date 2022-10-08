@@ -68,15 +68,19 @@ wk.register({
     g = {'<cmd>Telescope git_files <CR>', 'Git files'},
     i = {'<cmd>Telescope live_grep <CR>', 'Find in files'},
     b = {'<cmd>Telescope buffers <CR>', 'Buffers'},
-    d = {'<cmd>Telescope diagnostics<CR>', 'Diagnostics'},
+  }
+})
+wk.register({
+  ['<leader>d'] = {
+    w = {'<cmd>Telescope diagnostics<CR>', 'Workspace (Telescope)'},
   }
 })
 
 -- Trouble
 wk.register({
   ['<leader>d'] = {
-    d = {'<cmd>TroubleToggle document_diagnostics <CR>', 'Document diagnostics (toggle)'},
+    d = {'<cmd>TroubleToggle document_diagnostics <CR>', 'Document (Trouble)'},
   }
 })
-map('n', 'gr', '<cmd>TroubleToggle lsp_references <CR>', { desc = 'References (toggle)' })
+map('n', 'gr', '<cmd>TroubleToggle lsp_references <CR>', { desc = 'References (Trouble)' })
 
