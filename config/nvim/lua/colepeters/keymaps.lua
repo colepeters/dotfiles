@@ -1,13 +1,20 @@
+-- Use which-key to define nested mappings
+local status_ok, wk = pcall(require, 'which-key')
+if not status_ok then
+  return
+end
+
+-- For basic mappings
 local function map(mode, shortcut, command, opts)
   local options = { noremap = true, silent = true }
   if opts then
     options = vim.tbl_extend('force', options, opts)
   end
-  vim.api.nvim_set_keymap(mode, shortcut, command, options)
+  vim.keymap.set(mode, shortcut, command, options)
 end
 
 -- ----------------------------------------------------------------------------
--- General
+-- Builtins
 -- ----------------------------------------------------------------------------
 map('n', '//', ':nohlsearch <CR>')               -- Clear current search with //
 map('n', '0', '^')                               -- 0 goes to first char in line
@@ -18,19 +25,11 @@ map('n', 'Y', 'y$')                              -- Make Y behave like C and D
 map('v', '<', '<gv')
 map('v', '>', '>gv')
 
--- Move text up and down
+-- Move text up and down in visual mode
 map('v', 'J', ":m '>+1<CR>gv=gv")
 map('v', 'K', ":m '<-2<CR>gv=gv")
 map('x', 'J', ":m '>+1<CR>gv=gv")
 map('x', 'K', ":m '<-2<CR>gv=gv")
-
--- Splits
-map('n', 'sy', '<C-w>v')                         -- Vertical split
-map('n', 'sx', '<C-w>s')                         -- Horizontal split
-map('n', '<C-j>', '<C-W>j')                      -- Navigate splits with CTRL-h/j/k/l
-map('n', '<C-k>', '<C-W>k')
-map('n', '<C-h>', '<C-W>h')
-map('n', '<C-l>', '<C-W>l')
 
 -- Stop visual paste insanity:
 -- If you visually select something and hit paste, that thing gets yanked into your buffer. This
@@ -38,8 +37,16 @@ map('n', '<C-l>', '<C-W>l')
 -- command in visual mode so that it doesn't overwrite whatever is in your paste buffer.
 map('v', 'p', '"_dP')
 
--- Formatting
-map('n', '<leader>bf', '<cmd>lua vim.lsp.buf.formatting_sync(nil, 2000)<CR>')
+
+-- Diagnostics
+wk.register({
+  ['<leader>d'] = {
+    name = 'Diagnostics…',
+    l = {vim.diagnostic.open_float, 'Line diagnostics'},
+    j = {vim.diagnostic.goto_next, 'Next diagnostic'},
+    k = {vim.diagnostic.goto_prev, 'Previous diagnostic'},
+  }
+})
 
 -- ----------------------------------------------------------------------------
 -- Plugins
@@ -51,14 +58,25 @@ map('n', '<S-H>', '<cmd>:BufferLineCyclePrev<CR>')
 map('n', '<S-Q>', '<cmd>:Bdelete<CR>')
 
 -- Nvim-Tree
-map('n', '<leader>e', '<cmd>NvimTreeToggle<CR>')           -- Toggle Nvim Tree to 'e'xplore
+map('n', '<leader>e', '<cmd>NvimTreeToggle<CR>', { desc = 'Toggle Nvim Tree'})
 
 -- Telescope
-map('n', '<leader>ff', '<cmd>Telescope find_files <CR>')   -- Find Files
-map('n', '<leader>fg', '<cmd>Telescope git_files <CR>')    -- Find Git files
-map('n', '<leader>fi', '<cmd>Telescope live_grep <CR>')    -- Find In (files)
-map('n', '<leader>fb', '<cmd>Telescope buffers <CR>')      -- Find Buffers
+wk.register({
+  ['<leader>f'] = {
+    name = 'Find…',
+    f = {'<cmd>Telescope find_files <CR>', 'Files'},
+    g = {'<cmd>Telescope git_files <CR>', 'Git files'},
+    i = {'<cmd>Telescope live_grep <CR>', 'Find in files'},
+    b = {'<cmd>Telescope buffers <CR>', 'Buffers'},
+    d = {'<cmd>Telescope diagnostics<CR>', 'Diagnostics'},
+  }
+})
 
 -- Trouble
-map('n', '<leader>d', '<cmd>TroubleToggle<CR>')           -- Toggle Trouble for 'd'iagnostics
+wk.register({
+  ['<leader>d'] = {
+    d = {'<cmd>TroubleToggle document_diagnostics <CR>', 'Document diagnostics (toggle)'},
+  }
+})
+map('n', 'gr', '<cmd>TroubleToggle lsp_references <CR>', { desc = 'References (toggle)' })
 

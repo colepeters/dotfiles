@@ -18,20 +18,25 @@ require('mason-lspconfig').setup({
   }
 })
 
-local opts = { noremap = true, silent = true }
-vim.keymap.set('n', '<leader>?', vim.diagnostic.open_float, opts)  -- shows diagnostics in a floating window
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)          -- move to previous diagnostic
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)          -- move to next diagnostic
-
 local on_attach = function (client, bufnr)
-  local bufopts = { noremap = true, silent = true, buffer = bufnr }
-  vim.keymap.set('n', 'g!', vim.lsp.buf.declaration, bufopts)         -- go to declaration
-  vim.keymap.set('n', 'g?', vim.lsp.buf.definition, bufopts)          -- go to definition
-  vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)      -- lists all implementations of symbol in quikfix
-  vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)          -- lists all references to symbol in quickfix
-  vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)                -- show hover information
-  vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)   -- show signature information
-  client.resolved_capabilities.document_formatting = false            -- disabled document formatting; use null-ls
+  local function map(mode, shortcut, command, opts)
+    local options = { noremap = true, silent = true, buffer = bufnr }
+    if opts then
+      options = vim.tbl_extend('force', options, opts)
+    end
+    vim.keymap.set(mode, shortcut, command, options)
+  end
+
+  map('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to symbol definition' })
+
+  -- show hover information
+  map('n', 'K', vim.lsp.buf.hover)
+
+  -- show signature information
+  map('n', '<C-k>', vim.lsp.buf.signature_help)
+
+  -- disable document formatting for all language servers; handled via null-ls instead
+  client.resolved_capabilities.document_formatting = false
 end
 
 require('mason-lspconfig').setup_handlers({
