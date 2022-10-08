@@ -13,6 +13,10 @@ local function map(mode, shortcut, command, opts)
   vim.keymap.set(mode, shortcut, command, options)
 end
 
+-- Leader groups
+local diagnostics = '<leader>d'
+local find = '<leader>f'
+
 -- ----------------------------------------------------------------------------
 -- Builtins
 -- ----------------------------------------------------------------------------
@@ -40,7 +44,7 @@ map('v', 'p', '"_dP')
 
 -- Diagnostics
 wk.register({
-  ['<leader>d'] = {
+  [diagnostics] = {
     name = 'Diagnostics…',
     l = {vim.diagnostic.open_float, 'Line diagnostics'},
     j = {vim.diagnostic.goto_next, 'Next diagnostic'},
@@ -62,7 +66,7 @@ map('n', '<leader>e', '<cmd>NvimTreeToggle<CR>', { desc = 'Toggle Nvim Tree'})
 
 -- Telescope
 wk.register({
-  ['<leader>f'] = {
+  [find] = {
     name = 'Find…',
     f = {'<cmd>Telescope find_files <CR>', 'Files'},
     g = {'<cmd>Telescope git_files <CR>', 'Git files'},
@@ -71,14 +75,14 @@ wk.register({
   }
 })
 wk.register({
-  ['<leader>d'] = {
+  [diagnostics] = {
     w = {'<cmd>Telescope diagnostics<CR>', 'Workspace (Telescope)'},
   }
 })
 
 -- Trouble
 wk.register({
-  ['<leader>d'] = {
+  [diagnostics] = {
     d = {'<cmd>TroubleToggle document_diagnostics <CR>', 'Document (Trouble)'},
   }
 })
