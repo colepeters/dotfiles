@@ -11,7 +11,6 @@ These instructions have been tested on my own machine (macOS 11, using the lates
 ### Prerequisites
 
 1. Install [Homebrew](http://brew.sh/)
-1. Correct Hombrew permissions: `sudo chown -R "$USER":admin /usr/local && sudo chown -R "$USER":admin /Library/Caches/Homebrew`
 1. Install [NodeJS](https://nodejs.org/)
 1. Install [Neovim](https://neovim.io)
 1. Install [tree-sitter](https://github.com/tree-sitter/tree-sitter) and [luajit](https://github.com/LuaJIT/LuaJIT) for use in Neovim: `brew install tree-sitter luajit`
