@@ -14,6 +14,7 @@ These instructions have been tested on my own machine (macOS 11, using the lates
 1. Install [NodeJS](https://nodejs.org/)
 1. Install [Neovim](https://neovim.io)
 1. Install [tree-sitter](https://github.com/tree-sitter/tree-sitter) and [luajit](https://github.com/LuaJIT/LuaJIT) for use in Neovim: `brew install tree-sitter luajit`
+    _(These may have been preinstalled with Neovim; if so, skip this step.)_
 1. Install [ripgrep](https://github.com/BurntSushi/ripgrep) for use with Telescope.nvim: `brew install ripgrep`
 
 ### Install
@@ -52,11 +53,14 @@ rcup -v
 Some aliases and configurations depend on these packages to work:
 
 ```shell
-# diff-so-fancy, for better git diffs:
-npm i -g diff-so-fancy
-
 # Tig, a Git CLI wrapper:
 brew install tig
+
+# Exa, a nicer `ls`
+brew install exa
+
+# diff-so-fancy, for better git diffs:
+npm i -g diff-so-fancy
 
 # HTTPie, a nice cURL replacement:
 brew install httpie
