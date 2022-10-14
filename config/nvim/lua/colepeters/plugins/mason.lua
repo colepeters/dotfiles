@@ -36,7 +36,7 @@ local on_attach = function (client, bufnr)
   map('n', '<C-k>', vim.lsp.buf.signature_help)
 
   -- disable document formatting for all language servers; handled via null-ls instead
-  client.resolved_capabilities.document_formatting = false
+  client.server_capabilities.document_formatting = false
 end
 
 require('mason-lspconfig').setup_handlers({
