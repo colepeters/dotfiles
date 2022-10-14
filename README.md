@@ -12,8 +12,7 @@ These instructions have been tested on my own machine (macOS 11, using the lates
 
 1. Install [Homebrew](http://brew.sh/)
 1. Correct Hombrew permissions: `sudo chown -R "$USER":admin /usr/local && sudo chown -R "$USER":admin /Library/Caches/Homebrew`
-1. Install [ASDF](https://asdf-vm.com/) to manage various runtimes — for me, mostly NodeJS
-1. Install [the `nodejs` plugin for ASDF](https://github.com/asdf-vm/asdf-nodejs) and install the latest LTS version globally
+1. Install [NodeJS](https://nodejs.org/)
 1. Install [Neovim](https://neovim.io)
 1. Install [tree-sitter](https://github.com/tree-sitter/tree-sitter) and [luajit](https://github.com/LuaJIT/LuaJIT) for use in Neovim: `brew install tree-sitter luajit`
 1. Install [ripgrep](https://github.com/BurntSushi/ripgrep) for use with Telescope.nvim: `brew install ripgrep`
@@ -21,14 +20,14 @@ These instructions have been tested on my own machine (macOS 11, using the lates
 ### Install
 
 ```shell
-# Install Zsh
+# Install ZSH via Homebrew (usually more up to date that macOS default)
 brew install zsh
 
 # Add zsh to standard shells
-sudo vi /etc/shells              # 👈 Add /usr/local/bin/zsh to the end of this file
+sudo vi /etc/shells              # 👈 Add /opt/homebrew/bin/zsh at the end of this file
 
 # Switch into Zsh
-chsh -s /usr/local/bin/zsh
+chsh -s /opt/homebrew/bin/zsh
 
 # Clone the repo to into a ".dotfiles" directory in your user directory
 git clone git@github.com:colepeters/dotfiles.git ~/.dotfiles
