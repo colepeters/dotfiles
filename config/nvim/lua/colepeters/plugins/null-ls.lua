@@ -10,8 +10,7 @@ require('null-ls').setup({
         group = augroup,
         buffer = bufnr,
         callback = function()
-          -- on 0.8, you should use vim.lsp.buf.format({ bufnr = bufnr }) instead
-          vim.lsp.buf.formatting_sync(nil, 2000)
+          vim.lsp.buf.format({ bufnr = bufnr})
         end,
       })
     end
