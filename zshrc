@@ -13,7 +13,7 @@ if ! zgen saved; then
   zgen load zsh-users/zsh-syntax-highlighting
   zgen load mafredri/zsh-async
   zgen load softmoth/zsh-vim-mode
-  zgen load denysdovhan/spaceship-prompt spaceship
+  zgen load spaceship-prompt/spaceship-prompt spaceship
 
   # generate the init script from plugins above
   zgen save
@@ -57,6 +57,31 @@ __git_files () {
 # git add the right stuff
 alias git='noglob git'
 
+# CL editing
+bindkey -v
+
+# zsh-vim-mode
+MODE_CURSOR_VICMD="block"
+MODE_CURSOR_VIINS="blinking bar"
+
+# Spaceship prompt options
+SPACESHIP_PROMPT_ORDER=(
+  time
+  user
+  dir
+  git
+  exec_time
+  line_sep
+  jobs
+  exit_code
+  char
+)
+SPACESHIP_CHAR_SYMBOL="❯ "
+SPACESHIP_EXEC_TIME_COLOR="243"
+SPACESHIP_EXEC_TIME_PREFIX="%F{243}∆t=%f"
+SPACESHIP_GIT_PREFIX=""
+SPACESHIP_GIT_STATUS_PREFIX=" ("
+SPACESHIP_GIT_STATUS_SUFFIX=")"
 
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -126,35 +151,6 @@ fi
 
 # Prefer Homebrew Python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-
-# CL editing
-bindkey -v
-
-# zsh-vim-mode
-MODE_CURSOR_VICMD="block"
-MODE_CURSOR_VIINS="blinking bar"
-
-# Spaceship prompt options
-SPACESHIP_PROMPT_ORDER=(
-  time
-  user
-  dir
-  git
-  exec_time
-  line_sep
-  vi_mode
-  jobs
-  exit_code
-  char
-)
-SPACESHIP_CHAR_SYMBOL="❯ "
-SPACESHIP_EXEC_TIME_COLOR="243"
-SPACESHIP_EXEC_TIME_PREFIX="%F{243}∆t=%f"
-SPACESHIP_GIT_PREFIX=""
-SPACESHIP_GIT_STATUS_PREFIX=" ("
-SPACESHIP_GIT_STATUS_SUFFIX=")"
-SPACESHIP_VI_MODE_SHOW=false
-
 
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
