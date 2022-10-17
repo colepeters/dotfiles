@@ -44,11 +44,12 @@ return packer.startup(function(use)
   -- Multi-plugin dependency
   use 'nvim-lua/plenary.nvim'
 
-  -- LSP
+  -- LSP etc
   -- Order of these plugins is important
   use {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig',
+    'WhoIsSethDaniel/mason-tool-installer.nvim',
     'neovim/nvim-lspconfig',
   }
   use 'jose-elias-alvarez/null-ls.nvim'

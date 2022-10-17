@@ -4,15 +4,15 @@ require('mason').setup({
   }
 })
 
-require('mason-lspconfig').setup({
+require('mason-tool-installer').setup({
   ensure_installed = {
     'css-lsp',
+    'diagnostic-languageserver',
     'eslint_d',
-    'diagnosticls',
     'html-lsp',
     'json-lsp',
-    'lua-language-server',
     'prettierd',
+    'lua-language-server',
     'typescript-language-server',
     'vim-language-server'
   }
