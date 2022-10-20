@@ -10,7 +10,7 @@ require('nvim-tree').setup({
           unstaged = '',
           staged = '',
           renamed = 'ﱴ',
-          untracked = '落',
+          untracked = 'ﭜ',
           deleted = '',
           ignored = '﯏',
         }
