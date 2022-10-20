@@ -36,7 +36,6 @@ opt.backspace = {
 -------------------------------------------------------------------------------
 opt.number = true              -- Show line numbers
 opt.showmatch = true           -- Highlight matching parens/brackets
-opt.colorcolumn = '120'        -- Line length markers at 120 characters
 opt.splitright = true          -- Vertical splits open on right
 opt.splitbelow = true          -- Horizontal splits open on bottom
 opt.ignorecase = true          -- Ignore casing on search
