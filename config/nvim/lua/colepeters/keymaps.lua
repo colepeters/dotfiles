@@ -57,8 +57,8 @@ wk.register({
 -- ----------------------------------------------------------------------------
 
 -- Bufferline & Bbye
-map('n', '<S-L>', '<cmd>:BufferLineCycleNext<CR>')
-map('n', '<S-H>', '<cmd>:BufferLineCyclePrev<CR>')
+map('n', 'tj', '<cmd>:BufferLineCycleNext<CR>')
+map('n', 'tk', '<cmd>:BufferLineCyclePrev<CR>')
 map('n', '<S-Q>', '<cmd>:Bdelete<CR>')
 
 -- Nvim-Tree
