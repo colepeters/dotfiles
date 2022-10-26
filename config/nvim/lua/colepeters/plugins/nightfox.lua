@@ -12,12 +12,12 @@ require('nightfox').setup({
     },
   },
   groups = {
-    all = {
-      ["@text"] = { link = "Normal" },
-      ["@tag"] = { link = "Keyword" },
-      ["@tag.attribute"] = { link = "Function" },
-      ["@tag.delimiter"] = { link = "Delimiter" },
-    },
+    -- all = {
+    --   ["@text"] = { link = "Normal" },
+    --   ["@tag"] = { link = "Keyword" },
+    --   ["@tag.attribute"] = { link = "Function" },
+    --   ["@tag.delimiter"] = { link = "Delimiter" },
+    -- },
     dayfox = {
       LineNr = { fg = 'bg4'},
     },
