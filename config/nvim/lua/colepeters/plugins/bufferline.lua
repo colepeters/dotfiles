@@ -35,6 +35,16 @@ require('bufferline').setup({
       fg = palette.fg0,
       bg = palette.bg1,
     },
+    duplicate = {
+      fg = palette.fg1,
+      bg = palette.bg4,
+    },
+    duplicate_visible = {
+      fg = palette.magenta.bright,
+    },
+    duplicate_selected = {
+      fg = palette.magenta.bright,
+    },
     close_button = {
       fg = palette.fg0,
       bg = palette.bg4,

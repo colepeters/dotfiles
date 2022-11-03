@@ -1,5 +1,11 @@
 require('lualine').setup({
   sections = {
+    lualine_c = {
+      {
+        'filename',
+        path = 3, -- absolute path with ~ for $HOME
+      }
+    },
     lualine_x = {
       'encoding',
       {
