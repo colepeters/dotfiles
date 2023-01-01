@@ -15,7 +15,6 @@ end
 
 cmp.event:on('confirm_done', cmp_autopairs.on_confirm_done())
 
-local npairs = require'nvim-autopairs'
 local Rule   = require'nvim-autopairs.rule'
 
 npairs.add_rules {
