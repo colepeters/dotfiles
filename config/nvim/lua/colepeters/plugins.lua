@@ -65,7 +65,6 @@ return packer.startup(function(use)
 
   -- Colours
   use { 'EdenEast/nightfox.nvim', branch = 'main' }
-  use 'f-person/auto-dark-mode.nvim'
 
   -- Completion
   use 'hrsh7th/nvim-cmp'
@@ -93,16 +92,6 @@ return packer.startup(function(use)
   use 'moll/vim-bbye'
   use 'nvim-lua/popup.nvim'
   use 'nvim-lualine/lualine.nvim'
-  use {
-    "folke/zen-mode.nvim",
-    config = function()
-      require("zen-mode").setup {
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
-      }
-    end
-  }
 
   -- Automatically set up configuration after cloning packer.nvim
   if packer_bootstrap then
