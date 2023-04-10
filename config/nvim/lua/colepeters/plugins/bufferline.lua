@@ -7,8 +7,11 @@ require('bufferline').setup({
     },
     separator_style = 'padded_slant',
   },
-  -- highlights for Dayfox
   highlights = {
+    background = {
+      fg = palette.fg0,
+      bg = palette.bg4,
+    },
     fill = {
       bg = palette.bg0,
     },
@@ -24,16 +27,33 @@ require('bufferline').setup({
       fg = palette.bg0,
       bg = palette.bg1,
     },
-    background = {
-      fg = palette.fg0,
-      bg = palette.bg4,
-    },
     buffer_selected = {
+      fg = palette.fg0,
+      bg = palette.bg1,
       italic = false,
     },
     buffer_visible = {
       fg = palette.fg0,
       bg = palette.bg1,
+    },
+    close_button = {
+      fg = palette.fg0,
+      bg = palette.bg4,
+    },
+    close_button_selected = {
+      fg = palette.fg0,
+      bg = palette.bg1,
+    },
+    close_button_visible = {
+      bg = palette.bg1,
+      fg = palette.fg0,
+    },
+    modified = {
+      bg = palette.bg4,
+      fg = palette.fg0,
+    },
+    modified_selected = {
+      bg = palette.bg1
     },
     duplicate = {
       fg = palette.fg1,
@@ -44,17 +64,6 @@ require('bufferline').setup({
     },
     duplicate_selected = {
       fg = palette.magenta.bright,
-    },
-    close_button = {
-      fg = palette.fg0,
-      bg = palette.bg4,
-    },
-    close_button_visible = {
-      fg = palette.fg0,
-    },
-    modified = {
-      bg = palette.bg4,
-      fg = palette.fg0,
     },
   }
 })

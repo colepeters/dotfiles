@@ -75,7 +75,7 @@ return packer.startup(function(use)
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
   use 'windwp/nvim-autopairs'
-  use { 'bennypowers/nvim-ts-autotag', branch = 'template-tags' }
+  use 'windwp/nvim-ts-autotag'
 
   -- Manipulation
   use 'numToStr/Comment.nvim'
