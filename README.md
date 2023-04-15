@@ -6,15 +6,13 @@ Configurations and optimisations for Zsh, Git, Neovim, etc.
 These dotfiles have been created for my own use and I make no assurances of them working for anyone else. That said, I like sharing these things in the open for others to borrow from, so please make use of these as you like.
 
 ## Usage (macOS)
-These instructions have been tested on my own machine (macOS 11, using the latest version of [iTerm2](https://www.iterm2.com/)). They presume that you do **not** already have a `.dotfiles/` directory in your user (`~/`) directory.
+These instructions have been tested on my own machine (macOS 13, using the latest version of [iTerm2](https://www.iterm2.com/)). They presume that you do **not** already have a `.dotfiles/` directory in your user (`~/`) directory.
 
 ### Prerequisites
 
 1. Install [Homebrew](http://brew.sh/)
 1. Install [NodeJS](https://nodejs.org/)
 1. Install [Neovim](https://neovim.io)
-1. Install [tree-sitter](https://github.com/tree-sitter/tree-sitter) and [luajit](https://github.com/LuaJIT/LuaJIT) for use in Neovim: `brew install tree-sitter luajit`\
-  _(These may have been preinstalled with Neovim; if so, skip this step.)_
 1. Install [ripgrep](https://github.com/BurntSushi/ripgrep) for use with Telescope.nvim: `brew install ripgrep`
 
 ### Install
