@@ -48,6 +48,11 @@
   # 'git push' will push the current branch to its tracking branch
   # the usual default is to push all branches
   default = upstream
+  # automatically push tags to remote
+  followTags = true
+[pull]
+  # rebase local branch on upstream branch after fetching
+  rebase = true
 [core]
   autocrlf = false
   excludesfile = ~/.gitignore_global
