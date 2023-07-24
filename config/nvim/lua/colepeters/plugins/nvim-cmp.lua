@@ -54,8 +54,7 @@ cmp.setup({
       i = cmp.mapping.abort(),
       c = cmp.mapping.close()
     }),
-    ['<C-CR>'] = cmp.mapping.confirm({ select = true }),
-    ['<CR>'] = {}, -- disable enter for confirmation
+    ['<CR>'] = cmp.mapping.confirm({ select = false }),
   },
   formatting = {
     fields = { 'kind', 'abbr', 'menu' },

@@ -93,6 +93,9 @@ return packer.startup(function(use)
   use 'nvim-lua/popup.nvim'
   use 'nvim-lualine/lualine.nvim'
 
+  -- Additional filetype (non TS)
+   use 'architect/vim-plugin'
+
   -- Automatically set up configuration after cloning packer.nvim
   if packer_bootstrap then
     require('packer').sync()

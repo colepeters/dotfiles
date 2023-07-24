@@ -234,6 +234,11 @@ _G.packer_plugins = {
     path = "/Users/cole/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
+  ["vim-plugin"] = {
+    loaded = true,
+    path = "/Users/cole/.local/share/nvim/site/pack/packer/start/vim-plugin",
+    url = "https://github.com/architect/vim-plugin"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/cole/.local/share/nvim/site/pack/packer/start/vim-surround",
