@@ -60,7 +60,7 @@ return packer.startup(function(use)
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- Treesitter (syntax parsing/highlighting)
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate', tag = 'v0.8.*' }
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   -- Colours
@@ -80,6 +80,7 @@ return packer.startup(function(use)
   -- Manipulation
   use 'numToStr/Comment.nvim'
   use 'tpope/vim-surround'
+  use 'gbprod/cutlass.nvim'
 
   -- UI
   use { 'akinsho/bufferline.nvim', tag = 'v2.*' }
@@ -88,7 +89,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
   use 'lewis6991/gitsigns.nvim'
-  use 'lukas-reineke/indent-blankline.nvim'
+  use { 'lukas-reineke/indent-blankline.nvim', tag="v2.*" }
   use 'moll/vim-bbye'
   use 'nvim-lua/popup.nvim'
   use 'nvim-lualine/lualine.nvim'
