@@ -48,6 +48,15 @@ require('mason-lspconfig').setup_handlers({
       capabilities = capabilities
     }
   end,
+  ['tsserver'] = function ()
+    require('lspconfig').tsserver.setup({
+      settings = {
+        implicitProjectConfiguration = {
+          checkJs = true
+        }
+      }
+    })
+  end,
   ['lua_ls'] = function ()
     require('lspconfig').lua_ls.setup({
       on_attach = on_attach,

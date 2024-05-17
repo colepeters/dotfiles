@@ -79,9 +79,10 @@
   smudge = git hawser smudge %f
   required = true
 [filter "lfs"]
-  clean = git lfs clean %f
-  smudge = git lfs smudge %f
+  clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
   required = true
+	process = git-lfs filter-process
 [page]
 	diff = diff-so-fancy | less --tabs=1,5 -RFX
 [pager]
@@ -98,3 +99,6 @@
 	gpgsign = true
 [init]
 	defaultBranch = main
+[user]
+	name = Cole Peters
+	email = cole@colepeters.com
