@@ -7,9 +7,11 @@ vim/bundle
 # Ignore config by default
 config/*
 
-# Don't ignore these though
+# config - neovim
 !config/nvim
-!config/spaceship
+
+# config - spaceship
+!config/spaceship.zsh
 
 # Ignore vim plugin installs
 config/nvim/plugged
