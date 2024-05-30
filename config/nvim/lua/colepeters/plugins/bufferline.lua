@@ -1,4 +1,13 @@
-local palette = require('nightfox.palette').load('dawnfox')
+local systemcolors = vim.fn.system('defaults read -g AppleInterfaceStyle')
+local fox
+
+if systemcolors:find('Dark') then
+  fox = 'duskfox'
+else
+  fox = 'dawnfox'
+end
+
+local palette = require('nightfox.palette').load(fox)
 
 require('bufferline').setup({
   options = {

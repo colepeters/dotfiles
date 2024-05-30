@@ -21,5 +21,11 @@ require('nightfox').setup({
   },
 })
 
-vim.cmd('colorscheme dawnfox')
+local systemcolors = vim.fn.system('defaults read -g AppleInterfaceStyle')
+
+if systemcolors:find('Dark') then
+  vim.cmd('colorscheme duskfox')
+else
+  vim.cmd('colorscheme dawnfox')
+end
 
