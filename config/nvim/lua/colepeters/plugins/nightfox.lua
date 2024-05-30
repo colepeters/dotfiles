@@ -15,6 +15,9 @@ require('nightfox').setup({
     dayfox = {
       LineNr = { fg = 'bg4'},
     },
+    dawnfox = {
+      LineNr = { fg = 'bg4'},
+    },
   },
 })
 

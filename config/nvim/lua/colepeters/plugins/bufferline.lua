@@ -1,4 +1,4 @@
-local palette = require('nightfox.palette').load('dayfox')
+local palette = require('nightfox.palette').load('dawnfox')
 
 require('bufferline').setup({
   options = {
