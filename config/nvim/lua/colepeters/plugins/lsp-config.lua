@@ -52,7 +52,8 @@ require('mason-lspconfig').setup_handlers({
     require('lspconfig').tsserver.setup({
       settings = {
         implicitProjectConfiguration = {
-          checkJs = true
+          checkJs = true,
+          target = 'es2022',
         }
       }
     })
