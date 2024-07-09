@@ -54,8 +54,8 @@ Some aliases and configurations depend on these packages to work:
 # Tig, a Git CLI wrapper:
 brew install tig
 
-# Exa, a nicer `ls`
-brew install exa
+# Eza, a nicer `ls`
+brew install eza
 
 # diff-so-fancy, for better git diffs:
 npm i -g diff-so-fancy
