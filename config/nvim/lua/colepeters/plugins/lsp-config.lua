@@ -48,8 +48,8 @@ require('mason-lspconfig').setup_handlers({
       capabilities = capabilities
     }
   end,
-  ['tsserver'] = function ()
-    require('lspconfig').tsserver.setup({
+  ['ts_ls'] = function ()
+    require('lspconfig').ts_ls.setup({
       settings = {
         implicitProjectConfiguration = {
           checkJs = true,

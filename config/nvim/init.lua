@@ -18,5 +18,4 @@ require('colepeters.plugins.telescope')
 require('colepeters.plugins.toggleterm')
 require('colepeters.plugins.treesitter')
 require('colepeters.plugins.trouble')
-require('colepeters.plugins.whichkey')
 
