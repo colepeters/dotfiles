@@ -43,13 +43,11 @@ map('v', 'p', '"_dP')
 
 
 -- Diagnostics
-wk.register({
-  [diagnostics] = {
-    name = 'Diagnostics…',
-    l = {vim.diagnostic.open_float, 'Line diagnostics'},
-    j = {vim.diagnostic.goto_next, 'Next diagnostic'},
-    k = {vim.diagnostic.goto_prev, 'Previous diagnostic'},
-  }
+wk.add({
+  { "<leader>d", group = "Diagnostics…" },
+  { "<leader>dj", vim.diagnostic.goto_next, desc = "Next diagnostic" },
+  { "<leader>dk", vim.diagnostic.goto_prev, desc = "Previous diagnostic" },
+  { "<leader>dl", vim.diagnostic.open_float, desc = "Line diagnostics" },
 })
 
 -- ----------------------------------------------------------------------------
@@ -65,26 +63,20 @@ map('n', '<S-Q>', '<cmd>:Bdelete<CR>')
 map('n', '<leader>e', '<cmd>NvimTreeToggle<CR>', { desc = 'Toggle Nvim Tree'})
 
 -- Telescope
-wk.register({
-  [find] = {
-    name = 'Find…',
-    f = {'<cmd>Telescope find_files <CR>', 'Files'},
-    g = {'<cmd>Telescope git_files <CR>', 'Git files'},
-    i = {'<cmd>Telescope live_grep <CR>', 'Find in files'},
-    b = {'<cmd>Telescope buffers <CR>', 'Buffers'},
-  }
+wk.add({
+  { "<leader>f", group = "Find…" },
+  { "<leader>fb", "<cmd>Telescope buffers <CR>", desc = "Buffers" },
+  { "<leader>ff", "<cmd>Telescope find_files <CR>", desc = "Files" },
+  { "<leader>fg", "<cmd>Telescope git_files <CR>", desc = "Git files" },
+  { "<leader>fi", "<cmd>Telescope live_grep <CR>", desc = "Find in files" },
 })
-wk.register({
-  [diagnostics] = {
-    w = {'<cmd>Telescope diagnostics<CR>', 'Workspace (Telescope)'},
-  }
+wk.add({
+  "<leader>dw", "<cmd>Telescope diagnostics<CR>", desc = "Workspace (Telescope)"
 })
 
 -- Trouble
-wk.register({
-  [diagnostics] = {
-    d = {'<cmd>TroubleToggle document_diagnostics <CR>', 'Document (Trouble)'},
-  }
+wk.add({
+  "<leader>dd", "<cmd>TroubleToggle document_diagnostics <CR>", desc = "Document (Trouble)"
 })
 map('n', 'gr', '<cmd>TroubleToggle lsp_references <CR>', { desc = 'References (Trouble)' })
 
