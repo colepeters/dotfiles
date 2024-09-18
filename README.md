@@ -64,6 +64,8 @@ npm i -g diff-so-fancy
 brew install httpie
 ```
 
+- [NerdFontSymbolsOnly](https://github.com/ryanoasis/nerd-fonts/releases) for non-ASCII text
+
 ### 🎉 Ta-da
 You should now be able to open a new shell session and have everything be not horrible and hopefully cooler and ready to go.
 

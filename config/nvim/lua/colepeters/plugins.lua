@@ -92,6 +92,8 @@ return packer.startup(function(use)
   use 'moll/vim-bbye'
   use 'nvim-lua/popup.nvim'
   use 'nvim-lualine/lualine.nvim'
+  use 'folke/which-key.nvim'
+  use 'echasnovski/mini.icons'
 
   -- Additional filetype (non TS)
    use 'architect/vim-plugin'

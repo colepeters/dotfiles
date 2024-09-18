@@ -149,6 +149,11 @@ _G.packer_plugins = {
     path = "/Users/cole.peters/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["mini.icons"] = {
+    loaded = true,
+    path = "/Users/cole.peters/.local/share/nvim/site/pack/packer/start/mini.icons",
+    url = "https://github.com/echasnovski/mini.icons"
+  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "/Users/cole.peters/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
@@ -248,6 +253,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/cole.peters/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "/Users/cole.peters/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 
