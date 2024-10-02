@@ -9,7 +9,7 @@ config/*
 
 # config dir opt ins
 !config/nvim
-!config/spaceship.zsh
+!config/spaceship
 !config/zed
 config/zed/*
 !config/zed/settings.json
