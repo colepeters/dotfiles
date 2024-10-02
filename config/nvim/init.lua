@@ -1,4 +1,4 @@
-require('colepeters.plugins')
+require('config.lazy')
 require('colepeters.options')
 require('colepeters.keymaps')
 require('colepeters.diagnostic')

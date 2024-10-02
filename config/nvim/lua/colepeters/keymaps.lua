@@ -13,10 +13,6 @@ local function map(mode, shortcut, command, opts)
   vim.keymap.set(mode, shortcut, command, options)
 end
 
--- Leader groups
-local diagnostics = '<leader>d'
-local find = '<leader>f'
-
 -- ----------------------------------------------------------------------------
 -- Builtins
 -- ----------------------------------------------------------------------------
@@ -76,7 +72,8 @@ wk.add({
 
 -- Trouble
 wk.add({
-  "<leader>dd", "<cmd>TroubleToggle document_diagnostics <CR>", desc = "Document (Trouble)"
+  { "<leader>dd", "<cmd>Trouble diagnostics toggle filter.buf=0<CR>", desc = "Document (Trouble)" },
+  { "<leader>da", "<cmd>Trouble diagnostics toggle filter.buf=0<CR>", desc = "All (Trouble)" },
 })
-map('n', 'gr', '<cmd>TroubleToggle lsp_references <CR>', { desc = 'References (Trouble)' })
+map('n', 'gr', '<cmd>Trouble lsp toggle focus=false win.position=right <CR>', { desc = 'References (Trouble)' })
 
