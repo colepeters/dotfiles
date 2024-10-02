@@ -73,7 +73,7 @@ wk.add({
 -- Trouble
 wk.add({
   { "<leader>dd", "<cmd>Trouble diagnostics toggle filter.buf=0<CR>", desc = "Document (Trouble)" },
-  { "<leader>da", "<cmd>Trouble diagnostics toggle filter.buf=0<CR>", desc = "All (Trouble)" },
+  { "<leader>da", "<cmd>Trouble diagnostics<CR>", desc = "All (Trouble)" },
 })
 map('n', 'gr', '<cmd>Trouble lsp toggle focus=false win.position=right <CR>', { desc = 'References (Trouble)' })
 
