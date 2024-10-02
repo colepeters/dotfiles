@@ -7,24 +7,15 @@ vim/bundle
 # Ignore config by default
 config/*
 
-# config - neovim
+# config dir opt ins
 !config/nvim
-
-# config - spaceship
 !config/spaceship.zsh
-
-# Ignore vim plugin installs
-config/nvim/plugged
+!config/zed/settings.json
 
 # Track undodir but not files inside it
 !config/nvim/undodir/
 config/nvim/undodir/*
 !config/nvim/undodir/undodir.md
-
-# Don't ignore config/ranger, do ignore bookmarks/history
-!config/ranger
-config/ranger/bookmarks
-config/ranger/history
 
 ### Vim ###
 [._]*.s[a-w][a-z]
@@ -33,14 +24,6 @@ config/ranger/history
 Session.vim
 .netrwhist
 *~
-
-### Atom ###
-atom/packages/**/*
-atom/storage
-atom/compile-cache
-atom/blob-store/**/*
-atom/.apm
-atom/.node-gyp
 
 ### OSX ###
 .DS_Store
