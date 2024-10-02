@@ -10,6 +10,8 @@ config/*
 # config dir opt ins
 !config/nvim
 !config/spaceship.zsh
+!config/zed
+config/zed/*
 !config/zed/settings.json
 
 # Track undodir but not files inside it
