@@ -3,11 +3,6 @@ if not cmp_status_ok then
   return
 end
 
-local snip_status_ok, luasnip = pcall(require, 'luasnip')
-if not snip_status_ok then
-  return
-end
-
 vim.opt.completeopt = 'menuone,noinsert,noselect'
 
 local kind_icons = {
@@ -41,7 +36,7 @@ local kind_icons = {
 cmp.setup({
   snippet = {
     expand = function(args)
-      luasnip.lsp_expand(args.body)
+      vim.snippet.expand(args.body)
     end,
   },
   mapping = {
