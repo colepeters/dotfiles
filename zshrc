@@ -42,8 +42,11 @@ export XDG_CONFIG_HOME=$HOME/.config
 # Source aliases
 source ~/.aliases.zsh
 
-# Source secrets
+# Source secrets; these are for private config not tracked in github
 source ~/.secrets
+
+# Source machine extras; these are for config unique to the machine in use
+source ~/.machine
 
 # Override rm -i alias which makes rm prompt for every action
 alias rm='nocorrect rm'
@@ -133,18 +136,7 @@ fi
 # Prefer Homebrew Python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
-# bun completions
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# Begin
-export BEGIN_INSTALL="$HOME/.begin"
-export PATH="$BEGIN_INSTALL:$PATH"
-
-
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
