@@ -7,27 +7,40 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "assistant": {
-    "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-20240620"
-    },
-    "version": "2"
-  },
-  "telemetry": {
-    "metrics": false
-  },
-  "vim_mode": true,
-  "ui_font_size": 14,
+  // UI, type
+  "buffer_font_family": "LigaPPFraktionMonoNerdFont Nerd Font",
   "buffer_font_size": 12,
+  "ui_font_family": "Zed Plex Sans",
+  "ui_font_size": 14,
+  "project_panel": {
+    "dock": "right"
+  },
+  "terminal": {
+    "dock": "bottom",
+    "working_directory": "current_project_directory"
+  },
   "theme": {
     "mode": "system",
     "light": "Dawnfox",
     "dark": "Duskfox"
   },
-  "buffer_font_family": "LigaPPFraktionMonoNerdFont Nerd Font",
-  "ui_font_family": "Zed Plex Sans",
-  "project_panel": {
-    "dock": "right"
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  // Vim
+  "vim_mode": true,
+  // AI stuff
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
+  // Other stuff
+  "telemetry": {
+    "metrics": false
   }
 }

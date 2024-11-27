@@ -1,0 +1,53 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  // Remap `d`, `c` commands to use blackhole register
+  // Retain `x` as a 'cut' operation
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "ctrl-shift-d": ["vim::PushOperator", "Delete"],
+      "ctrl-shift-c": ["vim::PushOperator", "Change"],
+      "d": ["workspace::SendKeystrokes", "\" _ ctrl-shift-d"],
+      "x": ["workspace::SendKeystrokes", "ctrl-shift-d"],
+      "c": ["workspace::SendKeystrokes", "\" _ ctrl-shift-c"]
+    }
+  },
+  // Same in visual mode
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "ctrl-shift-d": "vim::VisualDelete",
+      "ctrl-shift-c": "vim::Substitute",
+      "d": ["workspace::SendKeystrokes", "\" _ ctrl-shift-d"],
+      "x": ["workspace::SendKeystrokes", "ctrl-shift-d"],
+      "c": ["Editor && vim_mode == visual", "\" _ ctrl-shift-c"]
+    }
+  },
+  // Toggle terminal with ctrl-t from anywhere
+  {
+    "bindings": {
+      "ctrl-t": "workspace::ToggleBottomDock"
+    }
+  },
+  // Toggle file tree w/ space-e from editor or the panel itself
+  {
+    "context": "(Editor && vim_mode == normal) || ProjectPanel && not_editing",
+    "bindings": {
+      "space e": "workspace::ToggleRightDock"
+    }
+  },
+  // Searching
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space f f": "file_finder::Toggle",
+      "space f i": "pane::DeploySearch"
+    }
+  }
+]

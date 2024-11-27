@@ -13,6 +13,7 @@ config/*
 !config/zed
 config/zed/*
 !config/zed/settings.json
+!config/zed/keymap.json
 
 # Track undodir but not files inside it
 !config/nvim/undodir/
