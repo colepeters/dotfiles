@@ -35,6 +35,20 @@
       "ctrl-t": "workspace::ToggleBottomDock"
     }
   },
+  // Navigate menus with CTRL-j/k
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "ctrl-j": "editor::ContextMenuNext",
+      "ctrl-k": "editor::ContextMenuPrev"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-j": "menu::SelectNext",
+      "ctrl-k": "menu::SelectPrev"
+    }
+  },
   // Toggle file tree w/ space-e from editor or the panel itself
   {
     "context": "(Editor && vim_mode == normal) || ProjectPanel && not_editing",
