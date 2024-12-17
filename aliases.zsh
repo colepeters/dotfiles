@@ -15,7 +15,7 @@ alias zr='source ~/.zshrc'                  # Reload Zsh config
 
 ### GIT ###
 alias gca='git commit --amend'
-alias gclean='git branch --merged | egrep -v "(^\*|main|master|dev)" | xargs git branch -d' # git 'clean' (delete local branches merged to main/master/dev)
+alias gclean='git branch --merged | grep -Ev "(^\*|^\+|master|main|dev)" | xargs --no-run-if-empty git branch -d' # delete local merged branches
 alias gcm='git ci -m'
 alias gco='git co'
 alias gl='git l'
