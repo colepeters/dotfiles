@@ -17,3 +17,7 @@ SPACESHIP_GIT_PREFIX=""
 SPACESHIP_GIT_STATUS_PREFIX=" ("
 SPACESHIP_GIT_STATUS_SUFFIX=")"
 
+# Spaceship async breaks on Warp
+if [[ $TERM_PROGRAM == "WarpTerminal" ]]; then
+  SPACESHIP_PROMPT_ASYNC=false
+fi
