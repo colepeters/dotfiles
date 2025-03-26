@@ -8,10 +8,14 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   // UI, type
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
   "buffer_font_family": "LigaPPFraktionMonoNerdFont Nerd Font",
   "buffer_font_size": 12,
   "ui_font_family": "Zed Plex Sans",
   "ui_font_size": 14,
+  "preferred_line_length": 80,
   "project_panel": {
     "dock": "right"
   },
@@ -31,13 +35,27 @@
   },
   // Vim
   "vim_mode": true,
+  // Formatting
+  "format_on_save": "on",
+  "code_actions_on_format": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
   // AI stuff
   "assistant": {
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-latest"
+      "provider": "copilot_chat",
+      "model": "claude-3-7-sonnet"
     },
-    "version": "2"
+    "version": "2",
+    "dock": "left"
+  },
+  // Language settings
+  "languages": {
+    "Markdown": {
+      "show_edit_predictions": false,
+      "soft_wrap": "preferred_line_length"
+    }
   },
   // Other stuff
   "telemetry": {

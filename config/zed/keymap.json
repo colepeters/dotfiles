@@ -29,6 +29,18 @@
       "c": ["Editor && vim_mode == visual", "\" _ ctrl-shift-c"]
     }
   },
+  // Enable expected S for surround
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
+    "bindings": {
+      "shift-s": [
+        "vim::PushOperator",
+        {
+          "AddSurrounds": {}
+        }
+      ]
+    }
+  },
   // Toggle terminal with ctrl-t from anywhere
   {
     "bindings": {
