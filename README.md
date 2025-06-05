@@ -57,6 +57,9 @@ brew install tig
 # Eza, a nicer `ls`
 brew install eza
 
+# bat, cat with wings
+brew install bat
+
 # diff-so-fancy, for better git diffs:
 npm i -g diff-so-fancy
 
