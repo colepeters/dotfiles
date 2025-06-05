@@ -11,8 +11,8 @@
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
-      "ctrl-shift-d": ["vim::PushOperator", "Delete"],
-      "ctrl-shift-c": ["vim::PushOperator", "Change"],
+      "ctrl-shift-d": "vim::PushDelete",
+      "ctrl-shift-c": "vim::PushChange",
       "d": ["workspace::SendKeystrokes", "\" _ ctrl-shift-d"],
       "x": ["workspace::SendKeystrokes", "ctrl-shift-d"],
       "c": ["workspace::SendKeystrokes", "\" _ ctrl-shift-c"]
@@ -26,25 +26,27 @@
       "ctrl-shift-c": "vim::Substitute",
       "d": ["workspace::SendKeystrokes", "\" _ ctrl-shift-d"],
       "x": ["workspace::SendKeystrokes", "ctrl-shift-d"],
-      "c": ["Editor && vim_mode == visual", "\" _ ctrl-shift-c"]
+      "c": ["workspace::SendKeystrokes", "\" _ ctrl-shift-c"]
+    }
+  },
+  // Paste without yanking
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
+    "bindings": {
+      "p": ["vim::Paste", { "preserve_clipboard": true }]
     }
   },
   // Enable expected S for surround
   {
     "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
     "bindings": {
-      "shift-s": [
-        "vim::PushOperator",
-        {
-          "AddSurrounds": {}
-        }
-      ]
+      "shift-s": ["vim::PushAddSurrounds", {}]
     }
   },
   // Toggle terminal with ctrl-t from anywhere
   {
     "bindings": {
-      "ctrl-t": "workspace::ToggleBottomDock"
+      "ctrl-shift-t": "workspace::ToggleBottomDock"
     }
   },
   // Navigate menus with CTRL-j/k
@@ -52,13 +54,13 @@
     "context": "Editor && vim_mode == insert",
     "bindings": {
       "ctrl-j": "editor::ContextMenuNext",
-      "ctrl-k": "editor::ContextMenuPrev"
+      "ctrl-k": "editor::ContextMenuPrevious"
     }
   },
   {
     "bindings": {
       "ctrl-j": "menu::SelectNext",
-      "ctrl-k": "menu::SelectPrev"
+      "ctrl-k": "menu::SelectPrevious"
     }
   },
   // Toggle file tree w/ space-e from editor or the panel itself

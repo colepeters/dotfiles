@@ -11,6 +11,9 @@
   "features": {
     "edit_prediction_provider": "zed"
   },
+  "edit_predictions": {
+    "mode": "subtle"
+  },
   "buffer_font_family": "LigaPPFraktionMonoNerdFont Nerd Font",
   "buffer_font_size": 12,
   "ui_font_family": "Zed Plex Sans",
@@ -38,14 +41,16 @@
   // Formatting
   "format_on_save": "on",
   "code_actions_on_format": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": true
+    "source.organizeImports": true,
+    "source.fixAll.eslint": true
   },
   // AI stuff
-  "assistant": {
+  "agent": {
+    "default_profile": "ask",
+    "always_allow_tool_actions": true,
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-3-7-sonnet"
+      "provider": "anthropic",
+      "model": "claude-3-7-sonnet-latest"
     },
     "version": "2",
     "dock": "left"
