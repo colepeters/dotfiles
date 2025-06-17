@@ -4,6 +4,7 @@ alias npmgen='npm ls -g --depth=0 > ~/.dotfiles/npm-global-installs.txt'
 
 ### GENERAL ###
 alias la='eza -la --icons'
+alias ll='eza -l --icons'
 
 ### NEOVIM ###
 alias nv='nvim'                             # nv is quicker to write than nvim
