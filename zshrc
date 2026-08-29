@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/Users/cole.peters/.zsh/completions:"* ]]; then export FPATH="/Users/cole.peters/.zsh/completions:$FPATH"; fi
 # =====================================
 # ZGEN
 # =====================================
@@ -148,3 +150,5 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+export PATH="$HOME/.local/bin:$PATH"
+. "/Users/cole.peters/.deno/env"
