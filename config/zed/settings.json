@@ -7,63 +7,195 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  // UI, type
-  "features": {
-    "edit_prediction_provider": "zed"
+  "text_rendering_mode": "platform_default",
+  "active_pane_modifiers": {
+    "border_size": 0.0,
+    "inactive_opacity": 0.6,
   },
-  "edit_predictions": {
-    "mode": "subtle"
+  "agent": {
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-opus-4-8",
+      "enable_thinking": true,
+      "effort": "high",
+    },
   },
+  "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "mode": "default"
+      },
+      "type": "registry"
+    }
+  },
+  "bottom_dock_layout": "full",
   "buffer_font_family": "LigaPPFraktionMonoNerdFont Nerd Font",
   "buffer_font_size": 12,
-  "ui_font_family": "Zed Plex Sans",
-  "ui_font_size": 14,
-  "preferred_line_length": 80,
-  "project_panel": {
-    "dock": "right"
+  "buffer_font_weight": 400.0,
+  "buffer_line_height": "comfortable",
+  "centered_layout": {
+    "left_padding": 0.2,
   },
-  "terminal": {
-    "dock": "bottom",
-    "working_directory": "current_project_directory"
+  "cli_default_open_behavior": "new_window",
+  "code_actions_on_format": {
+    "source.removeUnusedImports": true,
+    "source.fixAll": true,
   },
-  "theme": {
-    "mode": "system",
-    "light": "Dawnfox",
-    "dark": "Duskfox"
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "colorize_brackets": true,
+  "completions": {
+    "words": "disabled",
+  },
+  "context_servers": {
+    "Sanity MCP": {
+      "enabled": true,
+      "url": "https://mcp.sanity.io"
+    }
+  },
+  "diagnostics": {
+    "button": true,
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+    "provider": "zed",
   },
   "git": {
     "inline_blame": {
-      "enabled": false
-    }
-  },
-  // Vim
-  "vim_mode": true,
-  // Formatting
-  "format_on_save": "on",
-  "code_actions_on_format": {
-    "source.organizeImports": true,
-    "source.fixAll.eslint": true
-  },
-  // AI stuff
-  "agent": {
-    "default_profile": "ask",
-    "always_allow_tool_actions": true,
-    "default_model": {
-      "provider": "anthropic",
-      "model": "claude-3-7-sonnet-latest"
+      "enabled": false,
     },
-    "version": "2",
-    "dock": "left"
   },
-  // Language settings
+  "git_panel": {
+    "dock": "left",
+  },
+  "icon_theme": {
+    "dark": "Zed (Default)",
+    "light": "Zed (Default)",
+    "mode": "light",
+  },
   "languages": {
+    "CSS": {
+      "completions": {
+        "words": "disabled",
+      },
+      "edit_predictions_disabled_in": ["comment"],
+      "tab_size": 2,
+    },
     "Markdown": {
       "show_edit_predictions": false,
-      "soft_wrap": "preferred_line_length"
-    }
+    },
+    "JavaScript": {
+      "format_on_save": "on",
+      "prettier": {
+        "allowed": false,
+      },
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt",
+          },
+        },
+        {
+          "code_action": "source.fixAll.oxc",
+        },
+      ],
+    },
+    "TypeScript": {
+      "format_on_save": "on",
+      "prettier": {
+        "allowed": false,
+      },
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt",
+          },
+        },
+        {
+          "code_action": "source.fixAll.oxc",
+        },
+      ],
+    },
+    "TSX": {
+      "format_on_save": "on",
+      "prettier": {
+        "allowed": false,
+      },
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt",
+          },
+        },
+        {
+          "code_action": "source.fixAll.oxc",
+        },
+      ],
+    },
   },
-  // Other stuff
+  "lsp": {
+    "oxlint": {
+      "initialization_options": {
+        "settings": {
+          "configPath": null,
+          "run": "onType",
+          "disableNestedConfig": false,
+          "fixKind": "safe_fix",
+          "unusedDisableDirectives": "deny",
+        },
+      },
+    },
+    "oxfmt": {
+      "initialization_options": {
+        "settings": {
+          "fmt.configPath": null,
+          "run": "onSave",
+        },
+      },
+    },
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "preferred_line_length": 120,
+  "project_panel": {
+    "dock": "right",
+  },
+  "search": {
+    "button": false,
+  },
+  "show_wrap_guides": true,
+  "soft_wrap": "editor_width",
+  "status_bar": {
+    "cursor_position_button": true,
+  },
+  "tab_size": 2,
+  "tabs": {
+    "file_icons": false,
+    "git_status": false,
+  },
   "telemetry": {
-    "metrics": false
-  }
+    "metrics": false,
+  },
+  "terminal": {
+    "button": true,
+    "dock": "bottom",
+    "working_directory": "current_project_directory",
+  },
+  "theme": {
+    "dark": "Duskfox - opaque",
+    "light": "Earl Grey",
+    "mode": "light",
+  },
+  "title_bar": {
+    "show_menus": false,
+    "show_project_items": true,
+    "show_user_picture": true,
+  },
+  "ui_font_family": "IBM Plex Sans",
+  "ui_font_size": 14.0,
+  "ui_font_weight": 400.0,
+  "use_system_window_tabs": false,
+  "vim_mode": true,
 }

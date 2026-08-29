@@ -15,8 +15,8 @@
       "ctrl-shift-c": "vim::PushChange",
       "d": ["workspace::SendKeystrokes", "\" _ ctrl-shift-d"],
       "x": ["workspace::SendKeystrokes", "ctrl-shift-d"],
-      "c": ["workspace::SendKeystrokes", "\" _ ctrl-shift-c"]
-    }
+      "c": ["workspace::SendKeystrokes", "\" _ ctrl-shift-c"],
+    },
   },
   // Same in visual mode
   {
@@ -26,56 +26,56 @@
       "ctrl-shift-c": "vim::Substitute",
       "d": ["workspace::SendKeystrokes", "\" _ ctrl-shift-d"],
       "x": ["workspace::SendKeystrokes", "ctrl-shift-d"],
-      "c": ["workspace::SendKeystrokes", "\" _ ctrl-shift-c"]
-    }
+      "c": ["workspace::SendKeystrokes", "\" _ ctrl-shift-c"],
+    },
   },
   // Paste without yanking
   {
     "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
     "bindings": {
-      "p": ["vim::Paste", { "preserve_clipboard": true }]
-    }
+      "p": ["vim::Paste", { "preserve_clipboard": true }],
+    },
   },
   // Enable expected S for surround
   {
     "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
     "bindings": {
-      "shift-s": ["vim::PushAddSurrounds", {}]
-    }
+      "shift-s": ["vim::PushAddSurrounds", {}],
+    },
   },
   // Toggle terminal with ctrl-t from anywhere
   {
     "bindings": {
-      "ctrl-shift-t": "workspace::ToggleBottomDock"
-    }
+      "ctrl-t": "workspace::ToggleBottomDock",
+    },
   },
   // Navigate menus with CTRL-j/k
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
       "ctrl-j": "editor::ContextMenuNext",
-      "ctrl-k": "editor::ContextMenuPrevious"
-    }
+      "ctrl-k": "editor::ContextMenuPrevious",
+    },
   },
   {
     "bindings": {
       "ctrl-j": "menu::SelectNext",
-      "ctrl-k": "menu::SelectPrevious"
-    }
+      "ctrl-k": "menu::SelectPrevious",
+    },
   },
   // Toggle file tree w/ space-e from editor or the panel itself
   {
     "context": "(Editor && vim_mode == normal) || ProjectPanel && not_editing",
     "bindings": {
-      "space e": "workspace::ToggleRightDock"
-    }
+      "space e": "workspace::ToggleRightDock",
+    },
   },
   // Searching
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
       "space f f": "file_finder::Toggle",
-      "space f i": "pane::DeploySearch"
-    }
-  }
+      "space f i": "pane::DeploySearch",
+    },
+  },
 ]
