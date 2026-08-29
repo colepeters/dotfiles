@@ -47,3 +47,5 @@ node_modules
 # Other orders of business #
 # ##########################
 .tool-versions # ASDF
+
+**/.claude/settings.local.json
